@@ -5,7 +5,7 @@
         <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceApp.mc" id="1" lineNum="26" parent="globals" pc="268435460" symbol="getApp"/>
         <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceApp.mc" id="1" lineNum="27" parent="globals" pc="268435470" symbol="getApp"/>
         <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceApp.mc" id="2" lineNum="5" parent="globals/Fenix7XVibeFaceApp" pc="268435481" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435493" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435493" symbol="&lt;init&gt;"/>
         <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="4" lineNum="10" parent="globals/Fenix7XVibeFaceView" pc="268435513" symbol="&lt;init&gt;"/>
         <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceApp.mc" id="5" lineNum="12" parent="globals/Fenix7XVibeFaceApp" pc="268435525" symbol="onStart"/>
         <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceApp.mc" id="6" lineNum="20" parent="globals/Fenix7XVibeFaceApp" pc="268435528" symbol="getInitialView"/>
@@ -300,15 +300,15 @@
         <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="46" lineNum="225" parent="globals/Fenix7XVibeFaceView" pc="268440476" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawRightStack&gt;"/>
         <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="46" lineNum="226" parent="globals/Fenix7XVibeFaceView" pc="268440498" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawRightStack&gt;"/>
         <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="46" lineNum="227" parent="globals/Fenix7XVibeFaceView" pc="268440515" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawRightStack&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="47" lineNum="14" parent="globals/Rez/Layouts" pc="268440545" symbol="WatchFace"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="47" lineNum="15" parent="globals/Rez/Layouts" pc="268440556" symbol="WatchFace"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="47" lineNum="17" parent="globals/Rez/Layouts" pc="268440565" symbol="WatchFace"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="47" lineNum="19" parent="globals/Rez/Layouts" pc="268440654" symbol="WatchFace"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="47" lineNum="21" parent="globals/Rez/Layouts" pc="268440744" symbol="WatchFace"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="47" lineNum="23" parent="globals/Rez/Layouts" pc="268440826" symbol="WatchFace"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="47" lineNum="25" parent="globals/Rez/Layouts" pc="268440910" symbol="WatchFace"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="47" lineNum="27" parent="globals/Rez/Layouts" pc="268440993" symbol="WatchFace"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="47" lineNum="29" parent="globals/Rez/Layouts" pc="268441078" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="47" lineNum="14" parent="globals/Rez/Layouts" pc="268440545" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="47" lineNum="15" parent="globals/Rez/Layouts" pc="268440556" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="47" lineNum="17" parent="globals/Rez/Layouts" pc="268440565" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="47" lineNum="19" parent="globals/Rez/Layouts" pc="268440654" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="47" lineNum="21" parent="globals/Rez/Layouts" pc="268440744" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="47" lineNum="23" parent="globals/Rez/Layouts" pc="268440826" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="47" lineNum="25" parent="globals/Rez/Layouts" pc="268440910" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="47" lineNum="27" parent="globals/Rez/Layouts" pc="268440993" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="47" lineNum="29" parent="globals/Rez/Layouts" pc="268441078" symbol="WatchFace"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>

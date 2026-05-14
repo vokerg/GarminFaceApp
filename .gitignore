@@ -1,0 +1,29 @@
+# Garmin Connect IQ build output
+/bin/
+/gen/
+/mir/
+/internal-mir/
+*.prg
+*.prg.debug.xml
+*.iq
+
+# Generated resource/compiler caches
+*.mbc
+
+# Local scratch files and backups
+/backups/
+*.bak
+*.orig
+*.rej
+*.patch
+
+# Local signing keys or developer secrets
+developer_key*
+*.der
+*.key
+
+# Editor and OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
