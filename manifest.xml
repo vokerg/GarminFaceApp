@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iq:manifest xmlns:iq="http://www.garmin.com/xml/connectiq" version="1">
+    <iq:application entry="Fenix7XVibeFaceApp" id="A3B3C3D3E3F343A3B3C3D3E3F343A3B3" launcherIcon="@Drawables.LauncherIcon" name="@Strings.AppName" type="watchface">
+        <iq:products>
+            <iq:product id="fenix7x"/>
+        </iq:products>
+        <iq:permissions/>
+        <iq:languages/>
+    </iq:application>
+</iq:manifest>

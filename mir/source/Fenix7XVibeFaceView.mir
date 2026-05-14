@@ -1,0 +1,346 @@
+[ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [System,3,14,20]; ]
+import Toybox.System;
+[ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [WatchUi,4,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Time,5,14,18]; ]
+import Toybox.Time;
+[ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 6; @symbol_importdef<0> = [Toybox,6,7,13]; @symbol_importdef<1> = [Time,6,14,18]; @symbol_importdef<2> = [Gregorian,6,19,28]; ]
+import Toybox.Time.Gregorian;
+[ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 7; @symbol_importdef<0> = [Toybox,7,7,13]; @symbol_importdef<1> = [ActivityMonitor,7,14,29]; ]
+import Toybox.ActivityMonitor;
+[ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 9; @symbol_classdef = [Fenix7XVibeFaceView,9,6,25]; @symbol_extends<0> = [WatchUi,9,34,41]; @symbol_extends<1> = [WatchFace,9,42,51]; ]
+class Fenix7XVibeFaceView extends WatchUi.WatchFace {
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 9; ]
+    <init> {
+    }
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 9; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 11; @symbol_functiondef = [initialize,11,13,23]; ]
+    function initialize() as Void {
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_11_26_13_4_start:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 12 8 ]
+        symbol [ WatchFace %tmp.2 12 8 17 ];
+        %tmp.2 = getv ? :WatchFace;
+        symbol [ initialize %tmp.3 12 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_11_26_13_4_stop:
+    }
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 16; @symbol_functiondef = [onLayout,16,13,21]; @symbol_param<0> = [dc,16,22,24]; @symbol_param<0>_type<0> = [Dc,16,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_16_40_18_4_start:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 17 8 ]
+        %tmp.1 = self;
+        symbol [ setLayout %tmp.2 17 8 17 ];
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        symbol [ Rez %tmp.4 17 18 21 ];
+        %tmp.4 = getv ? :Rez;
+        symbol [ Layouts %tmp.5 17 22 29 ];
+        %tmp.5 = getv %tmp.4 :Layouts;
+        symbol [ WatchFace %tmp.6 17 30 39 ];
+        %tmp.6 = getv function %tmp.5 :WatchFace;
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 17 40 42 ];
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        invoke %tmp.1 %tmp.2(%tmp.8);
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_16_40_18_4_stop:
+    }
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 23; @symbol_functiondef = [onShow,23,13,19]; ]
+    function onShow() as Void {
+    }
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 27; @symbol_functiondef = [onUpdate,27,13,21]; @symbol_param<0> = [dc,27,22,24]; @symbol_param<0>_type<0> = [Dc,27,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_start:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 29 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 29 8 10 ];
+        symbol [ setColor %tmp.2 29 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 29 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.4 29 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        symbol [ Graphics %tmp.5 29 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 29 51 62 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 30 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 30 8 10 ];
+        symbol [ clear %tmp.8 30 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 33 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_stop" ]
+        %clockTime.1 = local;
+        symbol [ clockTime %clockTime.1 33 12 21 ];
+        symbol [ System %tmp.9 33 24 30 ];
+        %tmp.9 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.10 33 31 43 ];
+        %tmp.10 = getv function %tmp.9 :getClockTime;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %clockTime.1 %tmp.11;
+        symbol [ clockTime %clockTime.1 33 12 21 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 34 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_stop" ]
+        %timeString.2 = local;
+        symbol [ timeString %timeString.2 34 12 22 ];
+        symbol [ Lang %tmp.12 34 25 29 ];
+        %tmp.12 = getm $.Toybox.Lang;
+        symbol [ format %tmp.13 34 30 36 ];
+        %tmp.13 = getv function %tmp.12 :format;
+        %tmp.14 = "$1$:$2$";
+        %tmp.15 = newa 2;
+        %tmp.16 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.16 34 49 58 ];
+        symbol [ hour %tmp.17 34 59 63 ];
+        %tmp.17 = getv %tmp.16 :hour;
+        %tmp.18 = dup %tmp.15;
+        %tmp.19 = aputv %tmp.18 0 %tmp.17;
+        %tmp.20 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.20 34 65 74 ];
+        symbol [ min %tmp.21 34 75 78 ];
+        %tmp.21 = getv %tmp.20 :min;
+        symbol [ format %tmp.22 34 79 85 ];
+        %tmp.22 = getv function %tmp.21 :format;
+        %tmp.23 = "%02d";
+        %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
+        %tmp.25 = dup %tmp.19;
+        %tmp.26 = aputv %tmp.25 1 %tmp.24;
+        %tmp.27 = invoke %tmp.12 %tmp.13(%tmp.14, %tmp.26);
+        lputv %timeString.2 %tmp.27;
+        symbol [ timeString %timeString.2 34 12 22 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 37 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_stop" ]
+        %view.3 = local;
+        symbol [ view %view.3 37 12 16 ];
+        symbol [ View %tmp.29 37 19 23 ];
+        %tmp.29 = getv ? :View;
+        symbol [ findDrawableById %tmp.30 37 24 40 ];
+        %tmp.30 = getv function %tmp.29 :findDrawableById;
+        %tmp.31 = "TimeLabel";
+        %tmp.32 = invoke %tmp.29 %tmp.30(%tmp.31);
+        %tmp.33 = as %tmp.32 Text;
+        symbol [ Text %tmp.33 37 57 61 ];
+        lputv %view.3 %tmp.33;
+        symbol [ view %view.3 37 12 16 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 38 8 ]
+        %tmp.34 = lgetv %view.3;
+        symbol [ view %tmp.34 38 8 12 ];
+        symbol [ setText %tmp.35 38 13 20 ];
+        %tmp.35 = getv function %tmp.34 :setText;
+        %tmp.36 = lgetv %timeString.2;
+        symbol [ timeString %tmp.36 38 21 31 ];
+        invoke %tmp.34 %tmp.35(%tmp.36);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 41 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_stop" ]
+        %now.4 = local;
+        symbol [ now %now.4 41 12 15 ];
+        symbol [ Time %tmp.37 41 18 22 ];
+        %tmp.37 = getm $.Toybox.Time;
+        symbol [ now %tmp.38 41 23 26 ];
+        %tmp.38 = getv function %tmp.37 :now;
+        %tmp.39 = invoke %tmp.37 %tmp.38();
+        lputv %now.4 %tmp.39;
+        symbol [ now %now.4 41 12 15 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 42 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_stop" ]
+        %date.5 = local;
+        symbol [ date %date.5 42 12 16 ];
+        symbol [ Gregorian %tmp.40 42 19 28 ];
+        %tmp.40 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.41 42 29 33 ];
+        %tmp.41 = getv function %tmp.40 :info;
+        %tmp.42 = lgetv %now.4;
+        symbol [ now %tmp.42 42 34 37 ];
+        symbol [ Time %tmp.43 42 39 43 ];
+        %tmp.43 = getm $.Toybox.Time;
+        symbol [ FORMAT_MEDIUM %tmp.44 42 44 57 ];
+        %tmp.44 = getv %tmp.43 :FORMAT_MEDIUM;
+        %tmp.45 = invoke %tmp.40 %tmp.41(%tmp.42, %tmp.44);
+        lputv %date.5 %tmp.45;
+        symbol [ date %date.5 42 12 16 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 43 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_stop" ]
+        %dateString.6 = local;
+        symbol [ dateString %dateString.6 43 12 22 ];
+        symbol [ Lang %tmp.46 43 25 29 ];
+        %tmp.46 = getm $.Toybox.Lang;
+        symbol [ format %tmp.47 43 30 36 ];
+        %tmp.47 = getv function %tmp.46 :format;
+        %tmp.48 = "$1$ $2$ $3$";
+        %tmp.49 = newa 3;
+        %tmp.50 = lgetv %date.5;
+        symbol [ date %tmp.50 43 53 57 ];
+        symbol [ day_of_week %tmp.51 43 58 69 ];
+        %tmp.51 = getv %tmp.50 :day_of_week;
+        %tmp.52 = dup %tmp.49;
+        %tmp.53 = aputv %tmp.52 0 %tmp.51;
+        %tmp.54 = lgetv %date.5;
+        symbol [ date %tmp.54 43 71 75 ];
+        symbol [ month %tmp.55 43 76 81 ];
+        %tmp.55 = getv %tmp.54 :month;
+        %tmp.56 = dup %tmp.53;
+        %tmp.57 = aputv %tmp.56 1 %tmp.55;
+        %tmp.58 = lgetv %date.5;
+        symbol [ date %tmp.58 43 83 87 ];
+        symbol [ day %tmp.59 43 88 91 ];
+        %tmp.59 = getv %tmp.58 :day;
+        %tmp.60 = dup %tmp.57;
+        %tmp.61 = aputv %tmp.60 2 %tmp.59;
+        %tmp.62 = invoke %tmp.46 %tmp.47(%tmp.48, %tmp.61);
+        lputv %dateString.6 %tmp.62;
+        symbol [ dateString %dateString.6 43 12 22 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 46 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_stop" ]
+        %dateView.7 = local;
+        symbol [ dateView %dateView.7 46 12 20 ];
+        symbol [ View %tmp.64 46 23 27 ];
+        %tmp.64 = getv ? :View;
+        symbol [ findDrawableById %tmp.65 46 28 44 ];
+        %tmp.65 = getv function %tmp.64 :findDrawableById;
+        %tmp.66 = "DateLabel";
+        %tmp.67 = invoke %tmp.64 %tmp.65(%tmp.66);
+        %tmp.68 = as %tmp.67 Text;
+        symbol [ Text %tmp.68 46 61 65 ];
+        lputv %dateView.7 %tmp.68;
+        symbol [ dateView %dateView.7 46 12 20 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 47 8 ]
+        %tmp.69 = lgetv %dateView.7;
+        symbol [ dateView %tmp.69 47 8 16 ];
+        symbol [ setText %tmp.70 47 17 24 ];
+        %tmp.70 = getv function %tmp.69 :setText;
+        %tmp.71 = lgetv %dateString.6;
+        symbol [ dateString %tmp.71 47 25 35 ];
+        invoke %tmp.69 %tmp.70(%tmp.71);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 50 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_stop" ]
+        %stats.8 = local;
+        symbol [ stats %stats.8 50 12 17 ];
+        symbol [ System %tmp.72 50 20 26 ];
+        %tmp.72 = getm $.Toybox.System;
+        symbol [ getSystemStats %tmp.73 50 27 41 ];
+        %tmp.73 = getv function %tmp.72 :getSystemStats;
+        %tmp.74 = invoke %tmp.72 %tmp.73();
+        lputv %stats.8 %tmp.74;
+        symbol [ stats %stats.8 50 12 17 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 51 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_stop" ]
+        %batteryString.9 = local;
+        symbol [ batteryString %batteryString.9 51 12 25 ];
+        symbol [ Lang %tmp.75 51 28 32 ];
+        %tmp.75 = getm $.Toybox.Lang;
+        symbol [ format %tmp.76 51 33 39 ];
+        %tmp.76 = getv function %tmp.75 :format;
+        %tmp.77 = "$1$%";
+        %tmp.78 = newa 1;
+        %tmp.79 = lgetv %stats.8;
+        symbol [ stats %tmp.79 51 49 54 ];
+        symbol [ battery %tmp.80 51 55 62 ];
+        %tmp.80 = getv %tmp.79 :battery;
+        symbol [ toNumber %tmp.81 51 63 71 ];
+        %tmp.81 = getv function %tmp.80 :toNumber;
+        %tmp.82 = invoke %tmp.80 %tmp.81();
+        %tmp.83 = dup %tmp.78;
+        %tmp.84 = aputv %tmp.83 0 %tmp.82;
+        %tmp.85 = invoke %tmp.75 %tmp.76(%tmp.77, %tmp.84);
+        lputv %batteryString.9 %tmp.85;
+        symbol [ batteryString %batteryString.9 51 12 25 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 52 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_stop" ]
+        %batteryView.10 = local;
+        symbol [ batteryView %batteryView.10 52 12 23 ];
+        symbol [ View %tmp.87 52 26 30 ];
+        %tmp.87 = getv ? :View;
+        symbol [ findDrawableById %tmp.88 52 31 47 ];
+        %tmp.88 = getv function %tmp.87 :findDrawableById;
+        %tmp.89 = "BatteryLabel";
+        %tmp.90 = invoke %tmp.87 %tmp.88(%tmp.89);
+        %tmp.91 = as %tmp.90 Text;
+        symbol [ Text %tmp.91 52 67 71 ];
+        lputv %batteryView.10 %tmp.91;
+        symbol [ batteryView %batteryView.10 52 12 23 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 53 8 ]
+        %tmp.92 = lgetv %batteryView.10;
+        symbol [ batteryView %tmp.92 53 8 19 ];
+        symbol [ setText %tmp.93 53 20 27 ];
+        %tmp.93 = getv function %tmp.92 :setText;
+        %tmp.94 = lgetv %batteryString.9;
+        symbol [ batteryString %tmp.94 53 28 41 ];
+        invoke %tmp.92 %tmp.93(%tmp.94);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 56 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_stop" ]
+        %info.11 = local;
+        symbol [ info %info.11 56 12 16 ];
+        symbol [ ActivityMonitor %tmp.95 56 19 34 ];
+        %tmp.95 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.96 56 35 42 ];
+        %tmp.96 = getv function %tmp.95 :getInfo;
+        %tmp.97 = invoke %tmp.95 %tmp.96();
+        lputv %info.11 %tmp.97;
+        symbol [ info %info.11 56 12 16 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 57 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_stop" ]
+        %stepsString.12 = local;
+        symbol [ stepsString %stepsString.12 57 12 23 ];
+        %tmp.98 = lgetv %info.11;
+        symbol [ info %tmp.98 57 26 30 ];
+        symbol [ steps %tmp.99 57 31 36 ];
+        %tmp.99 = getv %tmp.98 :steps;
+        symbol [ toString %tmp.100 57 37 45 ];
+        %tmp.100 = getv function %tmp.99 :toString;
+        %tmp.101 = invoke %tmp.99 %tmp.100();
+        lputv %stepsString.12 %tmp.101;
+        symbol [ stepsString %stepsString.12 57 12 23 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 58 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_stop" ]
+        %stepsView.13 = local;
+        symbol [ stepsView %stepsView.13 58 12 21 ];
+        symbol [ View %tmp.103 58 24 28 ];
+        %tmp.103 = getv ? :View;
+        symbol [ findDrawableById %tmp.104 58 29 45 ];
+        %tmp.104 = getv function %tmp.103 :findDrawableById;
+        %tmp.105 = "StepsLabel";
+        %tmp.106 = invoke %tmp.103 %tmp.104(%tmp.105);
+        %tmp.107 = as %tmp.106 Text;
+        symbol [ Text %tmp.107 58 63 67 ];
+        lputv %stepsView.13 %tmp.107;
+        symbol [ stepsView %stepsView.13 58 12 21 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 59 8 ]
+        %tmp.108 = lgetv %stepsView.13;
+        symbol [ stepsView %tmp.108 59 8 17 ];
+        symbol [ setText %tmp.109 59 18 25 ];
+        %tmp.109 = getv function %tmp.108 :setText;
+        %tmp.110 = lgetv %stepsString.12;
+        symbol [ stepsString %tmp.110 59 26 37 ];
+        invoke %tmp.108 %tmp.109(%tmp.110);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 62 8 ]
+        symbol [ View %tmp.112 62 8 12 ];
+        %tmp.112 = getv ? :View;
+        symbol [ onUpdate %tmp.113 62 13 21 ];
+        %tmp.113 = getv function %tmp.112 :onUpdate;
+        %tmp.114 = lgetv %dc;
+        symbol [ dc %tmp.114 62 22 24 ];
+        invoke %tmp.112 %tmp.113(%tmp.114);
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_27_40_63_4_stop:
+    }
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 68; @symbol_functiondef = [onHide,68,13,19]; ]
+    function onHide() as Void {
+    }
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 72; @symbol_functiondef = [onExitSleep,72,13,24]; ]
+    function onExitSleep() as Void {
+    }
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 76; @symbol_functiondef = [onEnterSleep,76,13,25]; ]
+    function onEnterSleep() as Void {
+    }
+}
+[ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 1; ]
+<init> {
+}

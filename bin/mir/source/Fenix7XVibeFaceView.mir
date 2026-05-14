@@ -1,0 +1,1337 @@
+[ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [System,3,14,20]; ]
+import Toybox.System;
+[ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [WatchUi,4,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Time,5,14,18]; ]
+import Toybox.Time;
+[ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 6; @symbol_importdef<0> = [Toybox,6,7,13]; @symbol_importdef<1> = [Time,6,14,18]; @symbol_importdef<2> = [Gregorian,6,19,28]; ]
+import Toybox.Time.Gregorian;
+[ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 7; @symbol_importdef<0> = [Toybox,7,7,13]; @symbol_importdef<1> = [ActivityMonitor,7,14,29]; ]
+import Toybox.ActivityMonitor;
+[ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 9; @symbol_classdef = [Fenix7XVibeFaceView,9,6,25]; @symbol_extends<0> = [WatchUi,9,34,41]; @symbol_extends<1> = [WatchFace,9,42,51]; ]
+class Fenix7XVibeFaceView extends WatchUi.WatchFace {
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 9; ]
+    <init> {
+    }
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 9; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 12; @position = 16; @symbol_vardef = [COLOR_ORANGE,12,16,28]; ]
+    private
+    var COLOR_ORANGE = 0xFF5500;
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 13; @position = 16; @symbol_vardef = [COLOR_DK_GRAY,13,16,29]; ]
+    private
+    var COLOR_DK_GRAY = 0x555555;
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 14; @position = 16; @symbol_vardef = [COLOR_LT_GRAY,14,16,29]; ]
+    private
+    var COLOR_LT_GRAY = 0xAAAAAA;
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 17; @position = 16; @symbol_vardef = [SCREEN_CENTER,17,16,29]; ]
+    private
+    var SCREEN_CENTER = 140;
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 18; @position = 16; @symbol_vardef = [WIDGET_RADIUS,18,16,29]; ]
+    private
+    var WIDGET_RADIUS = 26;
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 20; @symbol_functiondef = [initialize,20,13,23]; ]
+    function initialize() as Void {
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_20_26_22_4_start:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 21 8 ]
+        symbol [ WatchFace %tmp.2 21 8 17 ];
+        %tmp.2 = getv ? :WatchFace;
+        symbol [ initialize %tmp.3 21 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_20_26_22_4_stop:
+    }
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 24; @symbol_functiondef = [onLayout,24,13,21]; @symbol_param<0> = [dc,24,22,24]; @symbol_param<0>_type<0> = [Dc,24,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+    }
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 27; @symbol_functiondef = [onShow,27,13,19]; ]
+    function onShow() as Void {
+    }
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 31; @symbol_functiondef = [onUpdate,31,13,21]; @symbol_param<0> = [dc,31,22,24]; @symbol_param<0>_type<0> = [Dc,31,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_31_40_65_4_start:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 33 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 33 8 10 ];
+        symbol [ setColor %tmp.2 33 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 33 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.4 33 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        symbol [ Graphics %tmp.5 33 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 33 51 62 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 34 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 34 8 10 ];
+        symbol [ clear %tmp.8 34 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 37 8 ]
+        %tmp.9 = self;
+        symbol [ drawOuterTicks %tmp.10 37 8 22 ];
+        %tmp.10 = getv function %tmp.9 :drawOuterTicks;
+        %tmp.11 = lgetv %dc;
+        symbol [ dc %tmp.11 37 23 25 ];
+        invoke %tmp.9 %tmp.10(%tmp.11);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 40 8 ]
+        %tmp.12 = self;
+        symbol [ drawMainTime %tmp.13 40 8 20 ];
+        %tmp.13 = getv function %tmp.12 :drawMainTime;
+        %tmp.14 = lgetv %dc;
+        symbol [ dc %tmp.14 40 21 23 ];
+        invoke %tmp.12 %tmp.13(%tmp.14);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 43 8 ]
+        %tmp.15 = self;
+        symbol [ drawDatePanel %tmp.16 43 8 21 ];
+        %tmp.16 = getv function %tmp.15 :drawDatePanel;
+        %tmp.17 = lgetv %dc;
+        symbol [ dc %tmp.17 43 22 24 ];
+        invoke %tmp.15 %tmp.16(%tmp.17);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 48 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_31_40_65_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_31_40_65_4_stop" ]
+        %stats.1 = local;
+        symbol [ stats %stats.1 48 12 17 ];
+        symbol [ System %tmp.18 48 20 26 ];
+        %tmp.18 = getm $.Toybox.System;
+        symbol [ getSystemStats %tmp.19 48 27 41 ];
+        %tmp.19 = getv function %tmp.18 :getSystemStats;
+        %tmp.20 = invoke %tmp.18 %tmp.19();
+        lputv %stats.1 %tmp.20;
+        symbol [ stats %stats.1 48 12 17 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 49 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_31_40_65_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_31_40_65_4_stop" ]
+        %battery.2 = local;
+        symbol [ battery %battery.2 49 12 19 ];
+        %tmp.21 = lgetv %stats.1;
+        symbol [ stats %tmp.21 49 22 27 ];
+        symbol [ battery %tmp.22 49 28 35 ];
+        %tmp.22 = getv %tmp.21 :battery;
+        lputv %battery.2 %tmp.22;
+        symbol [ battery %battery.2 49 12 19 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 50 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_31_40_65_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_31_40_65_4_stop" ]
+        %info.3 = local;
+        symbol [ info %info.3 50 12 16 ];
+        symbol [ ActivityMonitor %tmp.23 50 19 34 ];
+        %tmp.23 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.24 50 35 42 ];
+        %tmp.24 = getv function %tmp.23 :getInfo;
+        %tmp.25 = invoke %tmp.23 %tmp.24();
+        lputv %info.3 %tmp.25;
+        symbol [ info %info.3 50 12 16 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 53 8 ]
+        %tmp.26 = self;
+        symbol [ drawCircularWidget %tmp.27 53 8 26 ];
+        %tmp.27 = getv function %tmp.26 :drawCircularWidget;
+        %tmp.28 = lgetv %dc;
+        symbol [ dc %tmp.28 53 27 29 ];
+        %tmp.29 = 85;
+        %tmp.30 = 80;
+        symbol [ WIDGET_RADIUS %tmp.32 53 39 52 ];
+        %tmp.32 = getv ? :WIDGET_RADIUS;
+        %tmp.33 = "BAT";
+        %tmp.34 = lgetv %battery.2;
+        symbol [ battery %tmp.34 53 61 68 ];
+        symbol [ toNumber %tmp.35 53 69 77 ];
+        %tmp.35 = getv function %tmp.34 :toNumber;
+        %tmp.36 = invoke %tmp.34 %tmp.35();
+        symbol [ toString %tmp.37 53 80 88 ];
+        %tmp.37 = getv function %tmp.36 :toString;
+        %tmp.38 = invoke %tmp.36 %tmp.37();
+        %tmp.39 = lgetv %battery.2;
+        symbol [ battery %tmp.39 53 92 99 ];
+        %tmp.40 = 100.0;
+        %tmp.41 = div %tmp.39 %tmp.40;
+        invoke %tmp.26 %tmp.27(%tmp.28, %tmp.29, %tmp.30, %tmp.32, %tmp.33, %tmp.38, %tmp.41);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 56 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_31_40_65_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_31_40_65_4_stop" ]
+        %steps.4 = local;
+        symbol [ steps %steps.4 56 12 17 ];
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_56_20_56_54_begin:
+        %tmp.42 = lgetv %info.3;
+        symbol [ info %tmp.42 56 20 24 ];
+        symbol [ steps %tmp.43 56 25 30 ];
+        %tmp.43 = getv %tmp.42 :steps;
+        %tmp.44 = null;
+        %tmp.45 = ne %tmp.43 %tmp.44;
+        bf %tmp.45 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_56_20_56_54_else_false;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_56_20_56_54_true:
+        %tmp.46 = lgetv %info.3;
+        symbol [ info %tmp.46 56 41 45 ];
+        symbol [ steps %tmp.47 56 46 51 ];
+        %tmp.47 = getv %tmp.46 :steps;
+        push %tmp.47;
+        goto @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_56_20_56_54_end;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_56_20_56_54_else_false:
+        %tmp.48 = 0;
+        push %tmp.48;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_56_20_56_54_end:
+        %tmp.49 = phi [%tmp.45 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_56_20_56_54_begin] [%tmp.47 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_56_20_56_54_true] [%tmp.48 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_56_20_56_54_else_false] [%tmp.49 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_56_20_56_54_end];
+        lputv %steps.4 %tmp.49;
+        symbol [ steps %steps.4 56 12 17 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 57 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_31_40_65_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_31_40_65_4_stop" ]
+        %stepGoal.5 = local;
+        symbol [ stepGoal %stepGoal.5 57 12 20 ];
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_57_23_57_87_begin:
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_57_24_57_66_begin:
+        %tmp.50 = lgetv %info.3;
+        symbol [ info %tmp.50 57 24 28 ];
+        symbol [ stepGoal %tmp.51 57 29 37 ];
+        %tmp.51 = getv %tmp.50 :stepGoal;
+        %tmp.52 = null;
+        %tmp.53 = ne %tmp.51 %tmp.52;
+        bf %tmp.53 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_57_23_57_87_else_false;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_57_49_57_66_true:
+        %tmp.54 = lgetv %info.3;
+        symbol [ info %tmp.54 57 49 53 ];
+        symbol [ stepGoal %tmp.55 57 54 62 ];
+        %tmp.55 = getv %tmp.54 :stepGoal;
+        %tmp.56 = 0;
+        %tmp.57 = ne %tmp.55 %tmp.56;
+        push %tmp.57;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_57_49_57_66_end:
+        %tmp.58 = phi [%tmp.53 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_57_24_57_66_begin] [%tmp.57 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_57_49_57_66_true] [%tmp.58 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_57_49_57_66_end];
+        bf %tmp.58 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_57_23_57_87_else_false;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_57_23_57_87_true:
+        %tmp.59 = lgetv %info.3;
+        symbol [ info %tmp.59 57 71 75 ];
+        symbol [ stepGoal %tmp.60 57 76 84 ];
+        %tmp.60 = getv %tmp.59 :stepGoal;
+        push %tmp.60;
+        goto @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_57_23_57_87_end;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_57_23_57_87_else_false:
+        %tmp.61 = 10000;
+        push %tmp.61;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_57_23_57_87_end:
+        %tmp.62 = phi [%tmp.58 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_57_23_57_87_begin] [%tmp.60 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_57_23_57_87_true] [%tmp.61 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_57_23_57_87_else_false] [%tmp.62 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_57_23_57_87_end];
+        lputv %stepGoal.5 %tmp.62;
+        symbol [ stepGoal %stepGoal.5 57 12 20 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 58 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_31_40_65_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_31_40_65_4_stop" ]
+        %stepProgress.6 = local;
+        symbol [ stepProgress %stepProgress.6 58 12 24 ];
+        %tmp.63 = lgetv %steps.4;
+        symbol [ steps %tmp.63 58 27 32 ];
+        symbol [ toFloat %tmp.64 58 33 40 ];
+        %tmp.64 = getv function %tmp.63 :toFloat;
+        %tmp.65 = invoke %tmp.63 %tmp.64();
+        %tmp.66 = lgetv %stepGoal.5;
+        symbol [ stepGoal %tmp.66 58 45 53 ];
+        symbol [ toFloat %tmp.67 58 54 61 ];
+        %tmp.67 = getv function %tmp.66 :toFloat;
+        %tmp.68 = invoke %tmp.66 %tmp.67();
+        %tmp.69 = div %tmp.65 %tmp.68;
+        lputv %stepProgress.6 %tmp.69;
+        symbol [ stepProgress %stepProgress.6 58 12 24 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 59 8 ]
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_59_8_59_54_if_stmt:
+        %tmp.70 = lgetv %stepProgress.6;
+        symbol [ stepProgress %tmp.70 59 12 24 ];
+        %tmp.71 = 1.0;
+        %tmp.72 = gt %tmp.70 %tmp.71;
+        bf %tmp.72 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_59_8_59_54_if_end;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_59_8_59_54_if_true:
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_59_32_59_54_start:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 59 34 ]
+        %tmp.73 = 1.0;
+        lputv %stepProgress.6 %tmp.73;
+        symbol [ stepProgress %stepProgress.6 59 34 46 ];
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_59_32_59_54_stop:
+        goto @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_59_8_59_54_if_end;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_59_8_59_54_if_end:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 60 8 ]
+        %tmp.74 = self;
+        symbol [ drawCircularWidget %tmp.75 60 8 26 ];
+        %tmp.75 = getv function %tmp.74 :drawCircularWidget;
+        %tmp.76 = lgetv %dc;
+        symbol [ dc %tmp.76 60 27 29 ];
+        %tmp.77 = 65;
+        %tmp.78 = 140;
+        symbol [ WIDGET_RADIUS %tmp.80 60 40 53 ];
+        %tmp.80 = getv ? :WIDGET_RADIUS;
+        %tmp.81 = "STEP";
+        %tmp.82 = self;
+        symbol [ formatSteps %tmp.83 60 63 74 ];
+        %tmp.83 = getv function %tmp.82 :formatSteps;
+        %tmp.84 = lgetv %steps.4;
+        symbol [ steps %tmp.84 60 75 80 ];
+        %tmp.85 = invoke %tmp.82 %tmp.83(%tmp.84);
+        %tmp.86 = lgetv %stepProgress.6;
+        symbol [ stepProgress %tmp.86 60 83 95 ];
+        invoke %tmp.74 %tmp.75(%tmp.76, %tmp.77, %tmp.78, %tmp.80, %tmp.81, %tmp.85, %tmp.86);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 64 8 ]
+        %tmp.87 = self;
+        symbol [ drawCircularWidget %tmp.88 64 8 26 ];
+        %tmp.88 = getv function %tmp.87 :drawCircularWidget;
+        %tmp.89 = lgetv %dc;
+        symbol [ dc %tmp.89 64 27 29 ];
+        %tmp.90 = 85;
+        %tmp.91 = 200;
+        symbol [ WIDGET_RADIUS %tmp.93 64 40 53 ];
+        %tmp.93 = getv ? :WIDGET_RADIUS;
+        %tmp.94 = "BAT";
+        %tmp.95 = lgetv %battery.2;
+        symbol [ battery %tmp.95 64 62 69 ];
+        symbol [ toNumber %tmp.96 64 70 78 ];
+        %tmp.96 = getv function %tmp.95 :toNumber;
+        %tmp.97 = invoke %tmp.95 %tmp.96();
+        symbol [ toString %tmp.98 64 81 89 ];
+        %tmp.98 = getv function %tmp.97 :toString;
+        %tmp.99 = invoke %tmp.97 %tmp.98();
+        %tmp.100 = lgetv %battery.2;
+        symbol [ battery %tmp.100 64 93 100 ];
+        %tmp.101 = 100.0;
+        %tmp.102 = div %tmp.100 %tmp.101;
+        invoke %tmp.87 %tmp.88(%tmp.89, %tmp.90, %tmp.91, %tmp.93, %tmp.94, %tmp.99, %tmp.102);
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_31_40_65_4_stop:
+    }
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 71; @symbol_functiondef = [drawOuterTicks,71,21,35]; @symbol_param<0> = [dc,71,36,38]; @symbol_param<0>_type<0> = [Dc,71,42,44]; ]
+    private
+    function drawOuterTicks(dc as Dc) as Void {
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_71_54_107_4_start:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 72 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_71_54_107_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_71_54_107_4_stop" ]
+        %cx.1 = local;
+        symbol [ cx %cx.1 72 12 14 ];
+        symbol [ SCREEN_CENTER %tmp.2 72 17 30 ];
+        %tmp.2 = getv ? :SCREEN_CENTER;
+        lputv %cx.1 %tmp.2;
+        symbol [ cx %cx.1 72 12 14 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 73 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_71_54_107_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_71_54_107_4_stop" ]
+        %cy.2 = local;
+        symbol [ cy %cy.2 73 12 14 ];
+        symbol [ SCREEN_CENTER %tmp.4 73 17 30 ];
+        %tmp.4 = getv ? :SCREEN_CENTER;
+        lputv %cy.2 %tmp.4;
+        symbol [ cy %cy.2 73 12 14 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 74 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_71_54_107_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_71_54_107_4_stop" ]
+        %outerR.3 = local;
+        symbol [ outerR %outerR.3 74 12 18 ];
+        %tmp.5 = 128;
+        lputv %outerR.3 %tmp.5;
+        symbol [ outerR %outerR.3 74 12 18 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 75 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_71_54_107_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_71_54_107_4_stop" ]
+        %innerR.4 = local;
+        symbol [ innerR %innerR.4 75 12 18 ];
+        %tmp.6 = 124;
+        lputv %innerR.4 %tmp.6;
+        symbol [ innerR %innerR.4 75 12 18 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 77 8 ]
+        for @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_77_8_106_8_for_test @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_77_8_106_8_for_incr @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_77_8_106_8_for_end;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_77_8_106_8_for_init:
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_77_8_106_8_for_begin" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_77_8_106_8_for_end" ]
+        %i.5 = local;
+        symbol [ i %i.5 77 17 18 ];
+        %tmp.7 = 0;
+        lputv %i.5 %tmp.7;
+        symbol [ i %i.5 77 17 18 ];
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_77_8_106_8_for_test:
+        %tmp.8 = lgetv %i.5;
+        symbol [ i %tmp.8 77 24 25 ];
+        %tmp.9 = 60;
+        %tmp.10 = lt %tmp.8 %tmp.9;
+        bf %tmp.10 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_77_8_106_8_for_end;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_77_8_106_8_for_begin:
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_77_37_106_8_start:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 78 12 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_77_37_106_8_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_77_37_106_8_stop" ]
+        %angle.6 = local;
+        symbol [ angle %angle.6 78 16 21 ];
+        symbol [ Math %tmp.12 78 24 28 ];
+        %tmp.12 = getv ? :Math;
+        symbol [ toRadians %tmp.13 78 29 38 ];
+        %tmp.13 = getv function %tmp.12 :toRadians;
+        %tmp.14 = lgetv %i.5;
+        symbol [ i %tmp.14 78 39 40 ];
+        %tmp.15 = 6;
+        %tmp.16 = mul %tmp.14 %tmp.15;
+        %tmp.17 = 90;
+        %tmp.18 = sub %tmp.16 %tmp.17;
+        %tmp.19 = invoke %tmp.12 %tmp.13(%tmp.18);
+        lputv %angle.6 %tmp.19;
+        symbol [ angle %angle.6 78 16 21 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 80 12 ]
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_80_12_105_12_if_stmt:
+        %tmp.20 = lgetv %i.5;
+        symbol [ i %tmp.20 80 16 17 ];
+        %tmp.21 = 15;
+        %tmp.22 = mod %tmp.20 %tmp.21;
+        %tmp.23 = 0;
+        %tmp.24 = eq %tmp.22 %tmp.23;
+        bf %tmp.24 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_80_12_105_12_if_false;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_80_12_105_12_if_true:
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_80_29_89_12_start:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 82 16 ]
+        %tmp.25 = lgetv %dc;
+        symbol [ dc %tmp.25 82 16 18 ];
+        symbol [ setColor %tmp.26 82 19 27 ];
+        %tmp.26 = getv function %tmp.25 :setColor;
+        symbol [ COLOR_ORANGE %tmp.28 82 28 40 ];
+        %tmp.28 = getv ? :COLOR_ORANGE;
+        symbol [ Graphics %tmp.29 82 42 50 ];
+        %tmp.29 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.30 82 51 68 ];
+        %tmp.30 = getv %tmp.29 :COLOR_TRANSPARENT;
+        invoke %tmp.25 %tmp.26(%tmp.28, %tmp.30);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 83 16 ]
+        %tmp.31 = lgetv %dc;
+        symbol [ dc %tmp.31 83 16 18 ];
+        symbol [ setPenWidth %tmp.32 83 19 30 ];
+        %tmp.32 = getv function %tmp.31 :setPenWidth;
+        %tmp.33 = 3;
+        invoke %tmp.31 %tmp.32(%tmp.33);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 84 16 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_80_29_89_12_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_80_29_89_12_stop" ]
+        %thickInnerR.7 = local;
+        symbol [ thickInnerR %thickInnerR.7 84 20 31 ];
+        %tmp.34 = 116;
+        lputv %thickInnerR.7 %tmp.34;
+        symbol [ thickInnerR %thickInnerR.7 84 20 31 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 85 16 ]
+        %tmp.35 = lgetv %dc;
+        symbol [ dc %tmp.35 85 16 18 ];
+        symbol [ drawLine %tmp.36 85 19 27 ];
+        %tmp.36 = getv function %tmp.35 :drawLine;
+        %tmp.37 = lgetv %cx.1;
+        symbol [ cx %tmp.37 86 20 22 ];
+        %tmp.38 = lgetv %thickInnerR.7;
+        symbol [ thickInnerR %tmp.38 86 25 36 ];
+        symbol [ Math %tmp.40 86 39 43 ];
+        %tmp.40 = getv ? :Math;
+        symbol [ cos %tmp.41 86 44 47 ];
+        %tmp.41 = getv function %tmp.40 :cos;
+        %tmp.42 = lgetv %angle.6;
+        symbol [ angle %tmp.42 86 48 53 ];
+        %tmp.43 = invoke %tmp.40 %tmp.41(%tmp.42);
+        %tmp.44 = mul %tmp.38 %tmp.43;
+        %tmp.45 = add %tmp.37 %tmp.44;
+        %tmp.46 = lgetv %cy.2;
+        symbol [ cy %tmp.46 86 56 58 ];
+        %tmp.47 = lgetv %thickInnerR.7;
+        symbol [ thickInnerR %tmp.47 86 61 72 ];
+        symbol [ Math %tmp.49 86 75 79 ];
+        %tmp.49 = getv ? :Math;
+        symbol [ sin %tmp.50 86 80 83 ];
+        %tmp.50 = getv function %tmp.49 :sin;
+        %tmp.51 = lgetv %angle.6;
+        symbol [ angle %tmp.51 86 84 89 ];
+        %tmp.52 = invoke %tmp.49 %tmp.50(%tmp.51);
+        %tmp.53 = mul %tmp.47 %tmp.52;
+        %tmp.54 = add %tmp.46 %tmp.53;
+        %tmp.55 = lgetv %cx.1;
+        symbol [ cx %tmp.55 87 20 22 ];
+        %tmp.56 = lgetv %outerR.3;
+        symbol [ outerR %tmp.56 87 25 31 ];
+        symbol [ Math %tmp.58 87 34 38 ];
+        %tmp.58 = getv ? :Math;
+        symbol [ cos %tmp.59 87 39 42 ];
+        %tmp.59 = getv function %tmp.58 :cos;
+        %tmp.60 = lgetv %angle.6;
+        symbol [ angle %tmp.60 87 43 48 ];
+        %tmp.61 = invoke %tmp.58 %tmp.59(%tmp.60);
+        %tmp.62 = mul %tmp.56 %tmp.61;
+        %tmp.63 = add %tmp.55 %tmp.62;
+        %tmp.64 = lgetv %cy.2;
+        symbol [ cy %tmp.64 87 51 53 ];
+        %tmp.65 = lgetv %outerR.3;
+        symbol [ outerR %tmp.65 87 56 62 ];
+        symbol [ Math %tmp.67 87 65 69 ];
+        %tmp.67 = getv ? :Math;
+        symbol [ sin %tmp.68 87 70 73 ];
+        %tmp.68 = getv function %tmp.67 :sin;
+        %tmp.69 = lgetv %angle.6;
+        symbol [ angle %tmp.69 87 74 79 ];
+        %tmp.70 = invoke %tmp.67 %tmp.68(%tmp.69);
+        %tmp.71 = mul %tmp.65 %tmp.70;
+        %tmp.72 = add %tmp.64 %tmp.71;
+        invoke %tmp.35 %tmp.36(%tmp.45, %tmp.54, %tmp.63, %tmp.72);
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_80_29_89_12_stop:
+        goto @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_80_12_105_12_if_end;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_80_12_105_12_if_false:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 89 19 ]
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_89_19_105_12_if_stmt:
+        %tmp.73 = lgetv %i.5;
+        symbol [ i %tmp.73 89 23 24 ];
+        %tmp.74 = 5;
+        %tmp.75 = mod %tmp.73 %tmp.74;
+        %tmp.76 = 0;
+        %tmp.77 = eq %tmp.75 %tmp.76;
+        bf %tmp.77 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_89_19_105_12_if_else_false;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_89_19_105_12_if_true:
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_89_35_97_12_start:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 91 16 ]
+        %tmp.78 = lgetv %dc;
+        symbol [ dc %tmp.78 91 16 18 ];
+        symbol [ setColor %tmp.79 91 19 27 ];
+        %tmp.79 = getv function %tmp.78 :setColor;
+        symbol [ COLOR_LT_GRAY %tmp.81 91 28 41 ];
+        %tmp.81 = getv ? :COLOR_LT_GRAY;
+        symbol [ Graphics %tmp.82 91 43 51 ];
+        %tmp.82 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.83 91 52 69 ];
+        %tmp.83 = getv %tmp.82 :COLOR_TRANSPARENT;
+        invoke %tmp.78 %tmp.79(%tmp.81, %tmp.83);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 92 16 ]
+        %tmp.84 = lgetv %dc;
+        symbol [ dc %tmp.84 92 16 18 ];
+        symbol [ setPenWidth %tmp.85 92 19 30 ];
+        %tmp.85 = getv function %tmp.84 :setPenWidth;
+        %tmp.86 = 2;
+        invoke %tmp.84 %tmp.85(%tmp.86);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 93 16 ]
+        %tmp.87 = lgetv %dc;
+        symbol [ dc %tmp.87 93 16 18 ];
+        symbol [ drawLine %tmp.88 93 19 27 ];
+        %tmp.88 = getv function %tmp.87 :drawLine;
+        %tmp.89 = lgetv %cx.1;
+        symbol [ cx %tmp.89 94 20 22 ];
+        %tmp.90 = lgetv %innerR.4;
+        symbol [ innerR %tmp.90 94 25 31 ];
+        symbol [ Math %tmp.92 94 34 38 ];
+        %tmp.92 = getv ? :Math;
+        symbol [ cos %tmp.93 94 39 42 ];
+        %tmp.93 = getv function %tmp.92 :cos;
+        %tmp.94 = lgetv %angle.6;
+        symbol [ angle %tmp.94 94 43 48 ];
+        %tmp.95 = invoke %tmp.92 %tmp.93(%tmp.94);
+        %tmp.96 = mul %tmp.90 %tmp.95;
+        %tmp.97 = add %tmp.89 %tmp.96;
+        %tmp.98 = lgetv %cy.2;
+        symbol [ cy %tmp.98 94 51 53 ];
+        %tmp.99 = lgetv %innerR.4;
+        symbol [ innerR %tmp.99 94 56 62 ];
+        symbol [ Math %tmp.101 94 65 69 ];
+        %tmp.101 = getv ? :Math;
+        symbol [ sin %tmp.102 94 70 73 ];
+        %tmp.102 = getv function %tmp.101 :sin;
+        %tmp.103 = lgetv %angle.6;
+        symbol [ angle %tmp.103 94 74 79 ];
+        %tmp.104 = invoke %tmp.101 %tmp.102(%tmp.103);
+        %tmp.105 = mul %tmp.99 %tmp.104;
+        %tmp.106 = add %tmp.98 %tmp.105;
+        %tmp.107 = lgetv %cx.1;
+        symbol [ cx %tmp.107 95 20 22 ];
+        %tmp.108 = lgetv %outerR.3;
+        symbol [ outerR %tmp.108 95 25 31 ];
+        symbol [ Math %tmp.110 95 34 38 ];
+        %tmp.110 = getv ? :Math;
+        symbol [ cos %tmp.111 95 39 42 ];
+        %tmp.111 = getv function %tmp.110 :cos;
+        %tmp.112 = lgetv %angle.6;
+        symbol [ angle %tmp.112 95 43 48 ];
+        %tmp.113 = invoke %tmp.110 %tmp.111(%tmp.112);
+        %tmp.114 = mul %tmp.108 %tmp.113;
+        %tmp.115 = add %tmp.107 %tmp.114;
+        %tmp.116 = lgetv %cy.2;
+        symbol [ cy %tmp.116 95 51 53 ];
+        %tmp.117 = lgetv %outerR.3;
+        symbol [ outerR %tmp.117 95 56 62 ];
+        symbol [ Math %tmp.119 95 65 69 ];
+        %tmp.119 = getv ? :Math;
+        symbol [ sin %tmp.120 95 70 73 ];
+        %tmp.120 = getv function %tmp.119 :sin;
+        %tmp.121 = lgetv %angle.6;
+        symbol [ angle %tmp.121 95 74 79 ];
+        %tmp.122 = invoke %tmp.119 %tmp.120(%tmp.121);
+        %tmp.123 = mul %tmp.117 %tmp.122;
+        %tmp.124 = add %tmp.116 %tmp.123;
+        invoke %tmp.87 %tmp.88(%tmp.97, %tmp.106, %tmp.115, %tmp.124);
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_89_35_97_12_stop:
+        goto @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_89_19_105_12_if_end;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_89_19_105_12_if_else_false:
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_97_19_105_12_start:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 99 16 ]
+        %tmp.125 = lgetv %dc;
+        symbol [ dc %tmp.125 99 16 18 ];
+        symbol [ setColor %tmp.126 99 19 27 ];
+        %tmp.126 = getv function %tmp.125 :setColor;
+        symbol [ COLOR_DK_GRAY %tmp.128 99 28 41 ];
+        %tmp.128 = getv ? :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.129 99 43 51 ];
+        %tmp.129 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.130 99 52 69 ];
+        %tmp.130 = getv %tmp.129 :COLOR_TRANSPARENT;
+        invoke %tmp.125 %tmp.126(%tmp.128, %tmp.130);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 100 16 ]
+        %tmp.131 = lgetv %dc;
+        symbol [ dc %tmp.131 100 16 18 ];
+        symbol [ setPenWidth %tmp.132 100 19 30 ];
+        %tmp.132 = getv function %tmp.131 :setPenWidth;
+        %tmp.133 = 1;
+        invoke %tmp.131 %tmp.132(%tmp.133);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 101 16 ]
+        %tmp.134 = lgetv %dc;
+        symbol [ dc %tmp.134 101 16 18 ];
+        symbol [ drawLine %tmp.135 101 19 27 ];
+        %tmp.135 = getv function %tmp.134 :drawLine;
+        %tmp.136 = lgetv %cx.1;
+        symbol [ cx %tmp.136 102 20 22 ];
+        %tmp.137 = lgetv %innerR.4;
+        symbol [ innerR %tmp.137 102 26 32 ];
+        %tmp.138 = 2;
+        %tmp.139 = add %tmp.137 %tmp.138;
+        symbol [ Math %tmp.141 102 40 44 ];
+        %tmp.141 = getv ? :Math;
+        symbol [ cos %tmp.142 102 45 48 ];
+        %tmp.142 = getv function %tmp.141 :cos;
+        %tmp.143 = lgetv %angle.6;
+        symbol [ angle %tmp.143 102 49 54 ];
+        %tmp.144 = invoke %tmp.141 %tmp.142(%tmp.143);
+        %tmp.145 = mul %tmp.139 %tmp.144;
+        %tmp.146 = add %tmp.136 %tmp.145;
+        %tmp.147 = lgetv %cy.2;
+        symbol [ cy %tmp.147 102 57 59 ];
+        %tmp.148 = lgetv %innerR.4;
+        symbol [ innerR %tmp.148 102 63 69 ];
+        %tmp.149 = 2;
+        %tmp.150 = add %tmp.148 %tmp.149;
+        symbol [ Math %tmp.152 102 77 81 ];
+        %tmp.152 = getv ? :Math;
+        symbol [ sin %tmp.153 102 82 85 ];
+        %tmp.153 = getv function %tmp.152 :sin;
+        %tmp.154 = lgetv %angle.6;
+        symbol [ angle %tmp.154 102 86 91 ];
+        %tmp.155 = invoke %tmp.152 %tmp.153(%tmp.154);
+        %tmp.156 = mul %tmp.150 %tmp.155;
+        %tmp.157 = add %tmp.147 %tmp.156;
+        %tmp.158 = lgetv %cx.1;
+        symbol [ cx %tmp.158 103 20 22 ];
+        %tmp.159 = lgetv %outerR.3;
+        symbol [ outerR %tmp.159 103 25 31 ];
+        symbol [ Math %tmp.161 103 34 38 ];
+        %tmp.161 = getv ? :Math;
+        symbol [ cos %tmp.162 103 39 42 ];
+        %tmp.162 = getv function %tmp.161 :cos;
+        %tmp.163 = lgetv %angle.6;
+        symbol [ angle %tmp.163 103 43 48 ];
+        %tmp.164 = invoke %tmp.161 %tmp.162(%tmp.163);
+        %tmp.165 = mul %tmp.159 %tmp.164;
+        %tmp.166 = add %tmp.158 %tmp.165;
+        %tmp.167 = lgetv %cy.2;
+        symbol [ cy %tmp.167 103 51 53 ];
+        %tmp.168 = lgetv %outerR.3;
+        symbol [ outerR %tmp.168 103 56 62 ];
+        symbol [ Math %tmp.170 103 65 69 ];
+        %tmp.170 = getv ? :Math;
+        symbol [ sin %tmp.171 103 70 73 ];
+        %tmp.171 = getv function %tmp.170 :sin;
+        %tmp.172 = lgetv %angle.6;
+        symbol [ angle %tmp.172 103 74 79 ];
+        %tmp.173 = invoke %tmp.170 %tmp.171(%tmp.172);
+        %tmp.174 = mul %tmp.168 %tmp.173;
+        %tmp.175 = add %tmp.167 %tmp.174;
+        invoke %tmp.134 %tmp.135(%tmp.146, %tmp.157, %tmp.166, %tmp.175);
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_97_19_105_12_stop:
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_89_19_105_12_if_end:
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_80_12_105_12_if_end:
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_77_37_106_8_stop:
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_77_8_106_8_for_incr:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 77 ]
+        %tmp.178 = lgetv %i.5;
+        symbol [ i %tmp.178 77 32 33 ];
+        %tmp.179 = add %tmp.178 1;
+        lputv %i.5 %tmp.179;
+        symbol [ i %i.5 77 32 33 ];
+        goto @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_77_8_106_8_for_test;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_77_8_106_8_for_end:
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_71_54_107_4_stop:
+    }
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 112; @symbol_functiondef = [drawCircularWidget,112,21,39]; @symbol_param<0> = [dc,112,40,42]; @symbol_param<0>_type<0> = [Dc,112,46,48]; @symbol_param<1> = [cx,112,50,52]; @symbol_param<1>_type<0> = [Number,112,56,62]; @symbol_param<2> = [cy,112,64,66]; @symbol_param<2>_type<0> = [Number,112,70,76]; @symbol_param<3> = [radius,112,78,84]; @symbol_param<3>_type<0> = [Number,112,88,94]; @symbol_param<4> = [label,112,96,101]; @symbol_param<4>_type<0> = [String,112,105,111]; @symbol_param<5> = [value,112,113,118]; @symbol_param<5>_type<0> = [String,112,122,128]; @symbol_param<6> = [progress,112,130,138]; @symbol_param<6>_type<0> = [Float,112,142,147]; ]
+    private
+    function drawCircularWidget(dc as Dc, cx as Number, cy as Number, radius as Number, label as String, value as String, progress as Float) as Void {
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_112_157_135_4_start:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 114 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 114 8 10 ];
+        symbol [ setPenWidth %tmp.2 114 11 22 ];
+        %tmp.2 = getv function %tmp.1 :setPenWidth;
+        %tmp.3 = 2;
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 115 8 ]
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 115 8 10 ];
+        symbol [ setColor %tmp.5 115 11 19 ];
+        %tmp.5 = getv function %tmp.4 :setColor;
+        symbol [ COLOR_DK_GRAY %tmp.7 115 20 33 ];
+        %tmp.7 = getv ? :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.8 115 35 43 ];
+        %tmp.8 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.9 115 44 61 ];
+        %tmp.9 = getv %tmp.8 :COLOR_TRANSPARENT;
+        invoke %tmp.4 %tmp.5(%tmp.7, %tmp.9);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 116 8 ]
+        %tmp.10 = lgetv %dc;
+        symbol [ dc %tmp.10 116 8 10 ];
+        symbol [ drawCircle %tmp.11 116 11 21 ];
+        %tmp.11 = getv function %tmp.10 :drawCircle;
+        %tmp.12 = lgetv %cx;
+        symbol [ cx %tmp.12 116 22 24 ];
+        %tmp.13 = lgetv %cy;
+        symbol [ cy %tmp.13 116 26 28 ];
+        %tmp.14 = lgetv %radius;
+        symbol [ radius %tmp.14 116 30 36 ];
+        invoke %tmp.10 %tmp.11(%tmp.12, %tmp.13, %tmp.14);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 119 8 ]
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_119_8_126_8_if_stmt:
+        %tmp.15 = lgetv %progress;
+        symbol [ progress %tmp.15 119 12 20 ];
+        %tmp.16 = 0;
+        %tmp.17 = gt %tmp.15 %tmp.16;
+        bf %tmp.17 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_119_8_126_8_if_end;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_119_8_126_8_if_true:
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_119_26_126_8_start:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 120 12 ]
+        %tmp.18 = lgetv %dc;
+        symbol [ dc %tmp.18 120 12 14 ];
+        symbol [ setColor %tmp.19 120 15 23 ];
+        %tmp.19 = getv function %tmp.18 :setColor;
+        symbol [ COLOR_ORANGE %tmp.21 120 24 36 ];
+        %tmp.21 = getv ? :COLOR_ORANGE;
+        symbol [ Graphics %tmp.22 120 38 46 ];
+        %tmp.22 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.23 120 47 64 ];
+        %tmp.23 = getv %tmp.22 :COLOR_TRANSPARENT;
+        invoke %tmp.18 %tmp.19(%tmp.21, %tmp.23);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 121 12 ]
+        %tmp.24 = lgetv %dc;
+        symbol [ dc %tmp.24 121 12 14 ];
+        symbol [ setPenWidth %tmp.25 121 15 26 ];
+        %tmp.25 = getv function %tmp.24 :setPenWidth;
+        %tmp.26 = 3;
+        invoke %tmp.24 %tmp.25(%tmp.26);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 122 12 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_119_26_126_8_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_119_26_126_8_stop" ]
+        %startAngle.1 = local;
+        symbol [ startAngle %startAngle.1 122 16 26 ];
+        %tmp.27 = 90;
+        lputv %startAngle.1 %tmp.27;
+        symbol [ startAngle %startAngle.1 122 16 26 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 123 12 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_119_26_126_8_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_119_26_126_8_stop" ]
+        %sweepAngle.2 = local;
+        symbol [ sweepAngle %sweepAngle.2 123 16 26 ];
+        %tmp.28 = lgetv %progress;
+        symbol [ progress %tmp.28 123 30 38 ];
+        %tmp.29 = 360;
+        %tmp.30 = mul %tmp.28 %tmp.29;
+        symbol [ toNumber %tmp.31 123 46 54 ];
+        %tmp.31 = getv function %tmp.30 :toNumber;
+        %tmp.32 = invoke %tmp.30 %tmp.31();
+        lputv %sweepAngle.2 %tmp.32;
+        symbol [ sweepAngle %sweepAngle.2 123 16 26 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 124 12 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_119_26_126_8_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_119_26_126_8_stop" ]
+        %endAngle.3 = local;
+        symbol [ endAngle %endAngle.3 124 16 24 ];
+        %tmp.33 = lgetv %startAngle.1;
+        symbol [ startAngle %tmp.33 124 27 37 ];
+        %tmp.34 = lgetv %sweepAngle.2;
+        symbol [ sweepAngle %tmp.34 124 40 50 ];
+        %tmp.35 = sub %tmp.33 %tmp.34;
+        lputv %endAngle.3 %tmp.35;
+        symbol [ endAngle %endAngle.3 124 16 24 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 125 12 ]
+        %tmp.36 = lgetv %dc;
+        symbol [ dc %tmp.36 125 12 14 ];
+        symbol [ drawArc %tmp.37 125 15 22 ];
+        %tmp.37 = getv function %tmp.36 :drawArc;
+        %tmp.38 = lgetv %cx;
+        symbol [ cx %tmp.38 125 23 25 ];
+        %tmp.39 = lgetv %cy;
+        symbol [ cy %tmp.39 125 27 29 ];
+        %tmp.40 = lgetv %radius;
+        symbol [ radius %tmp.40 125 31 37 ];
+        symbol [ Graphics %tmp.41 125 39 47 ];
+        %tmp.41 = getm $.Toybox.Graphics;
+        symbol [ ARC_CLOCKWISE %tmp.42 125 48 61 ];
+        %tmp.42 = getv %tmp.41 :ARC_CLOCKWISE;
+        %tmp.43 = lgetv %startAngle.1;
+        symbol [ startAngle %tmp.43 125 63 73 ];
+        %tmp.44 = lgetv %endAngle.3;
+        symbol [ endAngle %tmp.44 125 75 83 ];
+        invoke %tmp.36 %tmp.37(%tmp.38, %tmp.39, %tmp.40, %tmp.42, %tmp.43, %tmp.44);
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_119_26_126_8_stop:
+        goto @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_119_8_126_8_if_end;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_119_8_126_8_if_end:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 129 8 ]
+        %tmp.45 = lgetv %dc;
+        symbol [ dc %tmp.45 129 8 10 ];
+        symbol [ setColor %tmp.46 129 11 19 ];
+        %tmp.46 = getv function %tmp.45 :setColor;
+        symbol [ COLOR_LT_GRAY %tmp.48 129 20 33 ];
+        %tmp.48 = getv ? :COLOR_LT_GRAY;
+        symbol [ Graphics %tmp.49 129 35 43 ];
+        %tmp.49 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.50 129 44 61 ];
+        %tmp.50 = getv %tmp.49 :COLOR_TRANSPARENT;
+        invoke %tmp.45 %tmp.46(%tmp.48, %tmp.50);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 130 8 ]
+        %tmp.51 = lgetv %dc;
+        symbol [ dc %tmp.51 130 8 10 ];
+        symbol [ drawText %tmp.52 130 11 19 ];
+        %tmp.52 = getv function %tmp.51 :drawText;
+        %tmp.53 = lgetv %cx;
+        symbol [ cx %tmp.53 130 20 22 ];
+        %tmp.54 = lgetv %cy;
+        symbol [ cy %tmp.54 130 24 26 ];
+        %tmp.55 = lgetv %radius;
+        symbol [ radius %tmp.55 130 30 36 ];
+        %tmp.56 = 0.55;
+        %tmp.57 = mul %tmp.55 %tmp.56;
+        %tmp.58 = sub %tmp.54 %tmp.57;
+        symbol [ Graphics %tmp.59 130 46 54 ];
+        %tmp.59 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.60 130 55 65 ];
+        %tmp.60 = getv %tmp.59 :FONT_XTINY;
+        %tmp.61 = lgetv %label;
+        symbol [ label %tmp.61 130 67 72 ];
+        symbol [ Graphics %tmp.62 130 74 82 ];
+        %tmp.62 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.63 130 83 102 ];
+        %tmp.63 = getv %tmp.62 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.51 %tmp.52(%tmp.53, %tmp.58, %tmp.60, %tmp.61, %tmp.63);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 133 8 ]
+        %tmp.64 = lgetv %dc;
+        symbol [ dc %tmp.64 133 8 10 ];
+        symbol [ setColor %tmp.65 133 11 19 ];
+        %tmp.65 = getv function %tmp.64 :setColor;
+        symbol [ Graphics %tmp.66 133 20 28 ];
+        %tmp.66 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.67 133 29 40 ];
+        %tmp.67 = getv %tmp.66 :COLOR_WHITE;
+        symbol [ Graphics %tmp.68 133 42 50 ];
+        %tmp.68 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.69 133 51 68 ];
+        %tmp.69 = getv %tmp.68 :COLOR_TRANSPARENT;
+        invoke %tmp.64 %tmp.65(%tmp.67, %tmp.69);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 134 8 ]
+        %tmp.70 = lgetv %dc;
+        symbol [ dc %tmp.70 134 8 10 ];
+        symbol [ drawText %tmp.71 134 11 19 ];
+        %tmp.71 = getv function %tmp.70 :drawText;
+        %tmp.72 = lgetv %cx;
+        symbol [ cx %tmp.72 134 20 22 ];
+        %tmp.73 = lgetv %cy;
+        symbol [ cy %tmp.73 134 24 26 ];
+        %tmp.74 = lgetv %radius;
+        symbol [ radius %tmp.74 134 30 36 ];
+        %tmp.75 = 0.1;
+        %tmp.76 = mul %tmp.74 %tmp.75;
+        %tmp.77 = add %tmp.73 %tmp.76;
+        symbol [ Graphics %tmp.78 134 45 53 ];
+        %tmp.78 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.79 134 54 63 ];
+        %tmp.79 = getv %tmp.78 :FONT_TINY;
+        %tmp.80 = lgetv %value;
+        symbol [ value %tmp.80 134 65 70 ];
+        symbol [ Graphics %tmp.81 134 72 80 ];
+        %tmp.81 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.82 134 81 100 ];
+        %tmp.82 = getv %tmp.81 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.83 134 103 111 ];
+        %tmp.83 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.84 134 112 132 ];
+        %tmp.84 = getv %tmp.83 :TEXT_JUSTIFY_VCENTER;
+        %tmp.85 = bitor %tmp.82 %tmp.84;
+        invoke %tmp.70 %tmp.71(%tmp.72, %tmp.77, %tmp.79, %tmp.80, %tmp.85);
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_112_157_135_4_stop:
+    }
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 141; @symbol_functiondef = [drawMainTime,141,21,33]; @symbol_param<0> = [dc,141,34,36]; @symbol_param<0>_type<0> = [Dc,141,40,42]; ]
+    private
+    function drawMainTime(dc as Dc) as Void {
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_141_52_171_4_start:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 142 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_141_52_171_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_141_52_171_4_stop" ]
+        %clockTime.1 = local;
+        symbol [ clockTime %clockTime.1 142 12 21 ];
+        symbol [ System %tmp.1 142 24 30 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.2 142 31 43 ];
+        %tmp.2 = getv function %tmp.1 :getClockTime;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %clockTime.1 %tmp.3;
+        symbol [ clockTime %clockTime.1 142 12 21 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 143 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_141_52_171_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_141_52_171_4_stop" ]
+        %hour.2 = local;
+        symbol [ hour %hour.2 143 12 16 ];
+        %tmp.4 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.4 143 19 28 ];
+        symbol [ hour %tmp.5 143 29 33 ];
+        %tmp.5 = getv %tmp.4 :hour;
+        lputv %hour.2 %tmp.5;
+        symbol [ hour %hour.2 143 12 16 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 144 8 ]
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_144_8_147_8_if_stmt:
+        symbol [ System %tmp.6 144 13 19 ];
+        %tmp.6 = getm $.Toybox.System;
+        symbol [ getDeviceSettings %tmp.7 144 20 37 ];
+        %tmp.7 = getv function %tmp.6 :getDeviceSettings;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        symbol [ is24Hour %tmp.9 144 40 48 ];
+        %tmp.9 = getv %tmp.8 :is24Hour;
+        %tmp.10 = not %tmp.9;
+        bf %tmp.10 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_144_8_147_8_if_end;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_144_8_147_8_if_true:
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_144_50_147_8_start:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 145 12 ]
+        %tmp.11 = lgetv %hour.2;
+        symbol [ hour %tmp.11 145 19 23 ];
+        %tmp.12 = 12;
+        %tmp.13 = mod %tmp.11 %tmp.12;
+        lputv %hour.2 %tmp.13;
+        symbol [ hour %hour.2 145 12 16 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 146 12 ]
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_146_12_146_40_if_stmt:
+        %tmp.14 = lgetv %hour.2;
+        symbol [ hour %tmp.14 146 16 20 ];
+        %tmp.15 = 0;
+        %tmp.16 = eq %tmp.14 %tmp.15;
+        bf %tmp.16 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_146_12_146_40_if_end;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_146_12_146_40_if_true:
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_146_27_146_40_start:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 146 29 ]
+        %tmp.17 = 12;
+        lputv %hour.2 %tmp.17;
+        symbol [ hour %hour.2 146 29 33 ];
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_146_27_146_40_stop:
+        goto @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_146_12_146_40_if_end;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_146_12_146_40_if_end:
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_144_50_147_8_stop:
+        goto @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_144_8_147_8_if_end;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_144_8_147_8_if_end:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 149 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_141_52_171_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_141_52_171_4_stop" ]
+        %hourStr.3 = local;
+        symbol [ hourStr %hourStr.3 149 12 19 ];
+        %tmp.18 = lgetv %hour.2;
+        symbol [ hour %tmp.18 149 22 26 ];
+        symbol [ format %tmp.19 149 27 33 ];
+        %tmp.19 = getv function %tmp.18 :format;
+        %tmp.20 = "%d";
+        %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
+        lputv %hourStr.3 %tmp.21;
+        symbol [ hourStr %hourStr.3 149 12 19 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 150 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_141_52_171_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_141_52_171_4_stop" ]
+        %minStr.4 = local;
+        symbol [ minStr %minStr.4 150 12 18 ];
+        %tmp.22 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.22 150 21 30 ];
+        symbol [ min %tmp.23 150 31 34 ];
+        %tmp.23 = getv %tmp.22 :min;
+        symbol [ format %tmp.24 150 35 41 ];
+        %tmp.24 = getv function %tmp.23 :format;
+        %tmp.25 = "%02d";
+        %tmp.26 = invoke %tmp.23 %tmp.24(%tmp.25);
+        lputv %minStr.4 %tmp.26;
+        symbol [ minStr %minStr.4 150 12 18 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 151 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_141_52_171_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_141_52_171_4_stop" ]
+        %secStr.5 = local;
+        symbol [ secStr %secStr.5 151 12 18 ];
+        %tmp.27 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.27 151 21 30 ];
+        symbol [ sec %tmp.28 151 31 34 ];
+        %tmp.28 = getv %tmp.27 :sec;
+        symbol [ format %tmp.29 151 35 41 ];
+        %tmp.29 = getv function %tmp.28 :format;
+        %tmp.30 = "%02d";
+        %tmp.31 = invoke %tmp.28 %tmp.29(%tmp.30);
+        lputv %secStr.5 %tmp.31;
+        symbol [ secStr %secStr.5 151 12 18 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 153 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_141_52_171_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_141_52_171_4_stop" ]
+        %centerX.6 = local;
+        symbol [ centerX %centerX.6 153 12 19 ];
+        symbol [ SCREEN_CENTER %tmp.33 153 22 35 ];
+        %tmp.33 = getv ? :SCREEN_CENTER;
+        lputv %centerX.6 %tmp.33;
+        symbol [ centerX %centerX.6 153 12 19 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 154 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_141_52_171_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_141_52_171_4_stop" ]
+        %centerY.7 = local;
+        symbol [ centerY %centerY.7 154 12 19 ];
+        %tmp.34 = 120;
+        lputv %centerY.7 %tmp.34;
+        symbol [ centerY %centerY.7 154 12 19 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 157 8 ]
+        %tmp.35 = lgetv %dc;
+        symbol [ dc %tmp.35 157 8 10 ];
+        symbol [ setColor %tmp.36 157 11 19 ];
+        %tmp.36 = getv function %tmp.35 :setColor;
+        symbol [ COLOR_LT_GRAY %tmp.38 157 20 33 ];
+        %tmp.38 = getv ? :COLOR_LT_GRAY;
+        symbol [ Graphics %tmp.39 157 35 43 ];
+        %tmp.39 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.40 157 44 61 ];
+        %tmp.40 = getv %tmp.39 :COLOR_TRANSPARENT;
+        invoke %tmp.35 %tmp.36(%tmp.38, %tmp.40);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 158 8 ]
+        %tmp.41 = lgetv %dc;
+        symbol [ dc %tmp.41 158 8 10 ];
+        symbol [ drawText %tmp.42 158 11 19 ];
+        %tmp.42 = getv function %tmp.41 :drawText;
+        %tmp.43 = lgetv %centerX.6;
+        symbol [ centerX %tmp.43 158 20 27 ];
+        %tmp.44 = 35;
+        %tmp.45 = add %tmp.43 %tmp.44;
+        %tmp.46 = lgetv %centerY.7;
+        symbol [ centerY %tmp.46 158 34 41 ];
+        %tmp.47 = 40;
+        %tmp.48 = sub %tmp.46 %tmp.47;
+        symbol [ Graphics %tmp.49 158 48 56 ];
+        %tmp.49 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.50 158 57 67 ];
+        %tmp.50 = getv %tmp.49 :FONT_XTINY;
+        %tmp.51 = "VIBE";
+        symbol [ Graphics %tmp.52 158 77 85 ];
+        %tmp.52 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.53 158 86 103 ];
+        %tmp.53 = getv %tmp.52 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.41 %tmp.42(%tmp.45, %tmp.48, %tmp.50, %tmp.51, %tmp.53);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 161 8 ]
+        %tmp.54 = lgetv %dc;
+        symbol [ dc %tmp.54 161 8 10 ];
+        symbol [ setColor %tmp.55 161 11 19 ];
+        %tmp.55 = getv function %tmp.54 :setColor;
+        symbol [ Graphics %tmp.56 161 20 28 ];
+        %tmp.56 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.57 161 29 40 ];
+        %tmp.57 = getv %tmp.56 :COLOR_WHITE;
+        symbol [ Graphics %tmp.58 161 42 50 ];
+        %tmp.58 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.59 161 51 68 ];
+        %tmp.59 = getv %tmp.58 :COLOR_TRANSPARENT;
+        invoke %tmp.54 %tmp.55(%tmp.57, %tmp.59);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 162 8 ]
+        %tmp.60 = lgetv %dc;
+        symbol [ dc %tmp.60 162 8 10 ];
+        symbol [ drawText %tmp.61 162 11 19 ];
+        %tmp.61 = getv function %tmp.60 :drawText;
+        %tmp.62 = lgetv %centerX.6;
+        symbol [ centerX %tmp.62 162 20 27 ];
+        %tmp.63 = 4;
+        %tmp.64 = sub %tmp.62 %tmp.63;
+        %tmp.65 = lgetv %centerY.7;
+        symbol [ centerY %tmp.65 162 33 40 ];
+        symbol [ Graphics %tmp.66 162 42 50 ];
+        %tmp.66 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_THAI_HOT %tmp.67 162 51 71 ];
+        %tmp.67 = getv %tmp.66 :FONT_NUMBER_THAI_HOT;
+        %tmp.68 = lgetv %hourStr.3;
+        symbol [ hourStr %tmp.68 162 73 80 ];
+        symbol [ Graphics %tmp.69 162 82 90 ];
+        %tmp.69 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_RIGHT %tmp.70 162 91 109 ];
+        %tmp.70 = getv %tmp.69 :TEXT_JUSTIFY_RIGHT;
+        symbol [ Graphics %tmp.71 162 112 120 ];
+        %tmp.71 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.72 162 121 141 ];
+        %tmp.72 = getv %tmp.71 :TEXT_JUSTIFY_VCENTER;
+        %tmp.73 = bitor %tmp.70 %tmp.72;
+        invoke %tmp.60 %tmp.61(%tmp.64, %tmp.65, %tmp.67, %tmp.68, %tmp.73);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 165 8 ]
+        %tmp.74 = lgetv %dc;
+        symbol [ dc %tmp.74 165 8 10 ];
+        symbol [ setColor %tmp.75 165 11 19 ];
+        %tmp.75 = getv function %tmp.74 :setColor;
+        symbol [ COLOR_ORANGE %tmp.77 165 20 32 ];
+        %tmp.77 = getv ? :COLOR_ORANGE;
+        symbol [ Graphics %tmp.78 165 34 42 ];
+        %tmp.78 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.79 165 43 60 ];
+        %tmp.79 = getv %tmp.78 :COLOR_TRANSPARENT;
+        invoke %tmp.74 %tmp.75(%tmp.77, %tmp.79);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 166 8 ]
+        %tmp.80 = lgetv %dc;
+        symbol [ dc %tmp.80 166 8 10 ];
+        symbol [ drawText %tmp.81 166 11 19 ];
+        %tmp.81 = getv function %tmp.80 :drawText;
+        %tmp.82 = lgetv %centerX.6;
+        symbol [ centerX %tmp.82 166 20 27 ];
+        %tmp.83 = 4;
+        %tmp.84 = add %tmp.82 %tmp.83;
+        %tmp.85 = lgetv %centerY.7;
+        symbol [ centerY %tmp.85 166 33 40 ];
+        symbol [ Graphics %tmp.86 166 42 50 ];
+        %tmp.86 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_THAI_HOT %tmp.87 166 51 71 ];
+        %tmp.87 = getv %tmp.86 :FONT_NUMBER_THAI_HOT;
+        %tmp.88 = lgetv %minStr.4;
+        symbol [ minStr %tmp.88 166 73 79 ];
+        symbol [ Graphics %tmp.89 166 81 89 ];
+        %tmp.89 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.90 166 90 107 ];
+        %tmp.90 = getv %tmp.89 :TEXT_JUSTIFY_LEFT;
+        symbol [ Graphics %tmp.91 166 110 118 ];
+        %tmp.91 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.92 166 119 139 ];
+        %tmp.92 = getv %tmp.91 :TEXT_JUSTIFY_VCENTER;
+        %tmp.93 = bitor %tmp.90 %tmp.92;
+        invoke %tmp.80 %tmp.81(%tmp.84, %tmp.85, %tmp.87, %tmp.88, %tmp.93);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 169 8 ]
+        %tmp.94 = lgetv %dc;
+        symbol [ dc %tmp.94 169 8 10 ];
+        symbol [ setColor %tmp.95 169 11 19 ];
+        %tmp.95 = getv function %tmp.94 :setColor;
+        symbol [ Graphics %tmp.96 169 20 28 ];
+        %tmp.96 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.97 169 29 40 ];
+        %tmp.97 = getv %tmp.96 :COLOR_WHITE;
+        symbol [ Graphics %tmp.98 169 42 50 ];
+        %tmp.98 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.99 169 51 68 ];
+        %tmp.99 = getv %tmp.98 :COLOR_TRANSPARENT;
+        invoke %tmp.94 %tmp.95(%tmp.97, %tmp.99);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 170 8 ]
+        %tmp.100 = lgetv %dc;
+        symbol [ dc %tmp.100 170 8 10 ];
+        symbol [ drawText %tmp.101 170 11 19 ];
+        %tmp.101 = getv function %tmp.100 :drawText;
+        %tmp.102 = lgetv %centerX.6;
+        symbol [ centerX %tmp.102 170 20 27 ];
+        %tmp.103 = 75;
+        %tmp.104 = add %tmp.102 %tmp.103;
+        %tmp.105 = lgetv %centerY.7;
+        symbol [ centerY %tmp.105 170 34 41 ];
+        %tmp.106 = 8;
+        %tmp.107 = add %tmp.105 %tmp.106;
+        symbol [ Graphics %tmp.108 170 47 55 ];
+        %tmp.108 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.109 170 56 66 ];
+        %tmp.109 = getv %tmp.108 :FONT_XTINY;
+        %tmp.110 = lgetv %secStr.5;
+        symbol [ secStr %tmp.110 170 68 74 ];
+        symbol [ Graphics %tmp.111 170 76 84 ];
+        %tmp.111 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.112 170 85 102 ];
+        %tmp.112 = getv %tmp.111 :TEXT_JUSTIFY_LEFT;
+        symbol [ Graphics %tmp.113 170 105 113 ];
+        %tmp.113 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.114 170 114 134 ];
+        %tmp.114 = getv %tmp.113 :TEXT_JUSTIFY_VCENTER;
+        %tmp.115 = bitor %tmp.112 %tmp.114;
+        invoke %tmp.100 %tmp.101(%tmp.104, %tmp.107, %tmp.109, %tmp.110, %tmp.115);
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_141_52_171_4_stop:
+    }
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 176; @symbol_functiondef = [drawDatePanel,176,21,34]; @symbol_param<0> = [dc,176,35,37]; @symbol_param<0>_type<0> = [Dc,176,41,43]; ]
+    private
+    function drawDatePanel(dc as Dc) as Void {
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_176_53_192_4_start:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 177 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_176_53_192_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_176_53_192_4_stop" ]
+        %now.1 = local;
+        symbol [ now %now.1 177 12 15 ];
+        symbol [ Time %tmp.1 177 18 22 ];
+        %tmp.1 = getm $.Toybox.Time;
+        symbol [ now %tmp.2 177 23 26 ];
+        %tmp.2 = getv function %tmp.1 :now;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %now.1 %tmp.3;
+        symbol [ now %now.1 177 12 15 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 178 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_176_53_192_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_176_53_192_4_stop" ]
+        %dateInfo.2 = local;
+        symbol [ dateInfo %dateInfo.2 178 12 20 ];
+        symbol [ Gregorian %tmp.4 178 23 32 ];
+        %tmp.4 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.5 178 33 37 ];
+        %tmp.5 = getv function %tmp.4 :info;
+        %tmp.6 = lgetv %now.1;
+        symbol [ now %tmp.6 178 38 41 ];
+        symbol [ Time %tmp.7 178 43 47 ];
+        %tmp.7 = getm $.Toybox.Time;
+        symbol [ FORMAT_MEDIUM %tmp.8 178 48 61 ];
+        %tmp.8 = getv %tmp.7 :FORMAT_MEDIUM;
+        %tmp.9 = invoke %tmp.4 %tmp.5(%tmp.6, %tmp.8);
+        lputv %dateInfo.2 %tmp.9;
+        symbol [ dateInfo %dateInfo.2 178 12 20 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 180 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_176_53_192_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_176_53_192_4_stop" ]
+        %dateX.3 = local;
+        symbol [ dateX %dateX.3 180 12 17 ];
+        %tmp.10 = 155;
+        lputv %dateX.3 %tmp.10;
+        symbol [ dateX %dateX.3 180 12 17 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 181 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_176_53_192_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_176_53_192_4_stop" ]
+        %dateY.4 = local;
+        symbol [ dateY %dateY.4 181 12 17 ];
+        %tmp.11 = 165;
+        lputv %dateY.4 %tmp.11;
+        symbol [ dateY %dateY.4 181 12 17 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 184 8 ]
+        %tmp.12 = lgetv %dc;
+        symbol [ dc %tmp.12 184 8 10 ];
+        symbol [ setColor %tmp.13 184 11 19 ];
+        %tmp.13 = getv function %tmp.12 :setColor;
+        symbol [ COLOR_DK_GRAY %tmp.15 184 20 33 ];
+        %tmp.15 = getv ? :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.16 184 35 43 ];
+        %tmp.16 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.17 184 44 61 ];
+        %tmp.17 = getv %tmp.16 :COLOR_TRANSPARENT;
+        invoke %tmp.12 %tmp.13(%tmp.15, %tmp.17);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 185 8 ]
+        %tmp.18 = lgetv %dc;
+        symbol [ dc %tmp.18 185 8 10 ];
+        symbol [ setPenWidth %tmp.19 185 11 22 ];
+        %tmp.19 = getv function %tmp.18 :setPenWidth;
+        %tmp.20 = 1;
+        invoke %tmp.18 %tmp.19(%tmp.20);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 186 8 ]
+        %tmp.21 = lgetv %dc;
+        symbol [ dc %tmp.21 186 8 10 ];
+        symbol [ drawLine %tmp.22 186 11 19 ];
+        %tmp.22 = getv function %tmp.21 :drawLine;
+        %tmp.23 = lgetv %dateX.3;
+        symbol [ dateX %tmp.23 186 20 25 ];
+        %tmp.24 = lgetv %dateY.4;
+        symbol [ dateY %tmp.24 186 27 32 ];
+        %tmp.25 = lgetv %dateX.3;
+        symbol [ dateX %tmp.25 186 34 39 ];
+        %tmp.26 = 70;
+        %tmp.27 = add %tmp.25 %tmp.26;
+        %tmp.28 = lgetv %dateY.4;
+        symbol [ dateY %tmp.28 186 46 51 ];
+        invoke %tmp.21 %tmp.22(%tmp.23, %tmp.24, %tmp.27, %tmp.28);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 189 8 ]
+        [ "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_176_53_192_4_start" "C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_176_53_192_4_stop" ]
+        %dateStr.5 = local;
+        symbol [ dateStr %dateStr.5 189 12 19 ];
+        symbol [ Lang %tmp.29 189 22 26 ];
+        %tmp.29 = getm $.Toybox.Lang;
+        symbol [ format %tmp.30 189 27 33 ];
+        %tmp.30 = getv function %tmp.29 :format;
+        %tmp.31 = "$1$ $2$ $3$";
+        %tmp.32 = newa 3;
+        %tmp.33 = lgetv %dateInfo.2;
+        symbol [ dateInfo %tmp.33 189 50 58 ];
+        symbol [ day_of_week %tmp.34 189 59 70 ];
+        %tmp.34 = getv %tmp.33 :day_of_week;
+        symbol [ toUpper %tmp.35 189 71 78 ];
+        %tmp.35 = getv function %tmp.34 :toUpper;
+        %tmp.36 = invoke %tmp.34 %tmp.35();
+        %tmp.37 = dup %tmp.32;
+        %tmp.38 = aputv %tmp.37 0 %tmp.36;
+        %tmp.39 = lgetv %dateInfo.2;
+        symbol [ dateInfo %tmp.39 189 82 90 ];
+        symbol [ day %tmp.40 189 91 94 ];
+        %tmp.40 = getv %tmp.39 :day;
+        %tmp.41 = dup %tmp.38;
+        %tmp.42 = aputv %tmp.41 1 %tmp.40;
+        %tmp.43 = lgetv %dateInfo.2;
+        symbol [ dateInfo %tmp.43 189 96 104 ];
+        symbol [ month %tmp.44 189 105 110 ];
+        %tmp.44 = getv %tmp.43 :month;
+        symbol [ toUpper %tmp.45 189 111 118 ];
+        %tmp.45 = getv function %tmp.44 :toUpper;
+        %tmp.46 = invoke %tmp.44 %tmp.45();
+        %tmp.47 = dup %tmp.42;
+        %tmp.48 = aputv %tmp.47 2 %tmp.46;
+        %tmp.49 = invoke %tmp.29 %tmp.30(%tmp.31, %tmp.48);
+        lputv %dateStr.5 %tmp.49;
+        symbol [ dateStr %dateStr.5 189 12 19 ];
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 190 8 ]
+        %tmp.50 = lgetv %dc;
+        symbol [ dc %tmp.50 190 8 10 ];
+        symbol [ setColor %tmp.51 190 11 19 ];
+        %tmp.51 = getv function %tmp.50 :setColor;
+        symbol [ COLOR_LT_GRAY %tmp.53 190 20 33 ];
+        %tmp.53 = getv ? :COLOR_LT_GRAY;
+        symbol [ Graphics %tmp.54 190 35 43 ];
+        %tmp.54 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.55 190 44 61 ];
+        %tmp.55 = getv %tmp.54 :COLOR_TRANSPARENT;
+        invoke %tmp.50 %tmp.51(%tmp.53, %tmp.55);
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 191 8 ]
+        %tmp.56 = lgetv %dc;
+        symbol [ dc %tmp.56 191 8 10 ];
+        symbol [ drawText %tmp.57 191 11 19 ];
+        %tmp.57 = getv function %tmp.56 :drawText;
+        %tmp.58 = lgetv %dateX.3;
+        symbol [ dateX %tmp.58 191 20 25 ];
+        %tmp.59 = 2;
+        %tmp.60 = add %tmp.58 %tmp.59;
+        %tmp.61 = lgetv %dateY.4;
+        symbol [ dateY %tmp.61 191 31 36 ];
+        %tmp.62 = 4;
+        %tmp.63 = add %tmp.61 %tmp.62;
+        symbol [ Graphics %tmp.64 191 42 50 ];
+        %tmp.64 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.65 191 51 61 ];
+        %tmp.65 = getv %tmp.64 :FONT_XTINY;
+        %tmp.66 = lgetv %dateStr.5;
+        symbol [ dateStr %tmp.66 191 63 70 ];
+        symbol [ Graphics %tmp.67 191 72 80 ];
+        %tmp.67 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.68 191 81 98 ];
+        %tmp.68 = getv %tmp.67 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.56 %tmp.57(%tmp.60, %tmp.63, %tmp.65, %tmp.66, %tmp.68);
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_176_53_192_4_stop:
+    }
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 197; @symbol_functiondef = [formatSteps,197,21,32]; @symbol_param<0> = [steps,197,33,38]; @symbol_param<0>_type<0> = [Number,197,42,48]; @symbol_return<0> = [String,197,53,59]; ]
+    private
+    function formatSteps(steps as Number) as String {
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_197_60_202_4_start:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 198 8 ]
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_198_8_200_8_if_stmt:
+        %tmp.1 = lgetv %steps;
+        symbol [ steps %tmp.1 198 12 17 ];
+        %tmp.2 = 1000;
+        %tmp.3 = gte %tmp.1 %tmp.2;
+        bf %tmp.3 @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_198_8_200_8_if_end;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_198_8_200_8_if_true:
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_198_27_200_8_start:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 199 12 ]
+        %tmp.4 = lgetv %steps;
+        symbol [ steps %tmp.4 199 20 25 ];
+        %tmp.5 = 1000.0;
+        %tmp.6 = div %tmp.4 %tmp.5;
+        symbol [ format %tmp.7 199 36 42 ];
+        %tmp.7 = getv function %tmp.6 :format;
+        %tmp.8 = "%.1f";
+        %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
+        %tmp.10 = "K";
+        %tmp.11 = add %tmp.9 %tmp.10;
+        ret %tmp.11;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_198_27_200_8_stop:
+        goto @C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_198_8_200_8_if_end;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_198_8_200_8_if_end:
+[ "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc" 201 8 ]
+        %tmp.12 = lgetv %steps;
+        symbol [ steps %tmp.12 201 15 20 ];
+        symbol [ toString %tmp.13 201 21 29 ];
+        %tmp.13 = getv function %tmp.12 :toString;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        ret %tmp.14;
+C__repos_face_attempt_Fenix7XVibeFace_source_Fenix7XVibeFaceView_mc_197_60_202_4_stop:
+    }
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 204; @symbol_functiondef = [onHide,204,13,19]; ]
+    function onHide() as Void {
+    }
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 207; @symbol_functiondef = [onExitSleep,207,13,24]; ]
+    function onExitSleep() as Void {
+    }
+    [ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 210; @symbol_functiondef = [onEnterSleep,210,13,25]; ]
+    function onEnterSleep() as Void {
+    }
+}
+[ @file = "C:\repos\face-attempt\Fenix7XVibeFace\source\Fenix7XVibeFaceView.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\repos\face-attempt\Fenix7XVibeFace\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceApp.mc" id="1" lineNum="26" parent="globals" pc="268435460" symbol="getApp"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceApp.mc" id="1" lineNum="27" parent="globals" pc="268435470" symbol="getApp"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceApp.mc" id="2" lineNum="5" parent="globals/Fenix7XVibeFaceApp" pc="268435481" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\gen\\006-B3907-00\\source\\Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435493" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="4" lineNum="9" parent="globals/Fenix7XVibeFaceView" pc="268435513" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceApp.mc" id="5" lineNum="12" parent="globals/Fenix7XVibeFaceApp" pc="268435525" symbol="onStart"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceApp.mc" id="6" lineNum="20" parent="globals/Fenix7XVibeFaceApp" pc="268435528" symbol="getInitialView"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceApp.mc" id="6" lineNum="21" parent="globals/Fenix7XVibeFaceApp" pc="268435530" symbol="getInitialView"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceApp.mc" id="7" lineNum="7" parent="globals/Fenix7XVibeFaceApp" pc="268435556" symbol="initialize"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceApp.mc" id="7" lineNum="8" parent="globals/Fenix7XVibeFaceApp" pc="268435558" symbol="initialize"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceApp.mc" id="8" lineNum="16" parent="globals/Fenix7XVibeFaceApp" pc="268435571" symbol="onStop"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="11" lineNum="16" parent="globals/Fenix7XVibeFaceView" pc="268435574" symbol="onLayout"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="11" lineNum="17" parent="globals/Fenix7XVibeFaceView" pc="268435576" symbol="onLayout"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="13" lineNum="11" parent="globals/Fenix7XVibeFaceView" pc="268435610" symbol="initialize"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="13" lineNum="12" parent="globals/Fenix7XVibeFaceView" pc="268435612" symbol="initialize"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="15" lineNum="27" parent="globals/Fenix7XVibeFaceView" pc="268435625" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="15" lineNum="29" parent="globals/Fenix7XVibeFaceView" pc="268435628" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="15" lineNum="30" parent="globals/Fenix7XVibeFaceView" pc="268435640" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="15" lineNum="33" parent="globals/Fenix7XVibeFaceView" pc="268435648" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="15" lineNum="34" parent="globals/Fenix7XVibeFaceView" pc="268435660" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="15" lineNum="37" parent="globals/Fenix7XVibeFaceView" pc="268435714" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="15" lineNum="38" parent="globals/Fenix7XVibeFaceView" pc="268435738" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="15" lineNum="41" parent="globals/Fenix7XVibeFaceView" pc="268435750" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="15" lineNum="42" parent="globals/Fenix7XVibeFaceView" pc="268435762" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="15" lineNum="43" parent="globals/Fenix7XVibeFaceView" pc="268435780" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="15" lineNum="46" parent="globals/Fenix7XVibeFaceView" pc="268435830" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="15" lineNum="47" parent="globals/Fenix7XVibeFaceView" pc="268435854" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="15" lineNum="50" parent="globals/Fenix7XVibeFaceView" pc="268435866" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="15" lineNum="51" parent="globals/Fenix7XVibeFaceView" pc="268435878" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="15" lineNum="52" parent="globals/Fenix7XVibeFaceView" pc="268435916" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="15" lineNum="53" parent="globals/Fenix7XVibeFaceView" pc="268435940" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="15" lineNum="56" parent="globals/Fenix7XVibeFaceView" pc="268435952" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="15" lineNum="57" parent="globals/Fenix7XVibeFaceView" pc="268435964" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="15" lineNum="58" parent="globals/Fenix7XVibeFaceView" pc="268435978" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="15" lineNum="59" parent="globals/Fenix7XVibeFaceView" pc="268436002" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="15" lineNum="62" parent="globals/Fenix7XVibeFaceView" pc="268436014" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="13" parent="globals/Rez/Layouts" pc="268436035" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="14" parent="globals/Rez/Layouts" pc="268436046" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="16" parent="globals/Rez/Layouts" pc="268436055" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="18" parent="globals/Rez/Layouts" pc="268436167" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="20" parent="globals/Rez/Layouts" pc="268436257" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="22" parent="globals/Rez/Layouts" pc="268436340" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\gen\\006-B3907-00\\source\\Rez.mcgen" id="16" lineNum="24" parent="globals/Rez/Layouts" pc="268436423" symbol="WatchFace"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="10" symbol="AppName"/>
+        <entry id="8388633" module="true" symbol="ActivityMonitor"/>
+        <entry id="5" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="6" object="true" symbol="Fenix7XVibeFaceApp"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="9" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="8389347" symbol="color"/>
+        <entry id="7" object="true" symbol="Fenix7XVibeFaceView"/>
+        <entry id="8" module="true" symbol="Layouts"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435609" name="dc" stackId="1" startPc="268435574"/>
+        <entry arg="true" endPc="268436034" name="dc" stackId="1" startPc="268435625"/>
+        <entry endPc="268436033" name="clockTime" stackId="2" startPc="268435628"/>
+        <entry endPc="268436033" name="timeString" stackId="3" startPc="268435628"/>
+        <entry endPc="268436033" name="view" stackId="4" startPc="268435628"/>
+        <entry endPc="268436033" name="now" stackId="5" startPc="268435628"/>
+        <entry endPc="268436033" name="date" stackId="6" startPc="268435628"/>
+        <entry endPc="268436033" name="dateString" stackId="7" startPc="268435628"/>
+        <entry endPc="268436033" name="dateView" stackId="8" startPc="268435628"/>
+        <entry endPc="268436033" name="stats" stackId="9" startPc="268435628"/>
+        <entry endPc="268436033" name="batteryString" stackId="10" startPc="268435628"/>
+        <entry endPc="268436033" name="batteryView" stackId="11" startPc="268435628"/>
+        <entry endPc="268436033" name="info" stackId="12" startPc="268435628"/>
+        <entry endPc="268436033" name="stepsString" stackId="13" startPc="268435628"/>
+        <entry endPc="268436033" name="stepsView" stackId="14" startPc="268435628"/>
+        <entry arg="true" endPc="268436447" name="dc" stackId="1" startPc="268436035"/>
+        <entry endPc="268436447" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268436046"/>
+        <entry endPc="268436447" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268436046"/>
+        <entry endPc="268436447" name="rez_cmp_local_text_DateLabel" stackId="4" startPc="268436046"/>
+        <entry endPc="268436447" name="rez_cmp_local_text_BatteryLabel" stackId="5" startPc="268436046"/>
+        <entry endPc="268436447" name="rez_cmp_local_text_StepsLabel" stackId="6" startPc="268436046"/>
+    </localVars>
+    <deviceInfo deviceVersion="45fe3cbb0de8ea0a70e12628d2697915f1272301" partNumber="006-B3907-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="58" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/Fenix7XVibeFaceApp" offset="125" parentId="globals" symbolId="Fenix7XVibeFaceApp" type="class"/>
+        <dataEntry label="globals/Rez" offset="196" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/Fenix7XVibeFaceView" offset="249" parentId="globals" symbolId="Fenix7XVibeFaceView" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="347" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="382" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="417" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435480" name="getApp" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435492" name="&lt;init&gt;" parent="Fenix7XVibeFaceApp" startPc="268435481">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="Rez" startPc="268435493">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="Fenix7XVibeFaceView" startPc="268435513">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435527" name="onStart" parent="Fenix7XVibeFaceApp" startPc="268435525">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435555" name="getInitialView" parent="Fenix7XVibeFaceApp" startPc="268435528">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435570" name="initialize" parent="Fenix7XVibeFaceApp" startPc="268435556">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435573" name="onStop" parent="Fenix7XVibeFaceApp" startPc="268435571">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onExitSleep" parent="Fenix7XVibeFaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="Fenix7XVibeFaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435609" name="onLayout" parent="Fenix7XVibeFaceView" startPc="268435574">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onEnterSleep" parent="Fenix7XVibeFaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435624" name="initialize" parent="Fenix7XVibeFaceView" startPc="268435610">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="Fenix7XVibeFaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436034" name="onUpdate" parent="Fenix7XVibeFaceView" startPc="268435625">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436447" name="WatchFace" parent="Layouts" startPc="268436035">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

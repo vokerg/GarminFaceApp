@@ -1,0 +1,17 @@
+<layout id="WatchFace">
+    <!-- Background handled in code -->
+
+    <!-- Time: Centered and Large -->
+    <label id="TimeLabel" x="center" y="110" font="Graphics.FONT_NUMBER_MEDIUM" justification="Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER" color="Graphics.COLOR_WHITE" />
+
+    <!-- Date: Below Time -->
+    <label id="DateLabel" x="center" y="175" font="Graphics.FONT_MEDIUM" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_LT_GRAY" />
+
+    <!-- Battery Section (Lower Left) -->
+    <label text="BAT" x="75" y="210" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_DK_GRAY" />
+    <label id="BatteryLabel" x="75" y="225" font="Graphics.FONT_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+
+    <!-- Steps Section (Lower Right) -->
+    <label text="STEPS" x="205" y="210" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_DK_GRAY" />
+    <label id="StepsLabel" x="205" y="225" font="Graphics.FONT_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+</layout>
