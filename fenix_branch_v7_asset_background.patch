@@ -1,0 +1,123 @@
+diff --git a/resources/drawables/drawables.xml b/resources/drawables/drawables.xml
+index a22c33c..a4db42e 100644
+--- a/resources/drawables/drawables.xml
++++ b/resources/drawables/drawables.xml
+@@ -1,3 +1,4 @@
+ <drawables>
+     <bitmap id="LauncherIcon" filename="launcher_icon.png" />
++    <bitmap id="FaceBackground" filename="face_background.png" />
+ </drawables>
+diff --git a/resources/drawables/face_background.png b/resources/drawables/face_background.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..ee33baaddf71e74c44799c0da46e0735a8d90bbd
+GIT binary patch
+literal 3198
+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
+
+literal 0
+HcmV?d00001
+
+diff --git a/source/Fenix7XVibeFaceView.mc b/source/Fenix7XVibeFaceView.mc
+index 197136b..cff6aaf 100644
+--- a/source/Fenix7XVibeFaceView.mc
++++ b/source/Fenix7XVibeFaceView.mc
+@@ -31,8 +31,8 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
+     function onShow() as Void {
+     }
+ 
+-    // Main update loop. The drawing order is intentional: static shell first,
+-    // then complications, then the central time/date stack.
++    // Main update loop. The drawing order is intentional: pre-rendered shell
++    // first, then dynamic complications, then the central time/date stack.
+     function onUpdate(dc as Dc) as Void {
+         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
+         dc.clear();
+@@ -41,7 +41,7 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
+         var battery = stats.battery;
+         var info = ActivityMonitor.getInfo();
+ 
+-        drawStaticShell(dc);
++        drawAssetBackground(dc);
+         drawOuterTicks(dc);
+         drawBatteryGauge(dc, battery);
+         drawHeader(dc, battery);
+@@ -53,6 +53,18 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
+         drawDateStrip(dc);
+     }
+ 
++    /**
++     * Draw the pre-rendered static shell.
++     *
++     * Moving panel fills, base rings, and pod geometry into a bitmap is the
++     * practical step toward the reference design: Garmin's vector drawing and
++     * built-in fonts are fine for live values, but static art is more stable as
++     * an indexed 280x280 asset tuned for the fenix 7X MIP palette.
++     */
++    private function drawAssetBackground(dc as Dc) as Void {
++        dc.drawBitmap(0, 0, WatchUi.loadResource(Rez.Drawables.FaceBackground));
++    }
++
+     /**
+      * Static background structure.
+      *

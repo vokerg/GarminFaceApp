@@ -31,8 +31,8 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
     function onShow() as Void {
     }
 
-    // Main update loop. The drawing order is intentional: static shell first,
-    // then complications, then the central time/date stack.
+    // Main update loop. The drawing order is intentional: pre-rendered shell
+    // first, then dynamic complications, then the central time/date stack.
     function onUpdate(dc as Dc) as Void {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
@@ -41,7 +41,7 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
         var battery = stats.battery;
         var info = ActivityMonitor.getInfo();
 
-        drawStaticShell(dc);
+        drawAssetBackground(dc);
         drawOuterTicks(dc);
         drawBatteryGauge(dc, battery);
         drawHeader(dc, battery);
@@ -51,6 +51,18 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
 
         drawMainTime(dc);
         drawDateStrip(dc);
+    }
+
+    /**
+     * Draw the pre-rendered static shell.
+     *
+     * Moving panel fills, base rings, and pod geometry into a bitmap is the
+     * practical step toward the reference design: Garmin's vector drawing and
+     * built-in fonts are fine for live values, but static art is more stable as
+     * an indexed 280x280 asset tuned for the fenix 7X MIP palette.
+     */
+    private function drawAssetBackground(dc as Dc) as Void {
+        dc.drawBitmap(0, 0, WatchUi.loadResource(Rez.Drawables.FaceBackground));
     }
 
     /**
