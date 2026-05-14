@@ -9,12 +9,12 @@ import Toybox.Weather;
 
 class Fenix7XVibeFaceView extends WatchUi.WatchFace {
 
-    // 64-color-MIP-safe palette. Avoid custom dark blues as large fills: the
-    // fenix simulator quantizes them into bright navy. The reference-style
-    // structure is therefore built from black, gray, orange, and cyan only.
+    // 64-color-MIP-safe palette. Avoid custom dark blues and near-black fills:
+    // the fenix simulator can dither them into speckled panels. Large areas
+    // must stay exact black; gray, orange, and cyan are reserved for thin
+    // outlines, ticks, arcs, icons, and text.
     private var COLOR_ORANGE = 0xFF8800;
     private var COLOR_CYAN = 0x66D9E8;
-    private var COLOR_PANEL = 0x111111;
     private var COLOR_PANEL_EDGE = 0x333333;
     private var COLOR_DK_GRAY = 0x444444;
     private var COLOR_LT_GRAY = 0xAAAAAA;
@@ -31,8 +31,8 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
     function onShow() as Void {
     }
 
-    // Main update loop. The drawing order is intentional: pre-rendered shell
-    // first, then dynamic complications, then the central time/date stack.
+    // Main update loop. The drawing order is intentional: vector shell first,
+    // then dynamic complications, then the central time/date stack.
     function onUpdate(dc as Dc) as Void {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
@@ -41,7 +41,7 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
         var battery = stats.battery;
         var info = ActivityMonitor.getInfo();
 
-        drawAssetBackground(dc);
+        drawVectorBackground(dc);
         drawOuterTicks(dc);
         drawBatteryGauge(dc, battery);
         drawHeader(dc, battery);
@@ -54,31 +54,30 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
     }
 
     /**
-     * Draw the pre-rendered static shell.
+     * Draw the clean vector-only background shell.
      *
-     * Moving panel fills, base rings, and pod geometry into a bitmap is the
-     * practical step toward the reference design: Garmin's vector drawing and
-     * built-in fonts are fine for live values, but static art is more stable as
-     * an indexed 280x280 asset tuned for the fenix 7X MIP palette.
+     * Bitmap/static backgrounds and near-black panel fills look good on paper,
+     * but the fenix 7X MIP simulator can dither them into noisy speckles. Keep
+     * all large surfaces exact black and use only thin gray/orange strokes for
+     * structure.
      */
-    private function drawAssetBackground(dc as Dc) as Void {
-        dc.drawBitmap(0, 0, WatchUi.loadResource(Rez.Drawables.FaceBackground));
+    private function drawVectorBackground(dc as Dc) as Void {
+        drawStaticShell(dc);
+        drawSidePodFrames(dc);
+        drawCenterColumnGuides(dc);
     }
 
     /**
      * Static background structure.
      *
-     * This is the "serious" version of the layout: instead of debug-looking
-     * blue rectangles, the side zones are muted instrument pods with a black
-     * core, gray borders, orange cut lines, and enough empty center space for
-     * the large built-in Garmin number font.
+     * The face keeps the Fenix-inspired instrument layout while avoiding any
+     * filled navy/gray blocks that can dither on Garmin's 64-color MIP display.
      */
     private function drawStaticShell(dc as Dc) as Void {
-        // Inner shadow ring gives the face a dashboard-like frame.
-        dc.setColor(COLOR_PANEL, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.fillCircle(SCREEN_CENTER, SCREEN_CENTER, 121);
 
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.fillCircle(SCREEN_CENTER, SCREEN_CENTER, 113);
 
         dc.setPenWidth(1);
@@ -86,21 +85,23 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
         dc.drawCircle(SCREEN_CENTER, SCREEN_CENTER, 113);
         dc.drawCircle(SCREEN_CENTER, SCREEN_CENTER, 121);
 
-        // Four side pods. They are deliberately dark and simple so MIP palette
-        // quantization does not turn them into saturated blocks.
-        drawDataPod(dc, 10, 74, 62, 46, true);
-        drawDataPod(dc, 208, 74, 62, 46, false);
-        drawDataPod(dc, 10, 162, 62, 46, true);
-        drawDataPod(dc, 208, 162, 62, 46, false);
-
         // Horizontal orange cardinal cuts like the reference image.
         dc.setColor(COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
         dc.setPenWidth(2);
         dc.drawLine(0, 140, 18, 140);
         dc.drawLine(262, 140, 280, 140);
+    }
 
-        // Subtle center guard rails to keep side widgets from visually crashing
-        // into the time column.
+    /** Draw four side complication pods with black interiors and thin outlines. */
+    private function drawSidePodFrames(dc as Dc) as Void {
+        drawSidePodFrame(dc, 10, 74, 62, 46, true);
+        drawSidePodFrame(dc, 208, 74, 62, 46, false);
+        drawSidePodFrame(dc, 10, 162, 62, 46, true);
+        drawSidePodFrame(dc, 208, 162, 62, 46, false);
+    }
+
+    /** Draw subtle center guides without using filled panel color. */
+    private function drawCenterColumnGuides(dc as Dc) as Void {
         dc.setColor(COLOR_PANEL_EDGE, Graphics.COLOR_TRANSPARENT);
         dc.setPenWidth(1);
         dc.drawLine(82, 72, 93, 91);
@@ -109,9 +110,9 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
         dc.drawLine(198, 208, 187, 189);
     }
 
-    /** Draw one muted side pod with a clipped-looking diagonal inner edge. */
-    private function drawDataPod(dc as Dc, x as Number, y as Number, w as Number, h as Number, leftSide as Boolean) as Void {
-        dc.setColor(COLOR_PANEL, Graphics.COLOR_TRANSPARENT);
+    /** Draw one outline-only pod with a clipped-looking diagonal inner edge. */
+    private function drawSidePodFrame(dc as Dc, x as Number, y as Number, w as Number, h as Number, leftSide as Boolean) as Void {
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.fillRoundedRectangle(x, y, w, h, 6);
 
         dc.setColor(COLOR_PANEL_EDGE, Graphics.COLOR_TRANSPARENT);
@@ -271,6 +272,9 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
 
         // Built-in Garmin fonts are much wider than the reference digits.
         // FONT_NUMBER_HOT is the best readable compromise without bitmap digits.
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
+        dc.fillRectangle(92, 71, 96, 125);
+
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.drawText(SCREEN_CENTER, 100, Graphics.FONT_NUMBER_HOT, hourStr, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
@@ -282,6 +286,9 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
 
     /** Small seconds bubble at the bottom of the minute digits. */
     private function drawSecondsBubble(dc as Dc, cx as Number, cy as Number, seconds as String) as Void {
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
+        dc.fillRectangle(cx - 20, cy - 20, 40, 40);
+
         dc.setPenWidth(2);
         dc.setColor(COLOR_PANEL_EDGE, Graphics.COLOR_TRANSPARENT);
         dc.drawCircle(cx, cy, 13);
@@ -307,6 +314,9 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
         var selected = weekdayIndex(dateInfo.day_of_week.toUpper());
         var letters = [ "S", "M", "T", "W", "T", "F", "S" ];
         var startX = 83;
+
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
+        dc.fillRectangle(76, 211, 128, 37);
 
         dc.setColor(COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
         dc.drawText(102, 220, Graphics.FONT_XTINY, dateInfo.month.toUpper(), Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER);
