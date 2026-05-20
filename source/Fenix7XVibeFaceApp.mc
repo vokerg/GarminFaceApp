@@ -18,7 +18,11 @@ class Fenix7XVibeFaceApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as [Views] or [Views, InputDelegates] {
-        return [ new Fenix7XVibeFaceView() ];
+        // Instantiate the refined face view.  Previous versions of this
+        // application returned Fenix7XVibeFaceView, but the refined
+        // implementation lives in Fenix7XVibeFaceViewRefined.mc.  Return
+        // an instance here so the updated face loads at runtime.
+        return [ new Fenix7XVibeFaceViewRefined() ];
     }
 
 }
