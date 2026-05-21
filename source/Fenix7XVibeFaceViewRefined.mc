@@ -1,4 +1,5 @@
 import Toybox.ActivityMonitor;
+import Toybox.Complications;
 import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.System;
@@ -37,8 +38,18 @@ class Fenix7XVibeFaceViewRefined extends WatchUi.WatchFace {
         WatchFace.initialize();
     }
 
-    function onLayout(dc as Dc) as Void {}
+    function onLayout(dc as Dc) as Void {
+        if (Toybox has :Complications) {
+            Complications.subscribeToUpdates(new Complications.Id(Complications.COMPLICATION_TYPE_WEEKLY_RUN_DISTANCE));
+            Complications.subscribeToUpdates(new Complications.Id(Complications.COMPLICATION_TYPE_WEEKLY_BIKE_DISTANCE));
+            Complications.registerComplicationChangeCallback(method(:onComplicationChange));
+        }
+    }
     function onShow() as Void {}
+
+    function onComplicationChange(id as Complications.Id) as Void {
+        WatchUi.requestUpdate();
+    }
 
     /**
      * Main drawing entry point.  Clears the screen, draws the static guides,
@@ -47,7 +58,6 @@ class Fenix7XVibeFaceViewRefined extends WatchUi.WatchFace {
      * minimise overdraw on the lowâ€‘power MIP screen.
      */
     function onUpdate(dc as Dc) as Void {
-        // Clear background to black
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
 
@@ -55,26 +65,109 @@ class Fenix7XVibeFaceViewRefined extends WatchUi.WatchFace {
         var battery = stats.battery;
         var info    = ActivityMonitor.getInfo();
 
-        drawGuides(dc);
-        drawOuterTicks(dc);
-        drawBatteryGauge(dc, battery);
-        drawHeader(dc, battery);
+        drawPhotoFace(dc, battery, info);
+    }
 
-        // Top compartments: weekly run distance and weather
-        drawRunCompartment(dc);
-        drawWeatherCompartment(dc);
+    private function drawPhotoFace(dc as Dc, battery, info as ActivityMonitor.Info) as Void {
+        drawPhotoTicks(dc);
+        drawPhotoTop(dc);
+        drawPhotoTime(dc);
+        drawPhotoBottomStats(dc, info);
+        drawPhotoSteps(dc, info);
+        drawPhotoBattery(dc, battery);
+    }
 
-        // Middle compartments: heart rate and steps
-        drawHeartRateDial(dc);
-        drawStepsDial(dc, info);
+    private function drawPhotoTicks(dc as Dc) as Void {
+        dc.setColor(COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.setPenWidth(1);
+        dc.drawCircle(SCREEN_CENTER, SCREEN_CENTER, 134);
+        for (var i = 0; i < 60; i++) {
+            var angle = Math.toRadians(i * 6 - 90);
+            if (i % 5 == 0) {
+                dc.setColor(COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+                dc.setPenWidth(i % 15 == 0 ? 3 : 2);
+                dc.drawLine(
+                    SCREEN_CENTER + 122 * Math.cos(angle), SCREEN_CENTER + 122 * Math.sin(angle),
+                    SCREEN_CENTER + 134 * Math.cos(angle), SCREEN_CENTER + 134 * Math.sin(angle)
+                );
+            }
+        }
+    }
 
-        // Bottom compartments: weekly bike distance and calories
-        drawBikeCompartment(dc);
-        drawCaloriesCompartment(dc, info);
+    private function drawPhotoTop(dc as Dc) as Void {
+        dc.setColor(COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(103, 34, Graphics.FONT_XTINY, "DAWN", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(177, 34, Graphics.FONT_XTINY, "DUSK", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(103, 47, Graphics.FONT_XTINY, "--:--", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(177, 47, Graphics.FONT_XTINY, "--:--", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        drawMoonIcon(dc, SCREEN_CENTER, 43);
 
-        // Central time and date
-        drawMainTime(dc);
-        drawDateStrip(dc);
+        dc.setColor(COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(SCREEN_CENTER, 72, Graphics.FONT_SMALL, getWeatherTemperatureLabel() + "  MOSTLY CLOUDY", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+    }
+
+    private function drawPhotoTime(dc as Dc) as Void {
+        var clockTime = System.getClockTime();
+        var hour = clockTime.hour;
+        if (!System.getDeviceSettings().is24Hour) {
+            hour = hour % 12;
+            if (hour == 0) { hour = 12; }
+        }
+
+        dc.setColor(COLOR_CYAN, Graphics.COLOR_TRANSPARENT);
+        dc.setPenWidth(3);
+        dc.drawLine(36, 129, 36, 161);
+        dc.drawLine(244, 129, 244, 161);
+
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(SCREEN_CENTER, 123, Graphics.FONT_NUMBER_HOT, hour.format("%d"), Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.setColor(COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(SCREEN_CENTER, 173, Graphics.FONT_NUMBER_HOT, clockTime.min.format("%02d"), Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+
+        var dateInfo = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
+        dc.setColor(COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(78, 206, Graphics.FONT_SMALL, weekdayShort(dateInfo.day_of_week), Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(128, 206, Graphics.FONT_SMALL, dateInfo.day.toString(), Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(177, 206, Graphics.FONT_SMALL, dateInfo.month.toUpper(), Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(229, 206, Graphics.FONT_SMALL, clockTime.sec.format("%02d"), Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER);
+    }
+
+    private function drawPhotoBottomStats(dc as Dc, info as ActivityMonitor.Info) as Void {
+        drawPhotoMetric(dc, 64, 228, "RUN WEEK", getWeeklyRunDistanceLabel());
+        drawPhotoMetric(dc, SCREEN_CENTER, 228, "LIVE HR", getHeartRateLabel());
+        drawPhotoMetric(dc, 216, 228, "BIKE WEEK", getWeeklyBikeDistanceLabel());
+    }
+
+    private function drawPhotoMetric(dc as Dc, x as Number, y as Number, label as String, value as String) as Void {
+        dc.setColor(COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(x, y, Graphics.FONT_XTINY, label, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.setColor(COLOR_CYAN, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(x, y + 25, Graphics.FONT_MEDIUM, value, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+    }
+
+    private function drawPhotoSteps(dc as Dc, info as ActivityMonitor.Info) as Void {
+        var steps = info.steps != null ? info.steps : 0;
+        dc.setColor(COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.drawCircle(88, 268, 10);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(SCREEN_CENTER + 6, 270, Graphics.FONT_MEDIUM, steps.toString(), Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+    }
+
+    private function drawPhotoBattery(dc as Dc, battery) as Void {
+        dc.setColor(COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.setPenWidth(1);
+        dc.drawRoundedRectangle(121, 294, 38, 17, 4);
+        dc.drawLine(159, 299, 163, 299);
+        dc.drawLine(159, 306, 163, 306);
+        dc.drawText(SCREEN_CENTER, 303, Graphics.FONT_XTINY, battery.toNumber().format("%d"), Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+    }
+
+    private function drawMoonIcon(dc as Dc, x as Number, y as Number) as Void {
+        dc.setColor(COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.setPenWidth(2);
+        dc.drawArc(x, y, 12, Graphics.ARC_CLOCKWISE, 290, 90);
+        dc.drawArc(x + 5, y, 12, Graphics.ARC_CLOCKWISE, 290, 90);
     }
 
     /**
@@ -369,6 +462,12 @@ class Fenix7XVibeFaceViewRefined extends WatchUi.WatchFace {
     }
 
     /** Return latest valid heart rate sample from history. */
+    private function getHeartRateLabel() as String {
+        var hrValue = getHeartRateValue();
+        return hrValue == null ? "--" : hrValue.toString();
+    }
+
+    /** Return latest valid heart rate sample from history. */
     private function getHeartRateValue() {
         if (!(ActivityMonitor has :getHeartRateHistory)) {
             return null;
@@ -408,21 +507,26 @@ class Fenix7XVibeFaceViewRefined extends WatchUi.WatchFace {
         return km == null ? "--" : formatDistanceKm(km);
     }
 
-    /** Use the sum of the most recent seven days of ActivityMonitor history for
-     * weekly running distance.  Garmin does not currently expose sportâ€‘split
-     * totals to watch faces, so this approximation is the best available on
-     * device.  If history is unavailable, return null.
-     */
     private function getWeeklyRunDistanceKm() {
-        return getRollingActivityDistanceKm();
+        var km = getComplicationDistanceKm(Complications.COMPLICATION_TYPE_WEEKLY_RUN_DISTANCE);
+        return km == null ? getRollingActivityDistanceKm() : km;
     }
 
-    /** Weekly cycling distance is not available on device.  Returning null
-     * prevents the UI from showing fictitious data.  In a future version
-     * this could be supplied via a settings property or companion app.
-     */
     private function getWeeklyBikeDistanceKm() {
-        return null;
+        return getComplicationDistanceKm(Complications.COMPLICATION_TYPE_WEEKLY_BIKE_DISTANCE);
+    }
+
+    private function getComplicationDistanceKm(complicationType) {
+        if (!(Toybox has :Complications)) {
+            return null;
+        }
+
+        var complication = Complications.getComplication(new Complications.Id(complicationType));
+        if (complication == null || complication.value == null) {
+            return null;
+        }
+
+        return complication.value.toFloat() / 1000.0;
     }
 
     /** Sum the ActivityMonitor history distance fields and convert to km. */
@@ -464,6 +568,12 @@ class Fenix7XVibeFaceViewRefined extends WatchUi.WatchFace {
         if (day == "FRI" || day == "FRIDAY")   { return 5; }
         if (day == "SAT" || day == "SATURDAY") { return 6; }
         return -1;
+    }
+
+    private function weekdayShort(day as String) as String {
+        var index = weekdayIndex(day.toUpper());
+        var labels = [ "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" ];
+        return index < 0 ? "---" : labels[index];
     }
 
     /** Lightweight vector icons.  These avoid adding bitmap resources and
