@@ -9,21 +9,23 @@ import Toybox.WatchUi;
 import Toybox.Weather;
 
 /*
- * A fresh segment-week face generated from segment_week_face.zip, adjusted to
- * fit this project. It keeps the archive's large mosaic seven-segment time and
- * weather rows, while preserving the existing complication-backed weekly run
- * and bike distances.
+ * Photo-inspired mosaic face.
+ *
+ * The zip version had the right broad idea, but it rendered as a grid with a
+ * colon because the generated seven-segment string path was fragile. This
+ * version drives the digits numerically and makes the reference photo's visual
+ * hierarchy explicit: top dawn/weather, huge patterned time, date, three data
+ * columns, steps, and battery.
  */
 class SegmentWeekFaceView extends WatchUi.WatchFace {
 
-    private var COLOR_DIGIT = 0xC678D8;
-    private var COLOR_HATCH = 0x142A40;
+    private var COLOR_TEAL = 0x00A6A6;
+    private var COLOR_PURPLE = 0xC678D8;
+    private var COLOR_GRID = 0x003366;
     private var COLOR_CYAN = 0x40C0E0;
     private var COLOR_ORANGE = 0xFF8800;
     private var COLOR_WHITE = Graphics.COLOR_WHITE;
     private var COLOR_LGRAY = 0xAAAAAA;
-    private var COLOR_DGRAY = 0x666666;
-
     function initialize() {
         WatchFace.initialize();
     }
@@ -51,13 +53,14 @@ class SegmentWeekFaceView extends WatchUi.WatchFace {
         var dateInfo = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
         var current = getCurrentWeather();
         var steps = (info != null && info.steps != null) ? info.steps : 0;
-        var stepGoal = (info != null && info.stepGoal != null && info.stepGoal > 0) ? info.stepGoal : 10000;
 
+        drawTopAstronomy(dc);
         drawWeatherRow(dc, current);
-        drawLargeTime(dc, clock);
-        drawMetricsRow(dc, getWeeklyRunDistanceKm(), getHeartRateValue(), getWeeklyBikeDistanceKm());
-        drawStepsRow(dc, steps, stepGoal);
+        drawLargeMosaicTime(dc, clock);
         drawDateRow(dc, dateInfo, getHumidity(current));
+        drawMetricsRow(dc, getHeartRateValue());
+        drawStepsRow(dc, steps);
+        drawBattery(dc, System.getSystemStats().battery);
     }
 
     private function getCurrentWeather() {
@@ -67,6 +70,16 @@ class SegmentWeekFaceView extends WatchUi.WatchFace {
         return null;
     }
 
+    private function drawTopAstronomy(dc as Dc) as Void {
+        dc.setColor(COLOR_LGRAY, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(94, 16, Graphics.FONT_XTINY, "DAWN", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(186, 16, Graphics.FONT_XTINY, "DUSK", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.setColor(COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(94, 29, Graphics.FONT_XTINY, "--:--", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(186, 29, Graphics.FONT_XTINY, "--:--", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        drawMoonIcon(dc, 140, 25);
+    }
+
     private function drawWeatherRow(dc as Dc, current) as Void {
         var line1 = "--C --  FL:--C";
         var line2 = "(--)";
@@ -74,16 +87,14 @@ class SegmentWeekFaceView extends WatchUi.WatchFace {
         if (current != null) {
             var temp = (current.temperature != null) ? current.temperature.toNumber().format("%d") : "--";
             var feels = getFeelsLikeLabel(current);
-            var delta = getDewPointDeltaLabel(current);
             var condition = (current.condition != null) ? current.condition.toNumber().format("%d") : "--";
-            line1 = temp + "C " + delta + "  FL:" + feels + "C";
-            line2 = "(" + condition + ")";
+            line1 = temp + "C --  FL:" + feels + "C";
+            line2 = "MOSTLY CLOUDY (" + condition + ")";
         }
 
-        dc.setColor(COLOR_CYAN, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(140, 18, Graphics.FONT_XTINY, line1, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         dc.setColor(COLOR_LGRAY, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(140, 32, Graphics.FONT_XTINY, line2, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(140, 48, Graphics.FONT_XTINY, line1, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(140, 64, Graphics.FONT_XTINY, line2, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
     private function getFeelsLikeLabel(current) as String {
@@ -93,12 +104,6 @@ class SegmentWeekFaceView extends WatchUi.WatchFace {
         return (current.temperature != null) ? current.temperature.toNumber().format("%d") : "--";
     }
 
-    private function getDewPointDeltaLabel(current) as String {
-        // Keep the generated row shape, but avoid optional weather fields that
-        // are not exposed consistently across fenix7x compiler metadata.
-        return "--";
-    }
-
     private function getHumidity(current) {
         if (current != null && (current has :relativeHumidity) && current.relativeHumidity != null) {
             return current.relativeHumidity;
@@ -106,150 +111,154 @@ class SegmentWeekFaceView extends WatchUi.WatchFace {
         return null;
     }
 
-    private function drawLargeTime(dc as Dc, clock) as Void {
+    private function drawLargeMosaicTime(dc as Dc, clock) as Void {
         var hour = clock.hour;
         if (!System.getDeviceSettings().is24Hour) {
             hour = hour % 12;
             if (hour == 0) { hour = 12; }
         }
 
-        var hourStr = hour.format("%02d");
-        var minStr = clock.min.format("%02d");
+        var y = 72;
         var digitW = 45;
         var digitH = 90;
-        var spacing = 12;
-        var totalW = digitW * 4 + spacing * 3;
-        var startX = ((280 - totalW) / 2).toNumber();
-        var yPos = 55;
+        var gap = 5;
+        var colonGap = 18;
+        var startX = 30;
+        var min = clock.min;
 
-        drawCrossHatch(dc, startX, yPos, totalW, digitH, 6);
-        drawSevenSegDigit(dc, startX, yPos, digitW, digitH, hourStr.substring(0, 1));
-        drawSevenSegDigit(dc, startX + digitW + spacing, yPos, digitW, digitH, hourStr.substring(1, 2));
-        drawSevenSegDigit(dc, startX + (digitW + spacing) * 2, yPos, digitW, digitH, minStr.substring(0, 1));
-        drawSevenSegDigit(dc, startX + (digitW + spacing) * 3, yPos, digitW, digitH, minStr.substring(1, 2));
+        drawMosaicDigit(dc, startX, y, digitW, digitH, hour / 10, COLOR_TEAL);
+        drawMosaicDigit(dc, startX + digitW + gap, y, digitW, digitH, hour % 10, COLOR_PURPLE);
+        drawColon(dc, startX + (digitW + gap) * 2 + 4, y);
+        drawMosaicDigit(dc, startX + (digitW + gap) * 2 + colonGap, y, digitW, digitH, min / 10, COLOR_PURPLE);
+        drawMosaicDigit(dc, startX + (digitW + gap) * 3 + colonGap, y, digitW, digitH, min % 10, COLOR_PURPLE);
 
-        var colonX = (startX + digitW * 2 + spacing * 1.5).toNumber();
-        dc.setColor(COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(colonX - 5, yPos + 28, 10, 10);
-        dc.fillRectangle(colonX - 5, yPos + 56, 10, 10);
-
-        drawSecondsBar(dc, startX + totalW + 8, yPos, digitH, clock.sec);
+        dc.setColor(COLOR_PURPLE, Graphics.COLOR_TRANSPARENT);
+        dc.setPenWidth(3);
+        dc.drawLine(22, y + 18, 22, y + 78);
+        drawSecondsBar(dc, 256, y + 18, 60, clock.sec);
     }
 
-    private function drawSevenSegDigit(dc as Dc, x as Number, y as Number, w as Number, h as Number, digit as String) as Void {
-        var segments = getSegmentsForDigit(digit);
-        var th = (w / 6).toNumber();
-        var halfH = h / 2.0;
+    private function drawMosaicDigit(dc as Dc, x as Number, y as Number, w as Number, h as Number, digit as Number, color as Number) as Void {
+        var th = 15;
+        var midY = y + (h / 2).toNumber() - (th / 2).toNumber();
+        var lowerY = y + (h / 2).toNumber() + 3;
+        var lowerH = h - (h / 2).toNumber() - th - 5;
 
-        dc.setColor(COLOR_DIGIT, Graphics.COLOR_TRANSPARENT);
-        if (segmentIsOn(segments, 0)) { dc.fillRectangle(x + th + 1, y, w - 2 * th - 2, th); }
-        if (segmentIsOn(segments, 1)) { dc.fillRectangle(x + w - th, y + th, th, (halfH - th).toNumber()); }
-        if (segmentIsOn(segments, 2)) { dc.fillRectangle(x + w - th, (y + halfH + th / 2).toNumber(), th, (halfH - 1.5 * th).toNumber()); }
-        if (segmentIsOn(segments, 3)) { dc.fillRectangle(x + th + 1, y + h - th, w - 2 * th - 2, th); }
-        if (segmentIsOn(segments, 4)) { dc.fillRectangle(x, (y + halfH + th / 2).toNumber(), th, (halfH - 1.5 * th).toNumber()); }
-        if (segmentIsOn(segments, 5)) { dc.fillRectangle(x, y + th, th, (halfH - th).toNumber()); }
-        if (segmentIsOn(segments, 6)) { dc.fillRectangle(x + th + 1, (y + halfH - th / 2).toNumber(), w - 2 * th - 2, th); }
+        if (isSegmentOn(digit, 0)) { fillMosaicSegment(dc, x + th - 1, y, w - th * 2 + 2, th, color); }
+        if (isSegmentOn(digit, 1)) { fillMosaicSegment(dc, x + w - th, y + th - 1, th, (h / 2).toNumber() - th + 3, color); }
+        if (isSegmentOn(digit, 2)) { fillMosaicSegment(dc, x + w - th, lowerY, th, lowerH, color); }
+        if (isSegmentOn(digit, 3)) { fillMosaicSegment(dc, x + th - 1, y + h - th, w - th * 2 + 2, th, color); }
+        if (isSegmentOn(digit, 4)) { fillMosaicSegment(dc, x, lowerY, th, lowerH, color); }
+        if (isSegmentOn(digit, 5)) { fillMosaicSegment(dc, x, y + th - 1, th, (h / 2).toNumber() - th + 3, color); }
+        if (isSegmentOn(digit, 6)) { fillMosaicSegment(dc, x + th - 1, midY, w - th * 2 + 2, th, color); }
     }
 
-    private function getSegmentsForDigit(digit as String) {
-        if (digit == "0") { return [0, 1, 2, 3, 4, 5]; }
-        if (digit == "1") { return [1, 2]; }
-        if (digit == "2") { return [0, 1, 6, 4, 3]; }
-        if (digit == "3") { return [0, 1, 6, 2, 3]; }
-        if (digit == "4") { return [5, 6, 1, 2]; }
-        if (digit == "5") { return [0, 5, 6, 2, 3]; }
-        if (digit == "6") { return [0, 5, 6, 2, 3, 4]; }
-        if (digit == "7") { return [0, 1, 2]; }
-        if (digit == "8") { return [0, 1, 2, 3, 4, 5, 6]; }
-        if (digit == "9") { return [0, 1, 2, 3, 5, 6]; }
-        return [];
-    }
+    private function fillMosaicSegment(dc as Dc, x as Number, y as Number, w as Number, h as Number, color as Number) as Void {
+        dc.setColor(color, Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(x, y, w, h);
 
-    private function segmentIsOn(segments, idx as Number) as Boolean {
-        for (var i = 0; i < segments.size(); i++) {
-            if (segments[i] == idx) { return true; }
+        dc.setPenWidth(1);
+        dc.setColor(COLOR_GRID, Graphics.COLOR_TRANSPARENT);
+        var xx = x + 5;
+        while (xx < x + w) {
+            dc.drawLine(xx, y, xx, y + h);
+            xx += 6;
         }
+
+        var yy = y + 5;
+        while (yy < y + h) {
+            dc.drawLine(x, yy, x + w, yy);
+            yy += 6;
+        }
+
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+        var offset = -h;
+        while (offset < w) {
+            dc.drawLine(x + offset, y + h, x + offset + h, y);
+            offset += 30;
+        }
+    }
+
+    private function isSegmentOn(digit as Number, segment as Number) as Boolean {
+        if (digit == 0) { return segment != 6; }
+        if (digit == 1) { return segment == 1 || segment == 2; }
+        if (digit == 2) { return segment == 0 || segment == 1 || segment == 6 || segment == 4 || segment == 3; }
+        if (digit == 3) { return segment == 0 || segment == 1 || segment == 6 || segment == 2 || segment == 3; }
+        if (digit == 4) { return segment == 5 || segment == 6 || segment == 1 || segment == 2; }
+        if (digit == 5) { return segment == 0 || segment == 5 || segment == 6 || segment == 2 || segment == 3; }
+        if (digit == 6) { return segment == 0 || segment == 5 || segment == 6 || segment == 2 || segment == 3 || segment == 4; }
+        if (digit == 7) { return segment == 0 || segment == 1 || segment == 2; }
+        if (digit == 8) { return true; }
+        if (digit == 9) { return segment == 0 || segment == 1 || segment == 2 || segment == 3 || segment == 5 || segment == 6; }
         return false;
     }
 
-    private function drawCrossHatch(dc as Dc, x as Number, y as Number, w as Number, h as Number, spacing as Number) as Void {
-        dc.setColor(COLOR_HATCH, Graphics.COLOR_TRANSPARENT);
-
-        var xx = x;
-        while (xx <= x + w) {
-            dc.drawLine(xx, y, xx, y + h);
-            xx += spacing;
-        }
-
-        var yy = y;
-        while (yy <= y + h) {
-            dc.drawLine(x, yy, x + w, yy);
-            yy += spacing;
-        }
-    }
-
-    private function drawSecondsBar(dc as Dc, x as Number, y as Number, height as Number, secVal as Number) as Void {
-        var segH = height / 60.0;
-        for (var i = 0; i < 60; i++) {
-            var yPos = (y + i * segH).toNumber();
-            dc.setColor(i < secVal ? (i < 30 ? COLOR_ORANGE : COLOR_CYAN) : COLOR_DGRAY, Graphics.COLOR_TRANSPARENT);
-            dc.fillRectangle(x, yPos, 4, (segH - 1).toNumber());
-        }
-    }
-
-    private function drawMetricsRow(dc as Dc, runKm, hrVal, bikeKm) as Void {
-        var labels = [ "RUN WEEK", "LIVE HR", "BIKE WEEK" ];
-        var values = [
-            (runKm == null) ? "--" : formatDistanceKm(runKm),
-            (hrVal == null) ? "--" : hrVal.toString(),
-            (bikeKm == null) ? "--" : formatDistanceKm(bikeKm)
-        ];
-        var positions = [46, 140, 234];
-
-        for (var i = 0; i < 3; i++) {
-            dc.setColor(COLOR_LGRAY, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(positions[i], 160, Graphics.FONT_XTINY, labels[i], Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-            dc.setColor(COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(positions[i], 172, Graphics.FONT_XTINY, values[i], Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-        }
-    }
-
-    private function drawStepsRow(dc as Dc, steps as Number, goal as Number) as Void {
-        var y = 188;
-        var barX = 120;
-        var barW = 130;
-        var barH = 6;
-        var progress = (goal > 0) ? (steps.toFloat() / goal.toFloat()) : 0.0;
-        if (progress > 1.0) { progress = 1.0; }
-        if (progress < 0.0) { progress = 0.0; }
-
-        drawFootIcon(dc, 40, y + 8);
-
+    private function drawColon(dc as Dc, x as Number, y as Number) as Void {
         dc.setColor(COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(70, y + 8, Graphics.FONT_XTINY, formatSteps(steps), Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.fillRectangle(x, y + 30, 10, 10);
+        dc.fillRectangle(x, y + 58, 10, 10);
+    }
 
-        dc.setColor(COLOR_DGRAY, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(barX, y + 5, barW, barH);
+    private function drawSecondsBar(dc as Dc, x as Number, y as Number, height as Number, second as Number) as Void {
+        var segmentH = 4;
+        var filled = (height * second / 60).toNumber();
 
-        var fillW = (barW * progress).toNumber();
-        var half = (barW / 2.0).toNumber();
-        if (fillW <= half) {
-            dc.setColor(COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
-            dc.fillRectangle(barX, y + 5, fillW, barH);
-        } else {
-            dc.setColor(COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
-            dc.fillRectangle(barX, y + 5, half, barH);
-            dc.setColor(COLOR_CYAN, Graphics.COLOR_TRANSPARENT);
-            dc.fillRectangle(barX + half, y + 5, fillW - half, barH);
+        for (var yy = 0; yy < height; yy += segmentH + 2) {
+            dc.setColor(yy <= filled ? COLOR_CYAN : COLOR_GRID, Graphics.COLOR_TRANSPARENT);
+            dc.fillRectangle(x, y + yy, 3, segmentH);
         }
     }
 
     private function drawDateRow(dc as Dc, dateInfo, humidity) as Void {
         var dow = weekdayShort(dateInfo.day_of_week);
-        var dateStr = dateInfo.day.format("%02d") + " " + dateInfo.month.toUpper();
-        var humStr = humidity != null ? humidity.toNumber().format("%d") + "%" : "--%";
+        var dateStr = dateInfo.day.format("%02d") + " " + dateInfo.month.toUpper() + " " + dateInfo.year.toString();
+        var humStr = humidity != null ? humidity.toNumber().format("%d") : "--";
+        dc.setColor(0x777777, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(140, 174, Graphics.FONT_XTINY, dow + "  " + dateStr + "    " + humStr, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+    }
+
+    private function drawMetricsRow(dc as Dc, hrVal) as Void {
+        var labels = [ "RUN WEEK", "LIVE HR", "BIKE WEEK" ];
+        var values = [
+            getRunWeekDistanceLabel(),
+            (hrVal == null) ? "--" : hrVal.toString(),
+            getWeeklyBikeDistanceLabel()
+        ];
+        var positions = [63, 140, 217];
+
+        for (var i = 0; i < 3; i++) {
+            dc.setColor(COLOR_LGRAY, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(positions[i], 182, Graphics.FONT_XTINY, labels[i], Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+            dc.setColor(i == 1 ? COLOR_PURPLE : COLOR_TEAL, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(positions[i], 198, Graphics.FONT_MEDIUM, values[i], Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        }
+    }
+
+    private function getRunWeekDistanceLabel() as String {
+        var km = getWeeklyRunDistanceKm();
+        return km == null ? "--" : formatDistanceKm(km);
+    }
+
+    private function getWeeklyBikeDistanceLabel() as String {
+        var km = getWeeklyBikeDistanceKm();
+        return km == null ? "--" : formatDistanceKm(km);
+    }
+
+    private function drawStepsRow(dc as Dc, steps as Number) as Void {
+        drawFootIcon(dc, 95, 225);
+        dc.setColor(COLOR_CYAN, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(116, 226, Graphics.FONT_MEDIUM, steps.toString(), Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+    }
+
+    private function drawBattery(dc as Dc, battery) as Void {
+        var x = 121;
+        var y = 263;
         dc.setColor(COLOR_LGRAY, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(140, 228, Graphics.FONT_XTINY, dow + ", " + dateStr + " " + humStr, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.setPenWidth(1);
+        dc.drawRoundedRectangle(x, y, 38, 14, 3);
+        dc.drawLine(x + 39, y + 5, x + 42, y + 5);
+        dc.drawLine(x + 39, y + 9, x + 42, y + 9);
+        dc.drawText(140, y + 7, Graphics.FONT_XTINY, battery.toNumber().format("%d"), Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
     private function getHeartRateValue() {
@@ -279,6 +288,9 @@ class SegmentWeekFaceView extends WatchUi.WatchFace {
     }
 
     private function getWeeklyBikeDistanceKm() {
+        // Public activity history does not expose sport-specific cycling
+        // totals. Use the bike-week complication when available; otherwise
+        // show "--" instead of inventing a value.
         return getComplicationDistanceKm(Complications.COMPLICATION_TYPE_WEEKLY_BIKE_DISTANCE);
     }
 
@@ -296,6 +308,9 @@ class SegmentWeekFaceView extends WatchUi.WatchFace {
     }
 
     private function getRollingActivityDistanceKm() {
+        // Approximation used only when the weekly run complication is absent:
+        // ActivityMonitor history is distance over recent days, not a
+        // sport-specific running split.
         var history = ActivityMonitor.getHistory();
         if (history == null) {
             return null;
@@ -314,16 +329,9 @@ class SegmentWeekFaceView extends WatchUi.WatchFace {
 
     private function formatDistanceKm(km as Float) as String {
         if (km >= 100.0) {
-            return km.format("%.0f") + "K";
+            return km.format("%.0f");
         }
-        return km.format("%.1f") + "K";
-    }
-
-    private function formatSteps(steps as Number) as String {
-        if (steps >= 1000) {
-            return (steps / 1000.0).format("%.1f") + "K";
-        }
-        return steps.toString();
+        return km.format("%.1f");
     }
 
     private function weekdayShort(day as String) as String {
@@ -338,13 +346,20 @@ class SegmentWeekFaceView extends WatchUi.WatchFace {
         return "---";
     }
 
+    private function drawMoonIcon(dc as Dc, x as Number, y as Number) as Void {
+        dc.setColor(COLOR_LGRAY, Graphics.COLOR_TRANSPARENT);
+        dc.setPenWidth(2);
+        dc.drawArc(x, y, 10, Graphics.ARC_CLOCKWISE, 295, 75);
+        dc.drawArc(x + 4, y, 10, Graphics.ARC_CLOCKWISE, 295, 75);
+    }
+
     private function drawFootIcon(dc as Dc, x as Number, y as Number) as Void {
-        dc.setColor(COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(COLOR_LGRAY, Graphics.COLOR_TRANSPARENT);
         dc.setPenWidth(1);
-        dc.drawCircle(x - 4, y - 2, 3);
-        dc.drawCircle(x + 3, y + 2, 3);
-        dc.drawLine(x - 6, y + 4, x - 2, y + 8);
-        dc.drawLine(x + 1, y + 7, x + 5, y + 11);
+        dc.drawCircle(x - 5, y - 3, 3);
+        dc.drawCircle(x + 4, y + 1, 3);
+        dc.drawLine(x - 7, y + 3, x - 3, y + 8);
+        dc.drawLine(x + 1, y + 6, x + 6, y + 11);
     }
 
     function onHide() as Void {}

@@ -8,7 +8,7 @@
         <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceApp.mc" id="3" lineNum="5" parent="globals/Fenix7XVibeFaceApp" pc="268435493" symbol="&lt;init&gt;"/>
         <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="4" lineNum="7" parent="globals/Rez" pc="268435505" symbol="&lt;init&gt;"/>
         <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="5" lineNum="10" parent="globals/Fenix7XVibeFaceView" pc="268435525" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="6" lineNum="17" parent="globals/SegmentWeekFaceView" pc="268435537" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="6" lineNum="20" parent="globals/SegmentWeekFaceView" pc="268435537" symbol="&lt;init&gt;"/>
         <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceViewRefined.mc" id="7" lineNum="548" parent="globals/Fenix7XVibeFaceViewRefined" pc="268435549" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;formatDistanceKm&gt;"/>
         <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceViewRefined.mc" id="7" lineNum="549" parent="globals/Fenix7XVibeFaceViewRefined" pc="268435551" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;formatDistanceKm&gt;"/>
         <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceViewRefined.mc" id="7" lineNum="550" parent="globals/Fenix7XVibeFaceViewRefined" pc="268435562" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;formatDistanceKm&gt;"/>
@@ -685,257 +685,263 @@
         <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="101" lineNum="226" parent="globals/Fenix7XVibeFaceView" pc="268447101" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawRightStack&gt;"/>
         <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="101" lineNum="227" parent="globals/Fenix7XVibeFaceView" pc="268447123" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawRightStack&gt;"/>
         <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\Fenix7XVibeFaceView.mc" id="101" lineNum="228" parent="globals/Fenix7XVibeFaceView" pc="268447140" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawRightStack&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="102" lineNum="315" parent="globals/SegmentWeekFaceView" pc="268447170" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;formatDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="102" lineNum="316" parent="globals/SegmentWeekFaceView" pc="268447172" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;formatDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="102" lineNum="317" parent="globals/SegmentWeekFaceView" pc="268447183" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;formatDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="102" lineNum="319" parent="globals/SegmentWeekFaceView" pc="268447207" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;formatDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="103" lineNum="191" parent="globals/SegmentWeekFaceView" pc="268447228" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSecondsBar&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="103" lineNum="192" parent="globals/SegmentWeekFaceView" pc="268447231" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSecondsBar&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="103" lineNum="193" parent="globals/SegmentWeekFaceView" pc="268447241" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSecondsBar&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="103" lineNum="194" parent="globals/SegmentWeekFaceView" pc="268447252" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSecondsBar&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="103" lineNum="195" parent="globals/SegmentWeekFaceView" pc="268447268" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSecondsBar&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="103" lineNum="196" parent="globals/SegmentWeekFaceView" pc="268447317" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSecondsBar&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="104" lineNum="298" parent="globals/SegmentWeekFaceView" pc="268447355" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="104" lineNum="299" parent="globals/SegmentWeekFaceView" pc="268447358" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="104" lineNum="300" parent="globals/SegmentWeekFaceView" pc="268447370" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="104" lineNum="301" parent="globals/SegmentWeekFaceView" pc="268447376" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="104" lineNum="304" parent="globals/SegmentWeekFaceView" pc="268447381" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="104" lineNum="305" parent="globals/SegmentWeekFaceView" pc="268447384" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="104" lineNum="306" parent="globals/SegmentWeekFaceView" pc="268447400" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="104" lineNum="307" parent="globals/SegmentWeekFaceView" pc="268447407" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="104" lineNum="308" parent="globals/SegmentWeekFaceView" pc="268447417" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="104" lineNum="312" parent="globals/SegmentWeekFaceView" pc="268447441" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="105" lineNum="247" parent="globals/SegmentWeekFaceView" pc="268447455" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawDateRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="105" lineNum="248" parent="globals/SegmentWeekFaceView" pc="268447458" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawDateRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="105" lineNum="249" parent="globals/SegmentWeekFaceView" pc="268447474" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawDateRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="105" lineNum="250" parent="globals/SegmentWeekFaceView" pc="268447514" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawDateRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="105" lineNum="251" parent="globals/SegmentWeekFaceView" pc="268447557" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawDateRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="105" lineNum="252" parent="globals/SegmentWeekFaceView" pc="268447574" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawDateRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="106" lineNum="281" parent="globals/SegmentWeekFaceView" pc="268447614" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyBikeDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="106" lineNum="282" parent="globals/SegmentWeekFaceView" pc="268447616" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyBikeDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="107" lineNum="41" parent="globals/SegmentWeekFaceView" pc="268447627" symbol="onComplicationChange"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="107" lineNum="42" parent="globals/SegmentWeekFaceView" pc="268447629" symbol="onComplicationChange"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="108" lineNum="89" parent="globals/SegmentWeekFaceView" pc="268447641" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getFeelsLikeLabel&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="108" lineNum="90" parent="globals/SegmentWeekFaceView" pc="268447643" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getFeelsLikeLabel&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="108" lineNum="91" parent="globals/SegmentWeekFaceView" pc="268447665" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getFeelsLikeLabel&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="108" lineNum="93" parent="globals/SegmentWeekFaceView" pc="268447695" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getFeelsLikeLabel&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="109" lineNum="168" parent="globals/SegmentWeekFaceView" pc="268447739" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;segmentIsOn&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="109" lineNum="169" parent="globals/SegmentWeekFaceView" pc="268447742" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;segmentIsOn&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="109" lineNum="170" parent="globals/SegmentWeekFaceView" pc="268447758" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;segmentIsOn&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="109" lineNum="170" parent="globals/SegmentWeekFaceView" pc="268447769" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;segmentIsOn&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="109" lineNum="172" parent="globals/SegmentWeekFaceView" pc="268447784" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;segmentIsOn&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="139" parent="globals/SegmentWeekFaceView" pc="268447786" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSevenSegDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="140" parent="globals/SegmentWeekFaceView" pc="268447789" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSevenSegDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="141" parent="globals/SegmentWeekFaceView" pc="268447801" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSevenSegDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="142" parent="globals/SegmentWeekFaceView" pc="268447814" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSevenSegDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="144" parent="globals/SegmentWeekFaceView" pc="268447824" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSevenSegDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="145" parent="globals/SegmentWeekFaceView" pc="268447841" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSevenSegDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="145" parent="globals/SegmentWeekFaceView" pc="268447855" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSevenSegDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="146" parent="globals/SegmentWeekFaceView" pc="268447891" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSevenSegDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="146" parent="globals/SegmentWeekFaceView" pc="268447906" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSevenSegDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="147" parent="globals/SegmentWeekFaceView" pc="268447945" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSevenSegDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="147" parent="globals/SegmentWeekFaceView" pc="268447960" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSevenSegDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="148" parent="globals/SegmentWeekFaceView" pc="268448017" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSevenSegDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="148" parent="globals/SegmentWeekFaceView" pc="268448032" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSevenSegDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="149" parent="globals/SegmentWeekFaceView" pc="268448074" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSevenSegDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="149" parent="globals/SegmentWeekFaceView" pc="268448089" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSevenSegDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="150" parent="globals/SegmentWeekFaceView" pc="268448140" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSevenSegDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="150" parent="globals/SegmentWeekFaceView" pc="268448155" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSevenSegDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="151" parent="globals/SegmentWeekFaceView" pc="268448188" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSevenSegDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="151" parent="globals/SegmentWeekFaceView" pc="268448203" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSevenSegDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="111" lineNum="70" parent="globals/SegmentWeekFaceView" pc="268448255" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="111" lineNum="71" parent="globals/SegmentWeekFaceView" pc="268448258" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="111" lineNum="72" parent="globals/SegmentWeekFaceView" pc="268448265" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="111" lineNum="74" parent="globals/SegmentWeekFaceView" pc="268448272" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="111" lineNum="75" parent="globals/SegmentWeekFaceView" pc="268448278" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="111" lineNum="76" parent="globals/SegmentWeekFaceView" pc="268448325" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="111" lineNum="77" parent="globals/SegmentWeekFaceView" pc="268448337" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="111" lineNum="78" parent="globals/SegmentWeekFaceView" pc="268448349" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="111" lineNum="79" parent="globals/SegmentWeekFaceView" pc="268448396" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="111" lineNum="80" parent="globals/SegmentWeekFaceView" pc="268448424" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="111" lineNum="83" parent="globals/SegmentWeekFaceView" pc="268448443" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="111" lineNum="84" parent="globals/SegmentWeekFaceView" pc="268448460" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="111" lineNum="85" parent="globals/SegmentWeekFaceView" pc="268448480" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="111" lineNum="86" parent="globals/SegmentWeekFaceView" pc="268448497" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="113" lineNum="96" parent="globals/SegmentWeekFaceView" pc="268448518" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getDewPointDeltaLabel&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="113" lineNum="99" parent="globals/SegmentWeekFaceView" pc="268448520" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getDewPointDeltaLabel&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="341" parent="globals/SegmentWeekFaceView" pc="268448526" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawFootIcon&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="342" parent="globals/SegmentWeekFaceView" pc="268448528" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawFootIcon&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="343" parent="globals/SegmentWeekFaceView" pc="268448545" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawFootIcon&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="344" parent="globals/SegmentWeekFaceView" pc="268448557" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawFootIcon&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="345" parent="globals/SegmentWeekFaceView" pc="268448579" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawFootIcon&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="346" parent="globals/SegmentWeekFaceView" pc="268448601" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawFootIcon&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="347" parent="globals/SegmentWeekFaceView" pc="268448631" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawFootIcon&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="117" lineNum="255" parent="globals/SegmentWeekFaceView" pc="268448662" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="117" lineNum="256" parent="globals/SegmentWeekFaceView" pc="268448665" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="117" lineNum="257" parent="globals/SegmentWeekFaceView" pc="268448681" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="117" lineNum="260" parent="globals/SegmentWeekFaceView" pc="268448686" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="117" lineNum="261" parent="globals/SegmentWeekFaceView" pc="268448703" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="117" lineNum="262" parent="globals/SegmentWeekFaceView" pc="268448709" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="117" lineNum="265" parent="globals/SegmentWeekFaceView" pc="268448714" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="117" lineNum="266" parent="globals/SegmentWeekFaceView" pc="268448723" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="117" lineNum="267" parent="globals/SegmentWeekFaceView" pc="268448729" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="117" lineNum="268" parent="globals/SegmentWeekFaceView" pc="268448754" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="117" lineNum="270" parent="globals/SegmentWeekFaceView" pc="268448765" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="117" lineNum="273" parent="globals/SegmentWeekFaceView" pc="268448777" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="118" lineNum="329" parent="globals/SegmentWeekFaceView" pc="268448779" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="118" lineNum="330" parent="globals/SegmentWeekFaceView" pc="268448782" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="118" lineNum="331" parent="globals/SegmentWeekFaceView" pc="268448791" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="118" lineNum="331" parent="globals/SegmentWeekFaceView" pc="268448813" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="118" lineNum="332" parent="globals/SegmentWeekFaceView" pc="268448822" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="118" lineNum="332" parent="globals/SegmentWeekFaceView" pc="268448844" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="118" lineNum="333" parent="globals/SegmentWeekFaceView" pc="268448853" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="118" lineNum="333" parent="globals/SegmentWeekFaceView" pc="268448875" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="118" lineNum="334" parent="globals/SegmentWeekFaceView" pc="268448884" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="118" lineNum="334" parent="globals/SegmentWeekFaceView" pc="268448906" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="118" lineNum="335" parent="globals/SegmentWeekFaceView" pc="268448915" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="118" lineNum="335" parent="globals/SegmentWeekFaceView" pc="268448937" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="118" lineNum="336" parent="globals/SegmentWeekFaceView" pc="268448946" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="118" lineNum="336" parent="globals/SegmentWeekFaceView" pc="268448968" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="118" lineNum="337" parent="globals/SegmentWeekFaceView" pc="268448977" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="118" lineNum="337" parent="globals/SegmentWeekFaceView" pc="268448999" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="118" lineNum="338" parent="globals/SegmentWeekFaceView" pc="268449008" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="119" lineNum="31" parent="globals/SegmentWeekFaceView" pc="268449014" symbol="onLayout"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="119" lineNum="32" parent="globals/SegmentWeekFaceView" pc="268449016" symbol="onLayout"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="119" lineNum="33" parent="globals/SegmentWeekFaceView" pc="268449031" symbol="onLayout"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="119" lineNum="34" parent="globals/SegmentWeekFaceView" pc="268449068" symbol="onLayout"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="119" lineNum="35" parent="globals/SegmentWeekFaceView" pc="268449105" symbol="onLayout"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="285" parent="globals/SegmentWeekFaceView" pc="268449135" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getComplicationDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="286" parent="globals/SegmentWeekFaceView" pc="268449138" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getComplicationDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="287" parent="globals/SegmentWeekFaceView" pc="268449154" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getComplicationDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="290" parent="globals/SegmentWeekFaceView" pc="268449159" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getComplicationDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="291" parent="globals/SegmentWeekFaceView" pc="268449197" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getComplicationDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="292" parent="globals/SegmentWeekFaceView" pc="268449214" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getComplicationDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="295" parent="globals/SegmentWeekFaceView" pc="268449219" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getComplicationDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="121" lineNum="102" parent="globals/SegmentWeekFaceView" pc="268449238" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHumidity&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="121" lineNum="103" parent="globals/SegmentWeekFaceView" pc="268449240" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHumidity&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="121" lineNum="104" parent="globals/SegmentWeekFaceView" pc="268449268" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHumidity&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="121" lineNum="106" parent="globals/SegmentWeekFaceView" pc="268449279" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHumidity&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="154" parent="globals/SegmentWeekFaceView" pc="268449281" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="155" parent="globals/SegmentWeekFaceView" pc="268449283" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="155" parent="globals/SegmentWeekFaceView" pc="268449294" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="156" parent="globals/SegmentWeekFaceView" pc="268449303" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="156" parent="globals/SegmentWeekFaceView" pc="268449314" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="157" parent="globals/SegmentWeekFaceView" pc="268449323" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="157" parent="globals/SegmentWeekFaceView" pc="268449334" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="158" parent="globals/SegmentWeekFaceView" pc="268449343" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="158" parent="globals/SegmentWeekFaceView" pc="268449354" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="159" parent="globals/SegmentWeekFaceView" pc="268449363" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="159" parent="globals/SegmentWeekFaceView" pc="268449374" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="160" parent="globals/SegmentWeekFaceView" pc="268449383" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="160" parent="globals/SegmentWeekFaceView" pc="268449394" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="161" parent="globals/SegmentWeekFaceView" pc="268449403" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="161" parent="globals/SegmentWeekFaceView" pc="268449414" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="162" parent="globals/SegmentWeekFaceView" pc="268449423" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="162" parent="globals/SegmentWeekFaceView" pc="268449434" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="163" parent="globals/SegmentWeekFaceView" pc="268449443" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="163" parent="globals/SegmentWeekFaceView" pc="268449454" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="164" parent="globals/SegmentWeekFaceView" pc="268449463" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="164" parent="globals/SegmentWeekFaceView" pc="268449474" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="165" parent="globals/SegmentWeekFaceView" pc="268449483" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="123" lineNum="200" parent="globals/SegmentWeekFaceView" pc="268449486" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="123" lineNum="201" parent="globals/SegmentWeekFaceView" pc="268449489" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="123" lineNum="202" parent="globals/SegmentWeekFaceView" pc="268449496" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="123" lineNum="207" parent="globals/SegmentWeekFaceView" pc="268449581" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="123" lineNum="209" parent="globals/SegmentWeekFaceView" pc="268449588" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="123" lineNum="210" parent="globals/SegmentWeekFaceView" pc="268449599" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="123" lineNum="211" parent="globals/SegmentWeekFaceView" pc="268449616" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="123" lineNum="212" parent="globals/SegmentWeekFaceView" pc="268449642" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="123" lineNum="213" parent="globals/SegmentWeekFaceView" pc="268449659" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="63" parent="globals/SegmentWeekFaceView" pc="268449696" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getCurrentWeather&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="64" parent="globals/SegmentWeekFaceView" pc="268449698" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getCurrentWeather&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="65" parent="globals/SegmentWeekFaceView" pc="268449733" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getCurrentWeather&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="67" parent="globals/SegmentWeekFaceView" pc="268449747" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getCurrentWeather&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="125" lineNum="322" parent="globals/SegmentWeekFaceView" pc="268449749" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;formatSteps&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="125" lineNum="323" parent="globals/SegmentWeekFaceView" pc="268449751" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;formatSteps&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="125" lineNum="324" parent="globals/SegmentWeekFaceView" pc="268449760" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;formatSteps&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="125" lineNum="326" parent="globals/SegmentWeekFaceView" pc="268449791" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;formatSteps&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="127" lineNum="175" parent="globals/SegmentWeekFaceView" pc="268449799" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawCrossHatch&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="127" lineNum="176" parent="globals/SegmentWeekFaceView" pc="268449802" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawCrossHatch&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="127" lineNum="178" parent="globals/SegmentWeekFaceView" pc="268449819" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawCrossHatch&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="127" lineNum="179" parent="globals/SegmentWeekFaceView" pc="268449823" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawCrossHatch&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="127" lineNum="180" parent="globals/SegmentWeekFaceView" pc="268449834" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawCrossHatch&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="127" lineNum="181" parent="globals/SegmentWeekFaceView" pc="268449855" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawCrossHatch&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="127" lineNum="184" parent="globals/SegmentWeekFaceView" pc="268449865" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawCrossHatch&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="127" lineNum="185" parent="globals/SegmentWeekFaceView" pc="268449869" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawCrossHatch&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="127" lineNum="186" parent="globals/SegmentWeekFaceView" pc="268449880" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawCrossHatch&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="127" lineNum="187" parent="globals/SegmentWeekFaceView" pc="268449901" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawCrossHatch&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="217" parent="globals/SegmentWeekFaceView" pc="268449912" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="218" parent="globals/SegmentWeekFaceView" pc="268449915" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="219" parent="globals/SegmentWeekFaceView" pc="268449920" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="220" parent="globals/SegmentWeekFaceView" pc="268449924" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="221" parent="globals/SegmentWeekFaceView" pc="268449929" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="222" parent="globals/SegmentWeekFaceView" pc="268449933" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="223" parent="globals/SegmentWeekFaceView" pc="268449961" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="223" parent="globals/SegmentWeekFaceView" pc="268449972" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="224" parent="globals/SegmentWeekFaceView" pc="268449982" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="224" parent="globals/SegmentWeekFaceView" pc="268449989" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="226" parent="globals/SegmentWeekFaceView" pc="268449995" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="228" parent="globals/SegmentWeekFaceView" pc="268450013" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="229" parent="globals/SegmentWeekFaceView" pc="268450030" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="231" parent="globals/SegmentWeekFaceView" pc="268450060" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="232" parent="globals/SegmentWeekFaceView" pc="268450077" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="234" parent="globals/SegmentWeekFaceView" pc="268450098" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="235" parent="globals/SegmentWeekFaceView" pc="268450111" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="236" parent="globals/SegmentWeekFaceView" pc="268450127" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="237" parent="globals/SegmentWeekFaceView" pc="268450135" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="238" parent="globals/SegmentWeekFaceView" pc="268450152" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="240" parent="globals/SegmentWeekFaceView" pc="268450176" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="241" parent="globals/SegmentWeekFaceView" pc="268450193" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="242" parent="globals/SegmentWeekFaceView" pc="268450214" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="243" parent="globals/SegmentWeekFaceView" pc="268450231" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="129" lineNum="27" parent="globals/SegmentWeekFaceView" pc="268450259" symbol="initialize"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="129" lineNum="28" parent="globals/SegmentWeekFaceView" pc="268450261" symbol="initialize"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="130" lineNum="276" parent="globals/SegmentWeekFaceView" pc="268450274" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyRunDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="130" lineNum="277" parent="globals/SegmentWeekFaceView" pc="268450277" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyRunDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="130" lineNum="278" parent="globals/SegmentWeekFaceView" pc="268450289" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyRunDistanceKm&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="131" lineNum="45" parent="globals/SegmentWeekFaceView" pc="268450307" symbol="onUpdate"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="131" lineNum="46" parent="globals/SegmentWeekFaceView" pc="268450310" symbol="onUpdate"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="131" lineNum="47" parent="globals/SegmentWeekFaceView" pc="268450322" symbol="onUpdate"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="131" lineNum="49" parent="globals/SegmentWeekFaceView" pc="268450330" symbol="onUpdate"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="131" lineNum="50" parent="globals/SegmentWeekFaceView" pc="268450342" symbol="onUpdate"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="131" lineNum="51" parent="globals/SegmentWeekFaceView" pc="268450354" symbol="onUpdate"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="131" lineNum="52" parent="globals/SegmentWeekFaceView" pc="268450380" symbol="onUpdate"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="131" lineNum="53" parent="globals/SegmentWeekFaceView" pc="268450388" symbol="onUpdate"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="131" lineNum="54" parent="globals/SegmentWeekFaceView" pc="268450418" symbol="onUpdate"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="131" lineNum="56" parent="globals/SegmentWeekFaceView" pc="268450462" symbol="onUpdate"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="131" lineNum="57" parent="globals/SegmentWeekFaceView" pc="268450475" symbol="onUpdate"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="131" lineNum="58" parent="globals/SegmentWeekFaceView" pc="268450488" symbol="onUpdate"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="131" lineNum="59" parent="globals/SegmentWeekFaceView" pc="268450517" symbol="onUpdate"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="131" lineNum="60" parent="globals/SegmentWeekFaceView" pc="268450532" symbol="onUpdate"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="109" parent="globals/SegmentWeekFaceView" pc="268450556" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="110" parent="globals/SegmentWeekFaceView" pc="268450559" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="111" parent="globals/SegmentWeekFaceView" pc="268450567" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="112" parent="globals/SegmentWeekFaceView" pc="268450586" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="113" parent="globals/SegmentWeekFaceView" pc="268450593" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="113" parent="globals/SegmentWeekFaceView" pc="268450600" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="116" parent="globals/SegmentWeekFaceView" pc="268450610" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="117" parent="globals/SegmentWeekFaceView" pc="268450626" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="118" parent="globals/SegmentWeekFaceView" pc="268450647" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="119" parent="globals/SegmentWeekFaceView" pc="268450651" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="120" parent="globals/SegmentWeekFaceView" pc="268450655" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="121" parent="globals/SegmentWeekFaceView" pc="268450659" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="122" parent="globals/SegmentWeekFaceView" pc="268450672" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="123" parent="globals/SegmentWeekFaceView" pc="268450689" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="125" parent="globals/SegmentWeekFaceView" pc="268450693" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="126" parent="globals/SegmentWeekFaceView" pc="268450714" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="127" parent="globals/SegmentWeekFaceView" pc="268450745" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="128" parent="globals/SegmentWeekFaceView" pc="268450783" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="129" parent="globals/SegmentWeekFaceView" pc="268450823" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="131" parent="globals/SegmentWeekFaceView" pc="268450864" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="132" parent="globals/SegmentWeekFaceView" pc="268450889" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="133" parent="globals/SegmentWeekFaceView" pc="268450906" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="134" parent="globals/SegmentWeekFaceView" pc="268450930" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="136" parent="globals/SegmentWeekFaceView" pc="268450954" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="133" lineNum="13" parent="globals/Rez/Layouts" pc="268450984" symbol="WatchFace"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="133" lineNum="14" parent="globals/Rez/Layouts" pc="268450995" symbol="WatchFace"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="133" lineNum="16" parent="globals/Rez/Layouts" pc="268451004" symbol="WatchFace"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="133" lineNum="18" parent="globals/Rez/Layouts" pc="268451093" symbol="WatchFace"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="133" lineNum="20" parent="globals/Rez/Layouts" pc="268451183" symbol="WatchFace"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="133" lineNum="22" parent="globals/Rez/Layouts" pc="268451265" symbol="WatchFace"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="133" lineNum="24" parent="globals/Rez/Layouts" pc="268451349" symbol="WatchFace"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="133" lineNum="26" parent="globals/Rez/Layouts" pc="268451432" symbol="WatchFace"/>
-        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="133" lineNum="28" parent="globals/Rez/Layouts" pc="268451517" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="102" lineNum="330" parent="globals/SegmentWeekFaceView" pc="268447170" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;formatDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="102" lineNum="331" parent="globals/SegmentWeekFaceView" pc="268447172" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;formatDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="102" lineNum="332" parent="globals/SegmentWeekFaceView" pc="268447183" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;formatDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="102" lineNum="334" parent="globals/SegmentWeekFaceView" pc="268447201" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;formatDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="103" lineNum="237" parent="globals/SegmentWeekFaceView" pc="268447216" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRunWeekDistanceLabel&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="103" lineNum="238" parent="globals/SegmentWeekFaceView" pc="268447219" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRunWeekDistanceLabel&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="103" lineNum="239" parent="globals/SegmentWeekFaceView" pc="268447227" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRunWeekDistanceLabel&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="104" lineNum="202" parent="globals/SegmentWeekFaceView" pc="268447252" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSecondsBar&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="104" lineNum="203" parent="globals/SegmentWeekFaceView" pc="268447255" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSecondsBar&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="104" lineNum="204" parent="globals/SegmentWeekFaceView" pc="268447259" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSecondsBar&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="104" lineNum="206" parent="globals/SegmentWeekFaceView" pc="268447275" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSecondsBar&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="104" lineNum="207" parent="globals/SegmentWeekFaceView" pc="268447286" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSecondsBar&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="104" lineNum="208" parent="globals/SegmentWeekFaceView" pc="268447319" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSecondsBar&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="105" lineNum="310" parent="globals/SegmentWeekFaceView" pc="268447354" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="105" lineNum="314" parent="globals/SegmentWeekFaceView" pc="268447357" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="105" lineNum="315" parent="globals/SegmentWeekFaceView" pc="268447369" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="105" lineNum="316" parent="globals/SegmentWeekFaceView" pc="268447375" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="105" lineNum="319" parent="globals/SegmentWeekFaceView" pc="268447380" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="105" lineNum="320" parent="globals/SegmentWeekFaceView" pc="268447383" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="105" lineNum="321" parent="globals/SegmentWeekFaceView" pc="268447399" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="105" lineNum="322" parent="globals/SegmentWeekFaceView" pc="268447406" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="105" lineNum="323" parent="globals/SegmentWeekFaceView" pc="268447416" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="105" lineNum="327" parent="globals/SegmentWeekFaceView" pc="268447440" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="106" lineNum="196" parent="globals/SegmentWeekFaceView" pc="268447454" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawColon&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="106" lineNum="197" parent="globals/SegmentWeekFaceView" pc="268447456" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawColon&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="106" lineNum="198" parent="globals/SegmentWeekFaceView" pc="268447473" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawColon&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="106" lineNum="199" parent="globals/SegmentWeekFaceView" pc="268447494" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawColon&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="107" lineNum="212" parent="globals/SegmentWeekFaceView" pc="268447516" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawDateRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="107" lineNum="213" parent="globals/SegmentWeekFaceView" pc="268447519" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawDateRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="107" lineNum="214" parent="globals/SegmentWeekFaceView" pc="268447535" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawDateRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="107" lineNum="215" parent="globals/SegmentWeekFaceView" pc="268447594" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawDateRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="107" lineNum="216" parent="globals/SegmentWeekFaceView" pc="268447631" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawDateRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="107" lineNum="217" parent="globals/SegmentWeekFaceView" pc="268447647" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawDateRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="108" lineNum="290" parent="globals/SegmentWeekFaceView" pc="268447687" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyBikeDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="108" lineNum="294" parent="globals/SegmentWeekFaceView" pc="268447689" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyBikeDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="109" lineNum="43" parent="globals/SegmentWeekFaceView" pc="268447700" symbol="onComplicationChange"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="109" lineNum="44" parent="globals/SegmentWeekFaceView" pc="268447702" symbol="onComplicationChange"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="73" parent="globals/SegmentWeekFaceView" pc="268447714" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawTopAstronomy&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="74" parent="globals/SegmentWeekFaceView" pc="268447716" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawTopAstronomy&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="75" parent="globals/SegmentWeekFaceView" pc="268447733" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawTopAstronomy&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="76" parent="globals/SegmentWeekFaceView" pc="268447755" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawTopAstronomy&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="77" parent="globals/SegmentWeekFaceView" pc="268447778" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawTopAstronomy&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="78" parent="globals/SegmentWeekFaceView" pc="268447795" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawTopAstronomy&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="79" parent="globals/SegmentWeekFaceView" pc="268447817" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawTopAstronomy&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="110" lineNum="80" parent="globals/SegmentWeekFaceView" pc="268447840" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawTopAstronomy&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="111" lineNum="100" parent="globals/SegmentWeekFaceView" pc="268447857" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getFeelsLikeLabel&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="111" lineNum="101" parent="globals/SegmentWeekFaceView" pc="268447859" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getFeelsLikeLabel&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="111" lineNum="102" parent="globals/SegmentWeekFaceView" pc="268447881" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getFeelsLikeLabel&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="111" lineNum="104" parent="globals/SegmentWeekFaceView" pc="268447911" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getFeelsLikeLabel&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="112" lineNum="83" parent="globals/SegmentWeekFaceView" pc="268447955" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="112" lineNum="84" parent="globals/SegmentWeekFaceView" pc="268447958" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="112" lineNum="85" parent="globals/SegmentWeekFaceView" pc="268447965" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="112" lineNum="87" parent="globals/SegmentWeekFaceView" pc="268447972" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="112" lineNum="88" parent="globals/SegmentWeekFaceView" pc="268447978" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="112" lineNum="89" parent="globals/SegmentWeekFaceView" pc="268448025" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="112" lineNum="90" parent="globals/SegmentWeekFaceView" pc="268448037" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="112" lineNum="91" parent="globals/SegmentWeekFaceView" pc="268448084" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="112" lineNum="92" parent="globals/SegmentWeekFaceView" pc="268448103" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="112" lineNum="95" parent="globals/SegmentWeekFaceView" pc="268448122" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="112" lineNum="96" parent="globals/SegmentWeekFaceView" pc="268448139" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="112" lineNum="97" parent="globals/SegmentWeekFaceView" pc="268448159" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="182" parent="globals/SegmentWeekFaceView" pc="268448180" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="183" parent="globals/SegmentWeekFaceView" pc="268448182" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="183" parent="globals/SegmentWeekFaceView" pc="268448189" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="184" parent="globals/SegmentWeekFaceView" pc="268448198" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="184" parent="globals/SegmentWeekFaceView" pc="268448206" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="185" parent="globals/SegmentWeekFaceView" pc="268448226" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="185" parent="globals/SegmentWeekFaceView" pc="268448234" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="186" parent="globals/SegmentWeekFaceView" pc="268448286" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="186" parent="globals/SegmentWeekFaceView" pc="268448294" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="187" parent="globals/SegmentWeekFaceView" pc="268448346" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="187" parent="globals/SegmentWeekFaceView" pc="268448354" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="188" parent="globals/SegmentWeekFaceView" pc="268448396" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="188" parent="globals/SegmentWeekFaceView" pc="268448404" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="189" parent="globals/SegmentWeekFaceView" pc="268448456" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="189" parent="globals/SegmentWeekFaceView" pc="268448464" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="190" parent="globals/SegmentWeekFaceView" pc="268448527" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="190" parent="globals/SegmentWeekFaceView" pc="268448535" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="191" parent="globals/SegmentWeekFaceView" pc="268448565" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="191" parent="globals/SegmentWeekFaceView" pc="268448573" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="192" parent="globals/SegmentWeekFaceView" pc="268448578" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="192" parent="globals/SegmentWeekFaceView" pc="268448586" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="114" lineNum="193" parent="globals/SegmentWeekFaceView" pc="268448649" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="115" lineNum="356" parent="globals/SegmentWeekFaceView" pc="268448651" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawFootIcon&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="115" lineNum="357" parent="globals/SegmentWeekFaceView" pc="268448653" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawFootIcon&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="115" lineNum="358" parent="globals/SegmentWeekFaceView" pc="268448670" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawFootIcon&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="115" lineNum="359" parent="globals/SegmentWeekFaceView" pc="268448682" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawFootIcon&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="115" lineNum="360" parent="globals/SegmentWeekFaceView" pc="268448704" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawFootIcon&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="115" lineNum="361" parent="globals/SegmentWeekFaceView" pc="268448726" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawFootIcon&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="115" lineNum="362" parent="globals/SegmentWeekFaceView" pc="268448756" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawFootIcon&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="116" lineNum="156" parent="globals/SegmentWeekFaceView" pc="268448787" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;fillMosaicSegment&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="116" lineNum="157" parent="globals/SegmentWeekFaceView" pc="268448790" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;fillMosaicSegment&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="116" lineNum="158" parent="globals/SegmentWeekFaceView" pc="268448804" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;fillMosaicSegment&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="116" lineNum="160" parent="globals/SegmentWeekFaceView" pc="268448822" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;fillMosaicSegment&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="116" lineNum="161" parent="globals/SegmentWeekFaceView" pc="268448834" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;fillMosaicSegment&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="116" lineNum="162" parent="globals/SegmentWeekFaceView" pc="268448851" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;fillMosaicSegment&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="116" lineNum="163" parent="globals/SegmentWeekFaceView" pc="268448858" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;fillMosaicSegment&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="116" lineNum="164" parent="globals/SegmentWeekFaceView" pc="268448869" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;fillMosaicSegment&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="116" lineNum="165" parent="globals/SegmentWeekFaceView" pc="268448890" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;fillMosaicSegment&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="116" lineNum="168" parent="globals/SegmentWeekFaceView" pc="268448900" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;fillMosaicSegment&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="116" lineNum="169" parent="globals/SegmentWeekFaceView" pc="268448907" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;fillMosaicSegment&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="116" lineNum="170" parent="globals/SegmentWeekFaceView" pc="268448918" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;fillMosaicSegment&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="116" lineNum="171" parent="globals/SegmentWeekFaceView" pc="268448939" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;fillMosaicSegment&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="116" lineNum="174" parent="globals/SegmentWeekFaceView" pc="268448949" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;fillMosaicSegment&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="116" lineNum="175" parent="globals/SegmentWeekFaceView" pc="268448962" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;fillMosaicSegment&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="116" lineNum="176" parent="globals/SegmentWeekFaceView" pc="268448968" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;fillMosaicSegment&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="116" lineNum="177" parent="globals/SegmentWeekFaceView" pc="268448976" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;fillMosaicSegment&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="116" lineNum="178" parent="globals/SegmentWeekFaceView" pc="268449006" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;fillMosaicSegment&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="119" lineNum="264" parent="globals/SegmentWeekFaceView" pc="268449017" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="119" lineNum="265" parent="globals/SegmentWeekFaceView" pc="268449020" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="119" lineNum="266" parent="globals/SegmentWeekFaceView" pc="268449036" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="119" lineNum="269" parent="globals/SegmentWeekFaceView" pc="268449041" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="119" lineNum="270" parent="globals/SegmentWeekFaceView" pc="268449058" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="119" lineNum="271" parent="globals/SegmentWeekFaceView" pc="268449064" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="119" lineNum="274" parent="globals/SegmentWeekFaceView" pc="268449069" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="119" lineNum="275" parent="globals/SegmentWeekFaceView" pc="268449078" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="119" lineNum="276" parent="globals/SegmentWeekFaceView" pc="268449084" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="119" lineNum="277" parent="globals/SegmentWeekFaceView" pc="268449109" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="119" lineNum="279" parent="globals/SegmentWeekFaceView" pc="268449120" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="119" lineNum="282" parent="globals/SegmentWeekFaceView" pc="268449132" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="337" parent="globals/SegmentWeekFaceView" pc="268449134" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="338" parent="globals/SegmentWeekFaceView" pc="268449137" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="339" parent="globals/SegmentWeekFaceView" pc="268449146" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="339" parent="globals/SegmentWeekFaceView" pc="268449168" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="340" parent="globals/SegmentWeekFaceView" pc="268449177" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="340" parent="globals/SegmentWeekFaceView" pc="268449199" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="341" parent="globals/SegmentWeekFaceView" pc="268449208" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="341" parent="globals/SegmentWeekFaceView" pc="268449230" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="342" parent="globals/SegmentWeekFaceView" pc="268449239" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="342" parent="globals/SegmentWeekFaceView" pc="268449261" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="343" parent="globals/SegmentWeekFaceView" pc="268449270" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="343" parent="globals/SegmentWeekFaceView" pc="268449292" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="344" parent="globals/SegmentWeekFaceView" pc="268449301" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="344" parent="globals/SegmentWeekFaceView" pc="268449323" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="345" parent="globals/SegmentWeekFaceView" pc="268449332" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="345" parent="globals/SegmentWeekFaceView" pc="268449354" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="120" lineNum="346" parent="globals/SegmentWeekFaceView" pc="268449363" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="121" lineNum="33" parent="globals/SegmentWeekFaceView" pc="268449369" symbol="onLayout"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="121" lineNum="34" parent="globals/SegmentWeekFaceView" pc="268449371" symbol="onLayout"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="121" lineNum="35" parent="globals/SegmentWeekFaceView" pc="268449386" symbol="onLayout"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="121" lineNum="36" parent="globals/SegmentWeekFaceView" pc="268449423" symbol="onLayout"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="121" lineNum="37" parent="globals/SegmentWeekFaceView" pc="268449460" symbol="onLayout"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="297" parent="globals/SegmentWeekFaceView" pc="268449490" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getComplicationDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="298" parent="globals/SegmentWeekFaceView" pc="268449493" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getComplicationDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="299" parent="globals/SegmentWeekFaceView" pc="268449509" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getComplicationDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="302" parent="globals/SegmentWeekFaceView" pc="268449514" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getComplicationDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="303" parent="globals/SegmentWeekFaceView" pc="268449552" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getComplicationDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="304" parent="globals/SegmentWeekFaceView" pc="268449569" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getComplicationDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="122" lineNum="307" parent="globals/SegmentWeekFaceView" pc="268449574" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getComplicationDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="123" lineNum="107" parent="globals/SegmentWeekFaceView" pc="268449593" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHumidity&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="123" lineNum="108" parent="globals/SegmentWeekFaceView" pc="268449595" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHumidity&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="123" lineNum="109" parent="globals/SegmentWeekFaceView" pc="268449623" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHumidity&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="123" lineNum="111" parent="globals/SegmentWeekFaceView" pc="268449634" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHumidity&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="141" parent="globals/SegmentWeekFaceView" pc="268449636" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMosaicDigit&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="142" parent="globals/SegmentWeekFaceView" pc="268449639" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMosaicDigit&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="143" parent="globals/SegmentWeekFaceView" pc="268449643" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMosaicDigit&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="144" parent="globals/SegmentWeekFaceView" pc="268449671" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMosaicDigit&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="145" parent="globals/SegmentWeekFaceView" pc="268449690" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMosaicDigit&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="147" parent="globals/SegmentWeekFaceView" pc="268449712" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMosaicDigit&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="147" parent="globals/SegmentWeekFaceView" pc="268449726" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMosaicDigit&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="148" parent="globals/SegmentWeekFaceView" pc="268449765" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMosaicDigit&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="148" parent="globals/SegmentWeekFaceView" pc="268449780" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMosaicDigit&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="149" parent="globals/SegmentWeekFaceView" pc="268449831" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMosaicDigit&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="149" parent="globals/SegmentWeekFaceView" pc="268449846" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMosaicDigit&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="150" parent="globals/SegmentWeekFaceView" pc="268449876" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMosaicDigit&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="150" parent="globals/SegmentWeekFaceView" pc="268449891" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMosaicDigit&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="151" parent="globals/SegmentWeekFaceView" pc="268449936" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMosaicDigit&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="151" parent="globals/SegmentWeekFaceView" pc="268449951" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMosaicDigit&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="152" parent="globals/SegmentWeekFaceView" pc="268449975" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMosaicDigit&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="152" parent="globals/SegmentWeekFaceView" pc="268449990" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMosaicDigit&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="153" parent="globals/SegmentWeekFaceView" pc="268450035" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMosaicDigit&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="124" lineNum="153" parent="globals/SegmentWeekFaceView" pc="268450050" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMosaicDigit&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="125" lineNum="220" parent="globals/SegmentWeekFaceView" pc="268450090" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="125" lineNum="221" parent="globals/SegmentWeekFaceView" pc="268450093" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="125" lineNum="222" parent="globals/SegmentWeekFaceView" pc="268450100" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="125" lineNum="227" parent="globals/SegmentWeekFaceView" pc="268450149" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="125" lineNum="229" parent="globals/SegmentWeekFaceView" pc="268450156" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="125" lineNum="230" parent="globals/SegmentWeekFaceView" pc="268450167" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="125" lineNum="231" parent="globals/SegmentWeekFaceView" pc="268450184" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="125" lineNum="232" parent="globals/SegmentWeekFaceView" pc="268450210" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="125" lineNum="233" parent="globals/SegmentWeekFaceView" pc="268450243" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="126" lineNum="66" parent="globals/SegmentWeekFaceView" pc="268450281" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getCurrentWeather&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="126" lineNum="67" parent="globals/SegmentWeekFaceView" pc="268450283" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getCurrentWeather&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="126" lineNum="68" parent="globals/SegmentWeekFaceView" pc="268450318" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getCurrentWeather&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="126" lineNum="70" parent="globals/SegmentWeekFaceView" pc="268450332" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getCurrentWeather&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="127" lineNum="242" parent="globals/SegmentWeekFaceView" pc="268450334" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyBikeDistanceLabel&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="127" lineNum="243" parent="globals/SegmentWeekFaceView" pc="268450337" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyBikeDistanceLabel&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="127" lineNum="244" parent="globals/SegmentWeekFaceView" pc="268450345" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyBikeDistanceLabel&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="114" parent="globals/SegmentWeekFaceView" pc="268450370" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="115" parent="globals/SegmentWeekFaceView" pc="268450373" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="116" parent="globals/SegmentWeekFaceView" pc="268450381" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="117" parent="globals/SegmentWeekFaceView" pc="268450400" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="118" parent="globals/SegmentWeekFaceView" pc="268450407" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="118" parent="globals/SegmentWeekFaceView" pc="268450414" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="121" parent="globals/SegmentWeekFaceView" pc="268450424" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="122" parent="globals/SegmentWeekFaceView" pc="268450428" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="123" parent="globals/SegmentWeekFaceView" pc="268450432" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="124" parent="globals/SegmentWeekFaceView" pc="268450436" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="125" parent="globals/SegmentWeekFaceView" pc="268450440" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="126" parent="globals/SegmentWeekFaceView" pc="268450444" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="127" parent="globals/SegmentWeekFaceView" pc="268450448" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="129" parent="globals/SegmentWeekFaceView" pc="268450456" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="130" parent="globals/SegmentWeekFaceView" pc="268450485" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="131" parent="globals/SegmentWeekFaceView" pc="268450520" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="132" parent="globals/SegmentWeekFaceView" pc="268450547" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="133" parent="globals/SegmentWeekFaceView" pc="268450588" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="135" parent="globals/SegmentWeekFaceView" pc="268450629" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="136" parent="globals/SegmentWeekFaceView" pc="268450646" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="137" parent="globals/SegmentWeekFaceView" pc="268450658" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="128" lineNum="138" parent="globals/SegmentWeekFaceView" pc="268450682" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="129" lineNum="349" parent="globals/SegmentWeekFaceView" pc="268450710" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMoonIcon&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="129" lineNum="350" parent="globals/SegmentWeekFaceView" pc="268450712" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMoonIcon&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="129" lineNum="351" parent="globals/SegmentWeekFaceView" pc="268450729" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMoonIcon&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="129" lineNum="352" parent="globals/SegmentWeekFaceView" pc="268450741" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMoonIcon&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="129" lineNum="353" parent="globals/SegmentWeekFaceView" pc="268450764" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMoonIcon&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="130" lineNum="253" parent="globals/SegmentWeekFaceView" pc="268450791" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="130" lineNum="254" parent="globals/SegmentWeekFaceView" pc="268450794" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="130" lineNum="255" parent="globals/SegmentWeekFaceView" pc="268450798" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="130" lineNum="256" parent="globals/SegmentWeekFaceView" pc="268450803" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="130" lineNum="257" parent="globals/SegmentWeekFaceView" pc="268450820" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="130" lineNum="258" parent="globals/SegmentWeekFaceView" pc="268450832" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="130" lineNum="259" parent="globals/SegmentWeekFaceView" pc="268450852" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="130" lineNum="260" parent="globals/SegmentWeekFaceView" pc="268450882" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="130" lineNum="261" parent="globals/SegmentWeekFaceView" pc="268450912" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="247" parent="globals/SegmentWeekFaceView" pc="268450954" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="248" parent="globals/SegmentWeekFaceView" pc="268450956" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="249" parent="globals/SegmentWeekFaceView" pc="268450972" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="132" lineNum="250" parent="globals/SegmentWeekFaceView" pc="268450989" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="133" lineNum="29" parent="globals/SegmentWeekFaceView" pc="268451016" symbol="initialize"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="133" lineNum="30" parent="globals/SegmentWeekFaceView" pc="268451018" symbol="initialize"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="134" lineNum="285" parent="globals/SegmentWeekFaceView" pc="268451031" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyRunDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="134" lineNum="286" parent="globals/SegmentWeekFaceView" pc="268451034" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyRunDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="134" lineNum="287" parent="globals/SegmentWeekFaceView" pc="268451046" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyRunDistanceKm&gt;"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="135" lineNum="47" parent="globals/SegmentWeekFaceView" pc="268451064" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="135" lineNum="48" parent="globals/SegmentWeekFaceView" pc="268451067" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="135" lineNum="49" parent="globals/SegmentWeekFaceView" pc="268451079" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="135" lineNum="51" parent="globals/SegmentWeekFaceView" pc="268451087" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="135" lineNum="52" parent="globals/SegmentWeekFaceView" pc="268451099" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="135" lineNum="53" parent="globals/SegmentWeekFaceView" pc="268451111" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="135" lineNum="54" parent="globals/SegmentWeekFaceView" pc="268451137" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="135" lineNum="55" parent="globals/SegmentWeekFaceView" pc="268451145" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="135" lineNum="57" parent="globals/SegmentWeekFaceView" pc="268451175" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="135" lineNum="58" parent="globals/SegmentWeekFaceView" pc="268451186" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="135" lineNum="59" parent="globals/SegmentWeekFaceView" pc="268451199" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="135" lineNum="60" parent="globals/SegmentWeekFaceView" pc="268451212" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="135" lineNum="61" parent="globals/SegmentWeekFaceView" pc="268451235" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="135" lineNum="62" parent="globals/SegmentWeekFaceView" pc="268451252" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\source\\SegmentWeekFaceView.mc" id="135" lineNum="63" parent="globals/SegmentWeekFaceView" pc="268451265" symbol="onUpdate"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="136" lineNum="13" parent="globals/Rez/Layouts" pc="268451292" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="136" lineNum="14" parent="globals/Rez/Layouts" pc="268451303" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="136" lineNum="16" parent="globals/Rez/Layouts" pc="268451312" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="136" lineNum="18" parent="globals/Rez/Layouts" pc="268451401" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="136" lineNum="20" parent="globals/Rez/Layouts" pc="268451491" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="136" lineNum="22" parent="globals/Rez/Layouts" pc="268451573" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="136" lineNum="24" parent="globals/Rez/Layouts" pc="268451657" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="136" lineNum="26" parent="globals/Rez/Layouts" pc="268451740" symbol="WatchFace"/>
+        <entry filename="C:\\repos\\face-attempt\\Fenix7XVibeFace\\.\\bin\\gen\\006-B3907-00\\source\\Rez.mcgen" id="136" lineNum="28" parent="globals/Rez/Layouts" pc="268451825" symbol="WatchFace"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
@@ -946,28 +952,30 @@
         <entry field="true" id="99" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;COLOR_CYAN&gt;"/>
         <entry id="51" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;getWeatherTemperatureLabel&gt;"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
-        <entry field="true" id="104" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;COLOR_ORANGE&gt;"/>
+        <entry field="true" id="102" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;COLOR_ORANGE&gt;"/>
         <entry id="71" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawFootstepsIcon&gt;"/>
         <entry id="94" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;getWeeklyBikeDistanceKm&gt;"/>
         <entry id="21" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawFootstepsIcon&gt;"/>
         <entry id="27" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawMoonIcon&gt;"/>
-        <entry id="115" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;formatDistanceKm&gt;"/>
+        <entry id="119" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;formatDistanceKm&gt;"/>
         <entry id="8389702" method="true" symbol="getHeartRateHistory"/>
         <entry id="36" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawPhotoTime&gt;"/>
         <entry field="true" id="105" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;COLOR_WHITE&gt;"/>
-        <entry id="114" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
-        <entry id="111" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSecondsBar&gt;"/>
+        <entry id="126" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRunWeekDistanceLabel&gt;"/>
+        <entry id="117" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;"/>
+        <entry id="114" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSecondsBar&gt;"/>
         <entry id="9" object="true" symbol="SegmentWeekFaceView"/>
-        <entry id="126" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyRunDistanceKm&gt;"/>
+        <entry id="129" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyRunDistanceKm&gt;"/>
         <entry id="74" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawLeftStack&gt;"/>
         <entry id="90" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;getHeartRateProgress&gt;"/>
         <entry id="70" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawFlameIcon&gt;"/>
         <entry id="38" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawRoundDial&gt;"/>
         <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry id="113" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMosaicDigit&gt;"/>
         <entry id="32" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawPhotoFace&gt;"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry id="122" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHumidity&gt;"/>
-        <entry id="128" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
+        <entry id="124" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHumidity&gt;"/>
+        <entry id="131" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;"/>
         <entry id="85" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawVectorBackground&gt;"/>
         <entry field="true" id="62" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;COLOR_LT_GRAY&gt;"/>
         <entry id="83" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawSidePodFrames&gt;"/>
@@ -975,13 +983,10 @@
         <entry id="76" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawMetricInPod&gt;"/>
         <entry id="96" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;getWeeklyRunDistanceKm&gt;"/>
         <entry id="37" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawPhotoTop&gt;"/>
-        <entry field="true" id="100" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;COLOR_DGRAY&gt;"/>
-        <entry field="true" id="130" symbol="AppName"/>
+        <entry field="true" id="133" symbol="AppName"/>
         <entry id="8388633" module="true" symbol="ActivityMonitor"/>
-        <entry id="116" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;formatSteps&gt;"/>
-        <entry id="106" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawCrossHatch&gt;"/>
-        <entry id="120" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getFeelsLikeLabel&gt;"/>
-        <entry id="107" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawDateRow&gt;"/>
+        <entry id="122" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getFeelsLikeLabel&gt;"/>
+        <entry id="108" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawDateRow&gt;"/>
         <entry id="5" module="true" symbol="globals/Rez/Strings"/>
         <entry id="75" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawMainTime&gt;"/>
         <entry id="69" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawDateStrip&gt;"/>
@@ -989,13 +994,13 @@
         <entry id="26" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawMainTime&gt;"/>
         <entry id="25" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawHeartRateDial&gt;"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry field="true" id="104" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;COLOR_TEAL&gt;"/>
         <entry id="91" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;getHeartRateValue&gt;"/>
         <entry id="41" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawSmallMetric&gt;"/>
         <entry id="49" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;getHeartRateValue&gt;"/>
         <entry id="30" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawPhotoBattery&gt;"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
-        <entry id="110" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;"/>
-        <entry id="127" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;segmentIsOn&gt;"/>
+        <entry id="111" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;"/>
         <entry id="87" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;formatDistanceKm&gt;"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
@@ -1005,13 +1010,15 @@
         <entry id="8391489" module="true" symbol="Weather"/>
         <entry field="true" id="8391673" symbol="relativeHumidity"/>
         <entry id="79" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawRightStack&gt;"/>
+        <entry id="112" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMoonIcon&gt;"/>
         <entry id="45" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;formatDistanceKm&gt;"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389348" symbol="font"/>
         <entry id="8389275" method="true" symbol="getApp"/>
         <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
-        <entry id="113" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
-        <entry id="123" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
+        <entry id="115" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;"/>
+        <entry id="125" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
+        <entry field="true" id="100" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;COLOR_GRID&gt;"/>
         <entry id="43" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawWeatherCompartment&gt;"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
         <entry id="8389376" method="true" symbol="onEnterSleep"/>
@@ -1023,16 +1030,15 @@
         <entry id="8391661" method="true" symbol="getCurrentConditions"/>
         <entry id="73" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawHeartIcon&gt;"/>
         <entry field="true" id="12" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;COLOR_LT_GRAY&gt;"/>
-        <entry id="117" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getComplicationDistanceKm&gt;"/>
+        <entry id="120" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getComplicationDistanceKm&gt;"/>
         <entry id="35" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawPhotoTicks&gt;"/>
         <entry id="78" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawOuterTicks&gt;"/>
+        <entry field="true" id="103" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;COLOR_PURPLE&gt;"/>
         <entry id="95" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;getWeeklyBikeDistanceLabel&gt;"/>
         <entry id="98" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;weekdayIndex&gt;"/>
-        <entry id="124" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
-        <entry field="true" id="102" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;COLOR_HATCH&gt;"/>
         <entry id="55" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;getWeeklyRunDistanceLabel&gt;"/>
-        <entry id="108" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawFootIcon&gt;"/>
+        <entry id="109" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawFootIcon&gt;"/>
         <entry field="true" id="64" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;COLOR_PANEL_EDGE&gt;"/>
         <entry id="18" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawCaloriesCompartment&gt;"/>
         <entry field="true" id="65" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;SCREEN_CENTER&gt;"/>
@@ -1042,6 +1048,7 @@
         <entry id="6" object="true" symbol="Fenix7XVibeFaceApp"/>
         <entry id="82" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawSidePodFrame&gt;"/>
         <entry id="31" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawPhotoBottomStats&gt;"/>
+        <entry id="128" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyBikeDistanceLabel&gt;"/>
         <entry id="8389377" method="true" symbol="onExitSleep"/>
         <entry id="8388644" module="true" symbol="System"/>
         <entry id="86" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawWeatherIcon&gt;"/>
@@ -1050,19 +1057,19 @@
         <entry id="8388645" module="true" symbol="Time"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
         <entry id="53" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;getWeeklyBikeDistanceLabel&gt;"/>
-        <entry field="true" id="103" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;COLOR_LGRAY&gt;"/>
+        <entry field="true" id="101" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;COLOR_LGRAY&gt;"/>
         <entry id="81" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawSecondsBubble&gt;"/>
         <entry id="40" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawSecondsBubble&gt;"/>
         <entry id="47" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;getComplicationDistanceKm&gt;"/>
         <entry id="8388640" module="true" symbol="Lang"/>
-        <entry field="true" id="101" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;COLOR_DIGIT&gt;"/>
-        <entry field="true" id="129" symbol="LauncherIcon"/>
+        <entry field="true" id="132" symbol="LauncherIcon"/>
         <entry id="54" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;getWeeklyRunDistanceKm&gt;"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
         <entry id="16" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawBikeCompartment&gt;"/>
+        <entry id="130" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;"/>
         <entry field="true" id="11" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;COLOR_DK_GRAY&gt;"/>
-        <entry id="125" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyBikeDistanceKm&gt;"/>
+        <entry id="127" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyBikeDistanceKm&gt;"/>
         <entry id="8389350" module="true" symbol="globals"/>
         <entry field="true" id="8391672" symbol="feelsLikeTemperature"/>
         <entry id="8391962" module="true" symbol="Complications"/>
@@ -1077,34 +1084,36 @@
         <entry field="true" id="13" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;COLOR_ORANGE&gt;"/>
         <entry id="8389279" method="true" symbol="onStart"/>
         <entry id="89" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;getHeartRateLabel&gt;"/>
+        <entry id="106" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawBattery&gt;"/>
         <entry id="48" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;getHeartRateLabel&gt;"/>
+        <entry id="110" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;"/>
         <entry id="44" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawWeatherIcon&gt;"/>
         <entry id="23" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawHeader&gt;"/>
         <entry id="56" method="true" symbol="onComplicationChange"/>
-        <entry id="121" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
+        <entry id="123" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
         <entry id="17" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawBikeIcon&gt;"/>
         <entry field="true" id="8389347" symbol="color"/>
         <entry id="33" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawPhotoMetric&gt;"/>
         <entry field="true" id="14" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;SCREEN_CENTER&gt;"/>
-        <entry id="119" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getDewPointDeltaLabel&gt;"/>
         <entry id="7" object="true" symbol="Fenix7XVibeFaceView"/>
         <entry id="68" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawCenterColumnGuides&gt;"/>
-        <entry id="112" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSevenSegDigit&gt;"/>
         <entry id="66" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawBatteryGauge&gt;"/>
         <entry id="59" module="true" symbol="Layouts"/>
         <entry id="93" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;getWeatherTemperatureLabel&gt;"/>
         <entry id="80" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawRoundDial&gt;"/>
         <entry id="15" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawBatteryGauge&gt;"/>
         <entry id="58" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;weekdayShort&gt;"/>
+        <entry id="116" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawTopAstronomy&gt;"/>
         <entry id="77" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawMountainIcon&gt;"/>
         <entry id="72" method="true" symbol="&lt;globals/Fenix7XVibeFaceView/&lt;&gt;drawHeader&gt;"/>
-        <entry id="118" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getCurrentWeather&gt;"/>
+        <entry id="107" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawColon&gt;"/>
+        <entry id="121" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;getCurrentWeather&gt;"/>
         <entry id="8389125" method="true" symbol="onHide"/>
         <entry id="50" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;getRollingActivityDistanceKm&gt;"/>
+        <entry id="118" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;fillMosaicSegment&gt;"/>
         <entry id="28" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;drawMountainIcon&gt;"/>
-        <entry id="109" method="true" symbol="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;"/>
         <entry id="8388635" module="true" symbol="Application"/>
         <entry id="46" method="true" symbol="&lt;globals/Fenix7XVibeFaceViewRefined/&lt;&gt;formatSteps&gt;"/>
     </symbolTable>
@@ -1353,115 +1362,113 @@
         <entry endPc="268447168" name="stepGoal" stackId="4" startPc="268446931"/>
         <entry endPc="268447168" name="progress" stackId="5" startPc="268446931"/>
         <entry endPc="268447168" name="calories" stackId="6" startPc="268446931"/>
-        <entry arg="true" endPc="268447227" name="km" stackId="1" startPc="268447170"/>
-        <entry arg="true" endPc="268447354" name="dc" stackId="1" startPc="268447228"/>
-        <entry arg="true" endPc="268447354" name="x" stackId="2" startPc="268447228"/>
-        <entry arg="true" endPc="268447354" name="y" stackId="3" startPc="268447228"/>
-        <entry arg="true" endPc="268447354" name="height" stackId="4" startPc="268447228"/>
-        <entry arg="true" endPc="268447354" name="secVal" stackId="5" startPc="268447228"/>
-        <entry endPc="268447353" name="segH" stackId="6" startPc="268447231"/>
-        <entry endPc="268447353" name="i" stackId="7" startPc="268447252"/>
-        <entry endPc="268447343" name="yPos" stackId="8" startPc="268447252"/>
-        <entry endPc="268447454" name="history" stackId="1" startPc="268447358"/>
-        <entry endPc="268447454" name="cm" stackId="2" startPc="268447358"/>
-        <entry endPc="268447440" name="i" stackId="3" startPc="268447400"/>
-        <entry endPc="268447430" name="day" stackId="4" startPc="268447400"/>
-        <entry arg="true" endPc="268447613" name="dc" stackId="1" startPc="268447455"/>
-        <entry arg="true" endPc="268447613" name="dateInfo" stackId="2" startPc="268447455"/>
-        <entry arg="true" endPc="268447613" name="humidity" stackId="3" startPc="268447455"/>
-        <entry endPc="268447612" name="dow" stackId="4" startPc="268447458"/>
-        <entry endPc="268447612" name="dateStr" stackId="5" startPc="268447458"/>
-        <entry endPc="268447612" name="humStr" stackId="6" startPc="268447458"/>
-        <entry arg="true" endPc="268447640" name="id" stackId="1" startPc="268447627"/>
-        <entry arg="true" endPc="268447738" name="current" stackId="1" startPc="268447641"/>
-        <entry arg="true" endPc="268447785" name="segments" stackId="1" startPc="268447739"/>
-        <entry arg="true" endPc="268447785" name="idx" stackId="2" startPc="268447739"/>
-        <entry endPc="268447783" name="i" stackId="3" startPc="268447758"/>
-        <entry arg="true" endPc="268448254" name="dc" stackId="1" startPc="268447786"/>
-        <entry arg="true" endPc="268448254" name="x" stackId="2" startPc="268447786"/>
-        <entry arg="true" endPc="268448254" name="y" stackId="3" startPc="268447786"/>
-        <entry arg="true" endPc="268448254" name="w" stackId="4" startPc="268447786"/>
-        <entry arg="true" endPc="268448254" name="h" stackId="5" startPc="268447786"/>
-        <entry arg="true" endPc="268448254" name="digit" stackId="6" startPc="268447786"/>
-        <entry endPc="268448253" name="segments" stackId="7" startPc="268447789"/>
-        <entry endPc="268448253" name="th" stackId="8" startPc="268447789"/>
-        <entry endPc="268448253" name="halfH" stackId="9" startPc="268447789"/>
-        <entry arg="true" endPc="268448517" name="dc" stackId="1" startPc="268448255"/>
-        <entry arg="true" endPc="268448517" name="current" stackId="2" startPc="268448255"/>
-        <entry endPc="268448516" name="line1" stackId="3" startPc="268448258"/>
-        <entry endPc="268448516" name="line2" stackId="4" startPc="268448258"/>
-        <entry endPc="268448439" name="temp" stackId="5" startPc="268448278"/>
-        <entry endPc="268448439" name="feels" stackId="6" startPc="268448278"/>
-        <entry endPc="268448439" name="delta" stackId="7" startPc="268448278"/>
-        <entry endPc="268448439" name="condition" stackId="8" startPc="268448278"/>
-        <entry arg="true" endPc="268448525" name="current" stackId="1" startPc="268448518"/>
-        <entry arg="true" endPc="268448661" name="dc" stackId="1" startPc="268448526"/>
-        <entry arg="true" endPc="268448661" name="x" stackId="2" startPc="268448526"/>
-        <entry arg="true" endPc="268448661" name="y" stackId="3" startPc="268448526"/>
-        <entry endPc="268448778" name="iterator" stackId="1" startPc="268448665"/>
-        <entry endPc="268448778" name="sample" stackId="2" startPc="268448665"/>
-        <entry arg="true" endPc="268449013" name="day" stackId="1" startPc="268448779"/>
-        <entry endPc="268449013" name="upper" stackId="2" startPc="268448782"/>
-        <entry arg="true" endPc="268449134" name="dc" stackId="1" startPc="268449014"/>
-        <entry arg="true" endPc="268449237" name="complicationType" stackId="1" startPc="268449135"/>
-        <entry endPc="268449237" name="complication" stackId="2" startPc="268449138"/>
-        <entry arg="true" endPc="268449280" name="current" stackId="1" startPc="268449238"/>
-        <entry arg="true" endPc="268449485" name="digit" stackId="1" startPc="268449281"/>
-        <entry arg="true" endPc="268449695" name="dc" stackId="1" startPc="268449486"/>
-        <entry arg="true" endPc="268449695" name="runKm" stackId="2" startPc="268449486"/>
-        <entry arg="true" endPc="268449695" name="hrVal" stackId="3" startPc="268449486"/>
-        <entry arg="true" endPc="268449695" name="bikeKm" stackId="4" startPc="268449486"/>
-        <entry endPc="268449694" name="labels" stackId="5" startPc="268449489"/>
-        <entry endPc="268449694" name="values" stackId="6" startPc="268449489"/>
-        <entry endPc="268449694" name="positions" stackId="7" startPc="268449489"/>
-        <entry endPc="268449694" name="i" stackId="8" startPc="268449599"/>
-        <entry arg="true" endPc="268449798" name="steps" stackId="1" startPc="268449749"/>
-        <entry arg="true" endPc="268449911" name="dc" stackId="1" startPc="268449799"/>
-        <entry arg="true" endPc="268449911" name="x" stackId="2" startPc="268449799"/>
-        <entry arg="true" endPc="268449911" name="y" stackId="3" startPc="268449799"/>
-        <entry arg="true" endPc="268449911" name="w" stackId="4" startPc="268449799"/>
-        <entry arg="true" endPc="268449911" name="h" stackId="5" startPc="268449799"/>
-        <entry arg="true" endPc="268449911" name="spacing" stackId="6" startPc="268449799"/>
-        <entry endPc="268449910" name="xx" stackId="7" startPc="268449802"/>
-        <entry endPc="268449910" name="yy" stackId="8" startPc="268449802"/>
-        <entry arg="true" endPc="268450258" name="dc" stackId="1" startPc="268449912"/>
-        <entry arg="true" endPc="268450258" name="steps" stackId="2" startPc="268449912"/>
-        <entry arg="true" endPc="268450258" name="goal" stackId="3" startPc="268449912"/>
-        <entry endPc="268450257" name="y" stackId="4" startPc="268449915"/>
-        <entry endPc="268450257" name="barX" stackId="5" startPc="268449915"/>
-        <entry endPc="268450257" name="barW" stackId="6" startPc="268449915"/>
-        <entry endPc="268450257" name="barH" stackId="7" startPc="268449915"/>
-        <entry endPc="268450257" name="progress" stackId="8" startPc="268449915"/>
-        <entry endPc="268450257" name="fillW" stackId="9" startPc="268449915"/>
-        <entry endPc="268450257" name="half" stackId="10" startPc="268449915"/>
-        <entry endPc="268450306" name="km" stackId="1" startPc="268450277"/>
-        <entry arg="true" endPc="268450555" name="dc" stackId="1" startPc="268450307"/>
-        <entry endPc="268450554" name="info" stackId="2" startPc="268450310"/>
-        <entry endPc="268450554" name="clock" stackId="3" startPc="268450310"/>
-        <entry endPc="268450554" name="dateInfo" stackId="4" startPc="268450310"/>
-        <entry endPc="268450554" name="current" stackId="5" startPc="268450310"/>
-        <entry endPc="268450554" name="steps" stackId="6" startPc="268450310"/>
-        <entry endPc="268450554" name="stepGoal" stackId="7" startPc="268450310"/>
-        <entry arg="true" endPc="268450983" name="dc" stackId="1" startPc="268450556"/>
-        <entry arg="true" endPc="268450983" name="clock" stackId="2" startPc="268450556"/>
-        <entry endPc="268450982" name="hour" stackId="3" startPc="268450559"/>
-        <entry endPc="268450982" name="hourStr" stackId="4" startPc="268450559"/>
-        <entry endPc="268450982" name="minStr" stackId="5" startPc="268450559"/>
-        <entry endPc="268450982" name="digitW" stackId="6" startPc="268450559"/>
-        <entry endPc="268450982" name="digitH" stackId="7" startPc="268450559"/>
-        <entry endPc="268450982" name="spacing" stackId="8" startPc="268450559"/>
-        <entry endPc="268450982" name="totalW" stackId="9" startPc="268450559"/>
-        <entry endPc="268450982" name="startX" stackId="10" startPc="268450559"/>
-        <entry endPc="268450982" name="yPos" stackId="11" startPc="268450559"/>
-        <entry endPc="268450982" name="colonX" stackId="12" startPc="268450559"/>
-        <entry arg="true" endPc="268451551" name="dc" stackId="1" startPc="268450984"/>
-        <entry endPc="268451551" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268450995"/>
-        <entry endPc="268451551" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268450995"/>
-        <entry endPc="268451551" name="rez_cmp_local_text_DateLabel" stackId="4" startPc="268450995"/>
-        <entry endPc="268451551" name="rez_cmp_local_text_1193959466" stackId="5" startPc="268450995"/>
-        <entry endPc="268451551" name="rez_cmp_local_text_BatteryLabel" stackId="6" startPc="268450995"/>
-        <entry endPc="268451551" name="rez_cmp_local_text_1139614796" stackId="7" startPc="268450995"/>
-        <entry endPc="268451551" name="rez_cmp_local_text_StepsLabel" stackId="8" startPc="268450995"/>
+        <entry arg="true" endPc="268447215" name="km" stackId="1" startPc="268447170"/>
+        <entry endPc="268447251" name="km" stackId="1" startPc="268447219"/>
+        <entry arg="true" endPc="268447353" name="dc" stackId="1" startPc="268447252"/>
+        <entry arg="true" endPc="268447353" name="x" stackId="2" startPc="268447252"/>
+        <entry arg="true" endPc="268447353" name="y" stackId="3" startPc="268447252"/>
+        <entry arg="true" endPc="268447353" name="height" stackId="4" startPc="268447252"/>
+        <entry arg="true" endPc="268447353" name="second" stackId="5" startPc="268447252"/>
+        <entry endPc="268447352" name="segmentH" stackId="6" startPc="268447255"/>
+        <entry endPc="268447352" name="filled" stackId="7" startPc="268447255"/>
+        <entry endPc="268447352" name="yy" stackId="8" startPc="268447286"/>
+        <entry endPc="268447453" name="history" stackId="1" startPc="268447357"/>
+        <entry endPc="268447453" name="cm" stackId="2" startPc="268447357"/>
+        <entry endPc="268447439" name="i" stackId="3" startPc="268447399"/>
+        <entry endPc="268447429" name="day" stackId="4" startPc="268447399"/>
+        <entry arg="true" endPc="268447515" name="dc" stackId="1" startPc="268447454"/>
+        <entry arg="true" endPc="268447515" name="x" stackId="2" startPc="268447454"/>
+        <entry arg="true" endPc="268447515" name="y" stackId="3" startPc="268447454"/>
+        <entry arg="true" endPc="268447686" name="dc" stackId="1" startPc="268447516"/>
+        <entry arg="true" endPc="268447686" name="dateInfo" stackId="2" startPc="268447516"/>
+        <entry arg="true" endPc="268447686" name="humidity" stackId="3" startPc="268447516"/>
+        <entry endPc="268447685" name="dow" stackId="4" startPc="268447519"/>
+        <entry endPc="268447685" name="dateStr" stackId="5" startPc="268447519"/>
+        <entry endPc="268447685" name="humStr" stackId="6" startPc="268447519"/>
+        <entry arg="true" endPc="268447713" name="id" stackId="1" startPc="268447700"/>
+        <entry arg="true" endPc="268447856" name="dc" stackId="1" startPc="268447714"/>
+        <entry arg="true" endPc="268447954" name="current" stackId="1" startPc="268447857"/>
+        <entry arg="true" endPc="268448179" name="dc" stackId="1" startPc="268447955"/>
+        <entry arg="true" endPc="268448179" name="current" stackId="2" startPc="268447955"/>
+        <entry endPc="268448178" name="line1" stackId="3" startPc="268447958"/>
+        <entry endPc="268448178" name="line2" stackId="4" startPc="268447958"/>
+        <entry endPc="268448118" name="temp" stackId="5" startPc="268447978"/>
+        <entry endPc="268448118" name="feels" stackId="6" startPc="268447978"/>
+        <entry endPc="268448118" name="condition" stackId="7" startPc="268447978"/>
+        <entry arg="true" endPc="268448650" name="digit" stackId="1" startPc="268448180"/>
+        <entry arg="true" endPc="268448650" name="segment" stackId="2" startPc="268448180"/>
+        <entry arg="true" endPc="268448786" name="dc" stackId="1" startPc="268448651"/>
+        <entry arg="true" endPc="268448786" name="x" stackId="2" startPc="268448651"/>
+        <entry arg="true" endPc="268448786" name="y" stackId="3" startPc="268448651"/>
+        <entry arg="true" endPc="268449016" name="dc" stackId="1" startPc="268448787"/>
+        <entry arg="true" endPc="268449016" name="x" stackId="2" startPc="268448787"/>
+        <entry arg="true" endPc="268449016" name="y" stackId="3" startPc="268448787"/>
+        <entry arg="true" endPc="268449016" name="w" stackId="4" startPc="268448787"/>
+        <entry arg="true" endPc="268449016" name="h" stackId="5" startPc="268448787"/>
+        <entry arg="true" endPc="268449016" name="color" stackId="6" startPc="268448787"/>
+        <entry endPc="268449015" name="xx" stackId="7" startPc="268448790"/>
+        <entry endPc="268449015" name="yy" stackId="8" startPc="268448790"/>
+        <entry endPc="268449015" name="offset" stackId="9" startPc="268448790"/>
+        <entry endPc="268449133" name="iterator" stackId="1" startPc="268449020"/>
+        <entry endPc="268449133" name="sample" stackId="2" startPc="268449020"/>
+        <entry arg="true" endPc="268449368" name="day" stackId="1" startPc="268449134"/>
+        <entry endPc="268449368" name="upper" stackId="2" startPc="268449137"/>
+        <entry arg="true" endPc="268449489" name="dc" stackId="1" startPc="268449369"/>
+        <entry arg="true" endPc="268449592" name="complicationType" stackId="1" startPc="268449490"/>
+        <entry endPc="268449592" name="complication" stackId="2" startPc="268449493"/>
+        <entry arg="true" endPc="268449635" name="current" stackId="1" startPc="268449593"/>
+        <entry arg="true" endPc="268450089" name="dc" stackId="1" startPc="268449636"/>
+        <entry arg="true" endPc="268450089" name="x" stackId="2" startPc="268449636"/>
+        <entry arg="true" endPc="268450089" name="y" stackId="3" startPc="268449636"/>
+        <entry arg="true" endPc="268450089" name="w" stackId="4" startPc="268449636"/>
+        <entry arg="true" endPc="268450089" name="h" stackId="5" startPc="268449636"/>
+        <entry arg="true" endPc="268450089" name="digit" stackId="6" startPc="268449636"/>
+        <entry arg="true" endPc="268450089" name="color" stackId="7" startPc="268449636"/>
+        <entry endPc="268450088" name="th" stackId="8" startPc="268449639"/>
+        <entry endPc="268450088" name="midY" stackId="9" startPc="268449639"/>
+        <entry endPc="268450088" name="lowerY" stackId="10" startPc="268449639"/>
+        <entry endPc="268450088" name="lowerH" stackId="11" startPc="268449639"/>
+        <entry arg="true" endPc="268450280" name="dc" stackId="1" startPc="268450090"/>
+        <entry arg="true" endPc="268450280" name="hrVal" stackId="2" startPc="268450090"/>
+        <entry endPc="268450279" name="labels" stackId="3" startPc="268450093"/>
+        <entry endPc="268450279" name="values" stackId="4" startPc="268450093"/>
+        <entry endPc="268450279" name="positions" stackId="5" startPc="268450093"/>
+        <entry endPc="268450279" name="i" stackId="6" startPc="268450167"/>
+        <entry endPc="268450369" name="km" stackId="1" startPc="268450337"/>
+        <entry arg="true" endPc="268450709" name="dc" stackId="1" startPc="268450370"/>
+        <entry arg="true" endPc="268450709" name="clock" stackId="2" startPc="268450370"/>
+        <entry endPc="268450708" name="hour" stackId="3" startPc="268450373"/>
+        <entry endPc="268450708" name="y" stackId="4" startPc="268450373"/>
+        <entry endPc="268450708" name="digitW" stackId="5" startPc="268450373"/>
+        <entry endPc="268450708" name="digitH" stackId="6" startPc="268450373"/>
+        <entry endPc="268450708" name="gap" stackId="7" startPc="268450373"/>
+        <entry endPc="268450708" name="colonGap" stackId="8" startPc="268450373"/>
+        <entry endPc="268450708" name="startX" stackId="9" startPc="268450373"/>
+        <entry endPc="268450708" name="min" stackId="10" startPc="268450373"/>
+        <entry arg="true" endPc="268450790" name="dc" stackId="1" startPc="268450710"/>
+        <entry arg="true" endPc="268450790" name="x" stackId="2" startPc="268450710"/>
+        <entry arg="true" endPc="268450790" name="y" stackId="3" startPc="268450710"/>
+        <entry arg="true" endPc="268450953" name="dc" stackId="1" startPc="268450791"/>
+        <entry arg="true" endPc="268450953" name="battery" stackId="2" startPc="268450791"/>
+        <entry endPc="268450952" name="x" stackId="3" startPc="268450794"/>
+        <entry endPc="268450952" name="y" stackId="4" startPc="268450794"/>
+        <entry arg="true" endPc="268451015" name="dc" stackId="1" startPc="268450954"/>
+        <entry arg="true" endPc="268451015" name="steps" stackId="2" startPc="268450954"/>
+        <entry endPc="268451063" name="km" stackId="1" startPc="268451034"/>
+        <entry arg="true" endPc="268451291" name="dc" stackId="1" startPc="268451064"/>
+        <entry endPc="268451290" name="info" stackId="2" startPc="268451067"/>
+        <entry endPc="268451290" name="clock" stackId="3" startPc="268451067"/>
+        <entry endPc="268451290" name="dateInfo" stackId="4" startPc="268451067"/>
+        <entry endPc="268451290" name="current" stackId="5" startPc="268451067"/>
+        <entry endPc="268451290" name="steps" stackId="6" startPc="268451067"/>
+        <entry arg="true" endPc="268451859" name="dc" stackId="1" startPc="268451292"/>
+        <entry endPc="268451859" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268451303"/>
+        <entry endPc="268451859" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268451303"/>
+        <entry endPc="268451859" name="rez_cmp_local_text_DateLabel" stackId="4" startPc="268451303"/>
+        <entry endPc="268451859" name="rez_cmp_local_text_1193959466" stackId="5" startPc="268451303"/>
+        <entry endPc="268451859" name="rez_cmp_local_text_BatteryLabel" stackId="6" startPc="268451303"/>
+        <entry endPc="268451859" name="rez_cmp_local_text_1139614796" stackId="7" startPc="268451303"/>
+        <entry endPc="268451859" name="rez_cmp_local_text_StepsLabel" stackId="8" startPc="268451303"/>
     </localVars>
     <deviceInfo deviceVersion="45fe3cbb0de8ea0a70e12628d2697915f1272301" partNumber="006-B3907-00"/>
     <annotations>
@@ -1475,9 +1482,9 @@
         <dataEntry label="globals/Rez" offset="753" parentId="globals" symbolId="Rez" type="module"/>
         <dataEntry label="globals/Fenix7XVibeFaceView" offset="806" parentId="globals" symbolId="Fenix7XVibeFaceView" type="class"/>
         <dataEntry label="globals/SegmentWeekFaceView" offset="1255" parentId="globals" symbolId="SegmentWeekFaceView" type="class"/>
-        <dataEntry label="globals/Rez/Drawables" offset="1632" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="1667" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="1702" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1659" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1694" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1729" parentId="Rez" symbolId="Strings" type="module"/>
     </dataEntryOffsetMappings>
     <functions>
         <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="Fenix7XVibeFaceViewRefined" startPc="268435460">
@@ -1931,53 +1938,52 @@
             <param id="info"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268447227" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;formatDistanceKm&gt;" parent="SegmentWeekFaceView" startPc="268447170">
+        <functionEntry accessMode="private" endPc="268447215" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;formatDistanceKm&gt;" parent="SegmentWeekFaceView" startPc="268447170">
             <param id="km"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268447354" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSecondsBar&gt;" parent="SegmentWeekFaceView" startPc="268447228">
+        <functionEntry accessMode="private" endPc="268447251" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRunWeekDistanceLabel&gt;" parent="SegmentWeekFaceView" startPc="268447216">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268447353" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSecondsBar&gt;" parent="SegmentWeekFaceView" startPc="268447252">
             <param id="dc"/>
             <param id="x"/>
             <param id="y"/>
             <param id="height"/>
-            <param id="secVal"/>
+            <param id="second"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268447454" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;" parent="SegmentWeekFaceView" startPc="268447355">
+        <functionEntry accessMode="private" endPc="268447453" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;getRollingActivityDistanceKm&gt;" parent="SegmentWeekFaceView" startPc="268447354">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268447613" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawDateRow&gt;" parent="SegmentWeekFaceView" startPc="268447455">
+        <functionEntry accessMode="private" endPc="268447515" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawColon&gt;" parent="SegmentWeekFaceView" startPc="268447454">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268447686" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawDateRow&gt;" parent="SegmentWeekFaceView" startPc="268447516">
             <param id="dc"/>
             <param id="dateInfo"/>
             <param id="humidity"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268447626" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyBikeDistanceKm&gt;" parent="SegmentWeekFaceView" startPc="268447614">
+        <functionEntry accessMode="private" endPc="268447699" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyBikeDistanceKm&gt;" parent="SegmentWeekFaceView" startPc="268447687">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268447640" name="onComplicationChange" parent="SegmentWeekFaceView" startPc="268447627">
+        <functionEntry accessMode="public" endPc="268447713" name="onComplicationChange" parent="SegmentWeekFaceView" startPc="268447700">
             <param id="id"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268447738" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;getFeelsLikeLabel&gt;" parent="SegmentWeekFaceView" startPc="268447641">
+        <functionEntry accessMode="private" endPc="268447856" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawTopAstronomy&gt;" parent="SegmentWeekFaceView" startPc="268447714">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268447954" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;getFeelsLikeLabel&gt;" parent="SegmentWeekFaceView" startPc="268447857">
             <param id="current"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268447785" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;segmentIsOn&gt;" parent="SegmentWeekFaceView" startPc="268447739">
-            <param id="segments"/>
-            <param id="idx"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268448254" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawSevenSegDigit&gt;" parent="SegmentWeekFaceView" startPc="268447786">
-            <param id="dc"/>
-            <param id="x"/>
-            <param id="y"/>
-            <param id="w"/>
-            <param id="h"/>
-            <param id="digit"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268448517" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;" parent="SegmentWeekFaceView" startPc="268448255">
+        <functionEntry accessMode="private" endPc="268448179" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawWeatherRow&gt;" parent="SegmentWeekFaceView" startPc="268447955">
             <param id="dc"/>
             <param id="current"/>
             <documentation/>
@@ -1985,14 +1991,24 @@
         <functionEntry accessMode="public" name="onHide" parent="SegmentWeekFaceView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268448525" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;getDewPointDeltaLabel&gt;" parent="SegmentWeekFaceView" startPc="268448518">
-            <param id="current"/>
+        <functionEntry accessMode="private" endPc="268448650" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;isSegmentOn&gt;" parent="SegmentWeekFaceView" startPc="268448180">
+            <param id="digit"/>
+            <param id="segment"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268448661" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawFootIcon&gt;" parent="SegmentWeekFaceView" startPc="268448526">
+        <functionEntry accessMode="private" endPc="268448786" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawFootIcon&gt;" parent="SegmentWeekFaceView" startPc="268448651">
             <param id="dc"/>
             <param id="x"/>
             <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268449016" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;fillMosaicSegment&gt;" parent="SegmentWeekFaceView" startPc="268448787">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <param id="w"/>
+            <param id="h"/>
+            <param id="color"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="onExitSleep" parent="SegmentWeekFaceView">
@@ -2001,77 +2017,81 @@
         <functionEntry accessMode="public" name="onShow" parent="SegmentWeekFaceView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268448778" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;" parent="SegmentWeekFaceView" startPc="268448662">
+        <functionEntry accessMode="private" endPc="268449133" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHeartRateValue&gt;" parent="SegmentWeekFaceView" startPc="268449017">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268449013" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;" parent="SegmentWeekFaceView" startPc="268448779">
+        <functionEntry accessMode="private" endPc="268449368" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;weekdayShort&gt;" parent="SegmentWeekFaceView" startPc="268449134">
             <param id="day"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268449134" name="onLayout" parent="SegmentWeekFaceView" startPc="268449014">
+        <functionEntry accessMode="public" endPc="268449489" name="onLayout" parent="SegmentWeekFaceView" startPc="268449369">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268449237" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;getComplicationDistanceKm&gt;" parent="SegmentWeekFaceView" startPc="268449135">
+        <functionEntry accessMode="private" endPc="268449592" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;getComplicationDistanceKm&gt;" parent="SegmentWeekFaceView" startPc="268449490">
             <param id="complicationType"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268449280" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHumidity&gt;" parent="SegmentWeekFaceView" startPc="268449238">
+        <functionEntry accessMode="private" endPc="268449635" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;getHumidity&gt;" parent="SegmentWeekFaceView" startPc="268449593">
             <param id="current"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268449485" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;getSegmentsForDigit&gt;" parent="SegmentWeekFaceView" startPc="268449281">
-            <param id="digit"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268449695" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;" parent="SegmentWeekFaceView" startPc="268449486">
-            <param id="dc"/>
-            <param id="runKm"/>
-            <param id="hrVal"/>
-            <param id="bikeKm"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268449748" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;getCurrentWeather&gt;" parent="SegmentWeekFaceView" startPc="268449696">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268449798" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;formatSteps&gt;" parent="SegmentWeekFaceView" startPc="268449749">
-            <param id="steps"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" name="onEnterSleep" parent="SegmentWeekFaceView">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268449911" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawCrossHatch&gt;" parent="SegmentWeekFaceView" startPc="268449799">
+        <functionEntry accessMode="private" endPc="268450089" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMosaicDigit&gt;" parent="SegmentWeekFaceView" startPc="268449636">
             <param id="dc"/>
             <param id="x"/>
             <param id="y"/>
             <param id="w"/>
             <param id="h"/>
-            <param id="spacing"/>
+            <param id="digit"/>
+            <param id="color"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268450258" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;" parent="SegmentWeekFaceView" startPc="268449912">
+        <functionEntry accessMode="private" endPc="268450280" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMetricsRow&gt;" parent="SegmentWeekFaceView" startPc="268450090">
             <param id="dc"/>
-            <param id="steps"/>
-            <param id="goal"/>
+            <param id="hrVal"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268450273" name="initialize" parent="SegmentWeekFaceView" startPc="268450259">
+        <functionEntry accessMode="private" endPc="268450333" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;getCurrentWeather&gt;" parent="SegmentWeekFaceView" startPc="268450281">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268450306" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyRunDistanceKm&gt;" parent="SegmentWeekFaceView" startPc="268450274">
+        <functionEntry accessMode="private" endPc="268450369" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyBikeDistanceLabel&gt;" parent="SegmentWeekFaceView" startPc="268450334">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268450555" name="onUpdate" parent="SegmentWeekFaceView" startPc="268450307">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268450983" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeTime&gt;" parent="SegmentWeekFaceView" startPc="268450556">
+        <functionEntry accessMode="private" endPc="268450709" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawLargeMosaicTime&gt;" parent="SegmentWeekFaceView" startPc="268450370">
             <param id="dc"/>
             <param id="clock"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268451551" name="WatchFace" parent="Layouts" startPc="268450984">
+        <functionEntry accessMode="private" endPc="268450790" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawMoonIcon&gt;" parent="SegmentWeekFaceView" startPc="268450710">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268450953" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawBattery&gt;" parent="SegmentWeekFaceView" startPc="268450791">
+            <param id="dc"/>
+            <param id="battery"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onEnterSleep" parent="SegmentWeekFaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268451015" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;drawStepsRow&gt;" parent="SegmentWeekFaceView" startPc="268450954">
+            <param id="dc"/>
+            <param id="steps"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268451030" name="initialize" parent="SegmentWeekFaceView" startPc="268451016">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268451063" name="&lt;globals/SegmentWeekFaceView/&lt;&gt;getWeeklyRunDistanceKm&gt;" parent="SegmentWeekFaceView" startPc="268451031">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268451291" name="onUpdate" parent="SegmentWeekFaceView" startPc="268451064">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268451859" name="WatchFace" parent="Layouts" startPc="268451292">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
