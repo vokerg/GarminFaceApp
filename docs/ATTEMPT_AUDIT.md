@@ -37,3 +37,7 @@ Generated `.prg`, `.mir`, `gen` and debug XML files from the original attempt ar
 ## Correction after deeper API review
 
 The original v6 comment that no public on-device API exposes sport-specific activity totals was too broad, and the first revival inherited that assumption. `UserProfile.getUserActivityHistory()` supplies sport, start time and distance for saved activities. The updated implementation uses this API for trailing-168-hour run/bike/swim totals. This does not change the audit finding that the original RUN value was aggregate ActivityMonitor distance; that implementation was still incorrect. Native history completeness and device-specific timestamps need physical-watch verification.
+
+## Branch closeout addendum
+
+The initial four-commit audit covered the old main branch. A later all-branch check also inspected May 14–21 experiments on `serious-fenix-layout-v7` and `agentic-segment-week-face`. These add refined and mosaic/segment renderers, including calendar-week complications and an aggregate-distance fallback. They are superseded alternatives, not current requirements. Their source/resources are archived under `docs/history/may-experiments/`, exact tips are tagged, and their history is incorporated while retaining the accepted current implementation. See that directory's README for the explicit merge strategy.

@@ -69,3 +69,7 @@ Repeated `MTP extended association type 0x00000001 encountered` messages appeare
 Confirm the face starts after selection, has no DEMO marker, and displays real time/battery/steps/HR. Verify rolling sport totals against known saved sessions, particularly Edge/indoor rides, pool/open-water swims and multisport legs. Validate actual timestamp semantics and native history completeness on firmware 2718. Test press-and-hold destinations, refresh after saving an activity, sleep/wake behavior, actual MIP readability and battery cost. Do not claim these are proven by simulator tests or the verified USB copy.
 
 If it shows an IQ error, reconnect in MTP, obtain `GARMIN/Apps/LOGS/CIQ_LOG.YAML`, and diagnose using the local build's debug information. Do not reinstall SDKs or redesign the face before inspecting the actual error.
+
+## Repository closeout
+
+All current implementation and installation notes are on main. The superseded May experiment branches were reviewed and preserved through `archive/may-*` tags and source/resource snapshots under `docs/history/may-experiments/`. Their history was incorporated with an explicit ours-strategy merge so the accepted active implementation stays intact. Temporary branches can be removed after verifying their tips are ancestors of main. Do not resurrect the archived alternative renderers or aggregate-distance fallbacks as missing work.
