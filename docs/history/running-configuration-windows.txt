@@ -1,0 +1,24 @@
+From PowerShell:
+
+cd C:\repos\face-attempt\Fenix7XVibeFace
+
+$Sdk = "c:\Users\voker\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-9.1.0-2026-03-09-6a872a80b"
+
+Start-Process `
+  -FilePath "$Sdk\bin\simulator.exe" `
+  -WorkingDirectory "$Sdk\bin"
+Wait for the Garmin CIQ Simulator window to open, then run:
+
+& "$Sdk\bin\monkeydo.bat" `
+  "C:\repos\face-attempt\Fenix7XVibeFace\bin\Fenix7XVibeFace.prg" `
+  fenix7x
+Important bit: use fenix7x, not fenix7x_sim, when running with monkeydo.
+
+If you changed code and need to rebuild first:
+
+& "$Sdk\bin\monkeyc.bat" `
+  -o "bin\Fenix7XVibeFace.prg" `
+  -f "C:\repos\face-attempt\Fenix7XVibeFace\monkey.jungle" `
+  -y "C:\repos\face-attempt\developer_key" `
+  -d fenix7x `
+  -w

@@ -1,0 +1,94 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+CIQ_DATA="${CIQ_DATA:-$HOME/Library/Application Support/Garmin/ConnectIQ}"
+if [[ -z "${CIQ_SDK:-}" && -f "$CIQ_DATA/current-sdk.cfg" ]]; then
+    CIQ_SDK="$(tr -d '\r\n' < "$CIQ_DATA/current-sdk.cfg")"
+fi
+CIQ_SDK="${CIQ_SDK:-}"
+DEVICE="${CIQ_DEVICE:-fenix7x}"
+KEY="${CIQ_KEY:-$HOME/.config/garmin/developer_key.der}"
+COMMAND="${1:-doctor}"
+
+sdk_required() {
+    if [[ ! -x "$CIQ_SDK/bin/monkeyc" ]]; then
+        echo "No SDK selected. Install with SDK Manager, or set CIQ_SDK." >&2
+        exit 1
+    fi
+}
+
+case "$COMMAND" in
+    doctor)
+        sdk_required
+        "$CIQ_SDK/bin/monkeyc" --version
+        java -version
+        echo "SDK: $CIQ_SDK"
+        echo "Device: $DEVICE"
+        if [[ -d "$CIQ_DATA/Devices/$DEVICE" ]]; then
+            echo "Device definition: installed"
+        else
+            echo "Device definition: MISSING — sign in to SDK Manager and download $DEVICE"
+            exit 1
+        fi
+        if [[ -f "$KEY" ]]; then
+            echo "Signing key: present (outside repository)"
+        else
+            echo "Signing key: MISSING — run ./scripts/ciq keygen"
+            exit 1
+        fi
+        ;;
+    keygen)
+        if [[ -e "$KEY" ]]; then
+            echo "Existing key retained: $KEY"
+            exit 0
+        fi
+        mkdir -p "$(dirname "$KEY")"
+        umask 077
+        openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:4096 -outform DER -out "$KEY"
+        echo "Created local development key: $KEY"
+        ;;
+    build|preview-build)
+        sdk_required
+        if [[ ! -f "$KEY" ]]; then
+            echo "Run ./scripts/ciq keygen first." >&2
+            exit 1
+        fi
+        mkdir -p "$ROOT/build"
+        cd "$ROOT"
+        JUNGLE=monkey.jungle
+        OUTPUT=Fenix7XVibeFace
+        if [[ "$COMMAND" == preview-build ]]; then
+            JUNGLE=preview.jungle
+            OUTPUT=EmberPreview
+            python3 "$ROOT/scripts/preview-fixture.py" "${2:-populated}"
+        fi
+        "$CIQ_SDK/bin/monkeyc" -f "$JUNGLE" -d "$DEVICE" -y "$KEY" -o "build/$OUTPUT.prg" -w
+        ;;
+    simulator)
+        sdk_required
+        "$CIQ_SDK/bin/connectiq"
+        ;;
+    test)
+        sdk_required
+        mkdir -p "$ROOT/build"
+        cd "$ROOT"
+        "$CIQ_SDK/bin/monkeyc" -f test.jungle -d "$DEVICE" -y "$KEY" -o build/EmberTests.prg -t -w
+        # SDK 9.3 monkeydo can exit 1 even when its test report says PASSED.
+        # Require an explicit nonempty passing report; preserve output for review.
+        "$CIQ_SDK/bin/monkeydo" "$ROOT/build/EmberTests.prg" "$DEVICE" -t > build/tests.log 2>&1 || true
+        cat build/tests.log
+        rg -q '^PASSED \(passed=[1-9][0-9]*, failed=0, errors=0\)$' build/tests.log
+        ;;
+    run|preview-run)
+        sdk_required
+        OUTPUT=Fenix7XVibeFace
+        if [[ "$COMMAND" == preview-run ]]; then OUTPUT=EmberPreview; fi
+        if [[ ! -f "$ROOT/build/$OUTPUT.prg" ]]; then
+            echo "Build $OUTPUT first." >&2
+            exit 1
+        fi
+        "$CIQ_SDK/bin/monkeydo" "$ROOT/build/$OUTPUT.prg" "$DEVICE"
+        ;;
+    *) echo "Usage: ./scripts/ciq {doctor|keygen|build|simulator|run|preview-build|preview-run|test}" >&2; exit 2 ;;
+esac

@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "CIQ: Build fēnix 7X",
+      "type": "shell",
+      "command": "./scripts/ciq build",
+      "group": {"kind": "build", "isDefault": true},
+      "problemMatcher": []
+    },
+    {"label": "CIQ: Start simulator", "type": "shell", "command": "./scripts/ciq simulator", "problemMatcher": []},
+    {"label": "CIQ: Run face", "type": "shell", "command": "./scripts/ciq run", "problemMatcher": []}
+  ]
+}

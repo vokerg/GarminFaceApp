@@ -1,0 +1,13 @@
+.DS_Store
+.local/
+build/
+bin/
+gen/
+mir/
+internal-mir/
+*.prg
+*.prg.debug.xml
+*.iq
+*.der
+*.pem
+developer_key*
