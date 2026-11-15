@@ -31,3 +31,7 @@ Sources: [Garmin SDK installation](https://developer.garmin.com/connect-iq/sdk/)
 ## Rolling sports update
 
 The live adapter now reads UserProfile saved activity history for rolling run/bike/swim totals; the manifest includes the native UserProfile permission. Live and preview builds pass without warnings, the live adapter was launched and inspected (zero totals for the simulator's empty history), and two Monkey C aggregation tests pass. Current visual evidence and remaining physical-watch checks are in `docs/reviews/2026-11-15-triathlon-bezel.md`.
+
+## First physical sideload — verified transfer
+
+Installed Homebrew libmtp 1.1.23/libusb 1.0.30, switched the watch itself from Garmin USB mode to MTP, released Garmin Express's background-service lock, and copied the live build to `GARMIN/Apps/Ember.prg`. Read-back compared byte for byte and matched SHA-256. Physical watch selection/startup and training-data/shortcut behavior remain awaiting owner confirmation. Exact commands and failure diagnoses are saved in `docs/AGENT_HANDOFF.md`.

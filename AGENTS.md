@@ -1,6 +1,6 @@
 # Working on this watch face
 
-Read `docs/PROJECT_BIBLE.md`, `docs/ATTEMPT_AUDIT.md` and `docs/SETUP.md` first. The current owner's brief supersedes the historical future-agent prompt in the archived Windows README.
+Read `docs/AGENT_HANDOFF.md`, `docs/PROJECT_BIBLE.md`, `docs/ATTEMPT_AUDIT.md` and `docs/SETUP.md` first. The handoff records the successful physical USB/MTP transfer and current owner decisions; reuse that procedure before trying new tools. The current owner's brief supersedes the historical future-agent prompt in the archived Windows README.
 
 - Use `./scripts/ciq` for doctor/build/simulator/run. Keep signing keys outside Git.
 - Target the owner-confirmed fēnix 7X. Treat 280×280 round MIP constraints as real design constraints.

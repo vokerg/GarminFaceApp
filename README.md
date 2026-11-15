@@ -2,6 +2,8 @@
 
 A personal Garmin Connect IQ watch face. Current device target: **fēnix 7X**, round 280×280 MIP, 64 colors. A first replacement renderer is implemented and runs in the Garmin simulator. The original v6 source is preserved under `docs/history/`; its actual simulator baseline and the candidate captures are under `docs/reviews/`.
 
+Future agents should first read [the installation and decision handoff](docs/AGENT_HANDOFF.md).
+
 Start with [the project bible](docs/PROJECT_BIBLE.md), [the previous-attempt audit](docs/ATTEMPT_AUDIT.md), and [setup status](docs/SETUP.md).
 
 ## macOS development

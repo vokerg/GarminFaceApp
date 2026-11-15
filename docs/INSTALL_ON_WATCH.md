@@ -2,6 +2,8 @@
 
 Use the live device build: `build/Fenix7XVibeFace.prg`. It is compiled for `fenix7x` and uses actual watch data. Do not copy `EmberPreview.prg` or `EmberTests.prg`.
 
+**Verified installation:** the face was copied to this watch as `GARMIN/Apps/Ember.prg` on 2026-11-15 with Homebrew libmtp and a matching byte-for-byte read-back. OpenMTP was not needed. See [the agent handoff](AGENT_HANDOFF.md) for the exact proven CLI recipe, Express background-service contention and remaining on-watch acceptance checks. The GUI procedure below is an alternative, not the method used for that successful transfer.
+
 ## First install
 
 1. Connect the watch to the Mac using a USB data cable. Unlock/accept file transfer on the watch if prompted. If its USB setting offers MTP and Garmin mode, use MTP for file transfer.
