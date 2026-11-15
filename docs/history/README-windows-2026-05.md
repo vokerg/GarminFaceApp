@@ -445,5 +445,5 @@ Working launch command:
 
 ```powershell
 & "$Sdk\bin\monkeydo.bat" "C:\repos\face-attempt\Fenix7XVibeFace\bin\Fenix7XVibeFace.prg" fenix7x
-```#   G a r m i n F a c e A p p  
- 
+```
+# GarminFaceApp

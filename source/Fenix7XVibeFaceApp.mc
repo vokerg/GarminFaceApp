@@ -18,7 +18,7 @@ class Fenix7XVibeFaceApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as [Views] or [Views, InputDelegates] {
-        return [ new Fenix7XVibeFaceView() ];
+        return [ new Fenix7XVibeFaceView(), new FaceShortcuts() ];
     }
 
 }

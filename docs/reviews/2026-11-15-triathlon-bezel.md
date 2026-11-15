@@ -49,3 +49,13 @@ Live and populated-preview builds pass without warnings. The populated render wa
 The owner clarified that RUN should be prominent, rather than BIKE. The bottom-center label/value now show running kilometers, with cycling on the lower-left curve and swimming on the lower-right. `triathlon-run-focus.png` is the current populated simulator export; `triathlon-bike-focus.png` records the intermediate attempt. Builds and both semantic tests pass after this change; the current populated native and enlarged render were inspected.
 
 ![Current running-focused design](triathlon-run-focus.png)
+
+## Final padding and interaction fixes
+
+The owner correctly observed step text crossing the smaller dial. Both frames now have 36px radii, centers (92,172)/(188,172), inward label/value offsets and a measured width limit for step text. Inspected populated simulator export: `triathlon-run-padded.png`. This is the current design; earlier images remain evidence of the actual iterations, not accepted final padding.
+
+![Current padded design — synthetic preview](triathlon-run-padded.png)
+
+DEMO appears only on the separate synthetic preview build. The live build has no marker.
+
+Added touch-and-hold hit regions for native battery/date/steps/HR and run/bike history complications. Swim remains display-only because no matching native complication exists. The native run/bike destinations may use calendar-week views; they do not change our trailing-168-hour calculation. All three tests pass, including a new hit-region test. A simulator long-press attempt did not visibly open a native app; destination behavior remains unverified until on-device testing. Live/preview builds pass without warnings.

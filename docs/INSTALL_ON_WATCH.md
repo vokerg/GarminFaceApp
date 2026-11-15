@@ -22,3 +22,7 @@ Confirm time, battery, steps and HR. Compare RUN/BIKE/SWIM against activities **
 If the watch shows an IQ error, copy `GARMIN/APPS/LOGS/CIQ_LOG.YAML` back to the Mac for diagnosis. A PRG that renders in the simulator is not a substitute for this first physical-watch check.
 
 Sources: [Garmin first-app/sideload workflow](https://developer.garmin.com/connect-iq/connect-iq-basics/your-first-app/), [Garmin MTP devices](https://support.garmin.com/en-US/?faq=CZqibgTHMb0dAYEaj2UiU7), [Garmin Mac watch recognition](https://support.garmin.com/en-US/?faq=zUa4z1zKNn39o6JiqZDHNA), [fēnix 7 watch-face settings](https://www8.garmin.com/manuals/webhelp/GUID-C001C335-A8EC-4A41-AB0E-BAC434259F92/EN-GB/GUID-A4EA51C3-D0B2-48E3-807A-768C6F07D7BA.html), [OpenMTP official repository](https://github.com/ganeshrvel/openmtp).
+
+## Press-and-hold shortcuts
+
+With touchscreen enabled, hold battery, date, steps or HR to request Garmin's corresponding native screen. Hold RUN or BIKE to request the built-in history view. Those built-in views may use a calendar-week period even though this face displays trailing 168 hours. SWIM is display-only. Short taps are left to the system. Native providers and behavior during activity recording depend on the watch firmware and require a first on-watch test; a rejected launch leaves the face usable.

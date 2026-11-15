@@ -46,3 +46,5 @@ Battery percentage, time/date, today's steps and heart rate; BIKE and SWIM follo
 ```
 
 To install on the physical watch, follow [the sideloading guide](docs/INSTALL_ON_WATCH.md). Copy only the live build, never the DEMO preview or test binary.
+
+Press and hold battery/date/steps/HR/RUN/BIKE for native Garmin shortcuts; swim is display-only. Native destination screens still need verification on the physical watch. The DEMO marker is limited to synthetic preview builds.

@@ -92,16 +92,16 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
     }
 
     private function drawSteps(dc, steps, goal) {
-        var x = 88;
+        var x = 92;
         var y = 172;
         dc.setPenWidth(3);
         dc.setColor(TRACK, Graphics.COLOR_TRANSPARENT);
-        dc.drawArc(x, y, 31, Graphics.ARC_CLOCKWISE, 225, -45);
+        dc.drawArc(x, y, 36, Graphics.ARC_CLOCKWISE, 225, -45);
         if (steps != null && goal != null && goal > 0 && steps > 0) {
             var progress = steps.toFloat() / goal;
             if (progress > 1) { progress = 1.0; }
             dc.setColor(EMBER, Graphics.COLOR_TRANSPARENT);
-            dc.drawArc(x, y, 31, Graphics.ARC_CLOCKWISE, 225, 225 - progress * 270);
+            dc.drawArc(x, y, 36, Graphics.ARC_CLOCKWISE, 225, 225 - progress * 270);
         }
         var label = "--";
         if (steps != null) {
@@ -113,19 +113,21 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
                 label = steps.format("%d");
             }
         }
-        text(dc, x, y - 3, Graphics.FONT_TINY, label, Graphics.COLOR_WHITE);
-        text(dc, x, y + 17, Graphics.FONT_XTINY, "STEPS", GRAY);
+        var valueFont = Graphics.FONT_TINY;
+        if (dc.getTextWidthInPixels(label, valueFont) > 56) { valueFont = Graphics.FONT_XTINY; }
+        text(dc, x, y - 6, valueFont, label, Graphics.COLOR_WHITE);
+        text(dc, x, y + 12, Graphics.FONT_XTINY, "STEPS", GRAY);
     }
 
     private function drawHeartRate(dc, hr) {
-        var x = 192;
+        var x = 188;
         var y = 172;
         // An open frame, not a fabricated HR/180 progress gauge.
         dc.setPenWidth(1);
         dc.setColor(TRACK, Graphics.COLOR_TRANSPARENT);
-        dc.drawArc(x, y, 31, Graphics.ARC_CLOCKWISE, 225, -45);
-        text(dc, x, y - 3, Graphics.FONT_TINY, hr == null ? "--" : hr.format("%d"), Graphics.COLOR_WHITE);
-        text(dc, x, y + 17, Graphics.FONT_XTINY, "BPM", GRAY);
+        dc.drawArc(x, y, 36, Graphics.ARC_CLOCKWISE, 225, -45);
+        text(dc, x, y - 6, Graphics.FONT_TINY, hr == null ? "--" : hr.format("%d"), Graphics.COLOR_WHITE);
+        text(dc, x, y + 12, Graphics.FONT_XTINY, "BPM", GRAY);
     }
 
     function onLayout(dc as Dc) as Void {

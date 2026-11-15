@@ -20,7 +20,7 @@ The useful ideas in the reference are hierarchy, asymmetry, curved geometry and 
 
 The owner liked the first candidate and then specified the actual fields: battery percentage, time, daily steps, rolling last-seven-day run/bike/swim kilometers, plus heart rate if it fits. They suggested placement around the bezel. This is the current brief and supersedes the first candidate's distance/calorie footer.
 
-Current layout: date at y=40, battery at y=62, dominant time at y=103, steps and HR centered at (88,172) and (192,172), radius 31. Bike and swim curve around the lower bezel at radius 113 and angles 215°/325°. The owner requested removing the redundant `7D KM` legend. Its space now holds an upright RUN label at y=214 and a larger running value at y=235; all sport values still mean trailing-168-hour kilometers. Battery retains the outer capacity arc. Calories, daily walking distance, weather and seconds are omitted.
+Current layout: date at y=40, battery at y=62, dominant time at y=103, steps and HR centered at (92,172) and (188,172), radius 36. Bike and swim curve around the lower bezel at radius 113 and angles 215°/325°. The owner requested removing the redundant `7D KM` legend. Its space now holds an upright RUN label at y=214 and a larger running value at y=235; all sport values still mean trailing-168-hour kilometers. Battery retains the outer capacity arc. Calories, daily walking distance, weather and seconds are omitted.
 
 Curved labels use the device's native vector font and radial text API. Prefer the fixed 16px condensed face; a horizontal fallback exists if the font is unavailable. Render long values before changing typography. The source and API expose a font fallback, but the fallback has not been forced and visually validated.
 
@@ -77,3 +77,7 @@ The development environment is verified and the first candidate builds/runs. Ini
 Latest evidence: [triathlon/bezel review](reviews/2026-11-15-triathlon-bezel.md). Two Monkey C semantic tests verify window boundaries, independent sport totals, unsorted input, expiry, missing fields and suspicious timestamps.
 
 Owner refinement: running is the priority sport. The bottom center is RUN; BIKE/SWIM remain on the lower bezel. The cycling-focused intermediate rendering is historical, not the current design.
+
+Final padding fix: values moved to y−6 and labels to y+12 inside the 36px dials. Step values wider than 56px use the smaller native font, keeping them clear of the arc. `triathlon-run-padded.png` is the current populated screenshot.
+
+Press-and-hold shortcuts are implemented through WatchFaceDelegate/Complications for battery, date, steps, HR, RUN and BIKE. RUN/BIKE open Garmin's native history providers, whose views may use calendar-week totals; displayed face values remain trailing 168 hours. There is no native swimming complication in this API, so swim is display-only. Unsupported/provider-blocked launches return false safely. Added ComplicationSubscriber permission. Native app launch destinations require physical-watch verification; simulator coordinate dispatch did not show a native app opening.
