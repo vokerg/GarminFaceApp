@@ -22,7 +22,8 @@ class Fenix7XVibeFaceApp extends Application.AppBase {
     }
 
     function getSettingsView() as [Views] or [Views, InputDelegates] or Null {
-        return [new FaceColorSettings(), new FaceColorSettingsDelegate()];
+        var menu = new FaceCustomizationMenu();
+        return [menu, new FaceCustomizationDelegate(menu)];
     }
 
 }

@@ -10,12 +10,18 @@ CIQ_SDK="${CIQ_SDK:-}"
 DEVICE="${CIQ_DEVICE:-fenix7x}"
 KEY="${CIQ_KEY:-$HOME/.config/garmin/developer_key.der}"
 COMMAND="${1:-doctor}"
+LAYOUT="${CIQ_LAYOUT:-ember}"
 
 sdk_required() {
     if [[ ! -x "$CIQ_SDK/bin/monkeyc" ]]; then
         echo "No SDK selected. Install with SDK Manager, or set CIQ_SDK." >&2
         exit 1
     fi
+}
+
+profile_required() {
+    PROFILE="$(python3 "$ROOT/scripts/concept-profile.py" "$LAYOUT")"
+    PROFILE_PATH=".local/profiles/$LAYOUT"
 }
 
 case "$COMMAND" in
@@ -56,11 +62,12 @@ case "$COMMAND" in
         fi
         mkdir -p "$ROOT/build"
         cd "$ROOT"
-        JUNGLE=monkey.jungle
-        OUTPUT=Fenix7XVibeFace
+        profile_required
+        JUNGLE="$PROFILE_PATH/live.jungle"
+        OUTPUT="$PROFILE"
         if [[ "$COMMAND" == preview-build ]]; then
-            JUNGLE=preview.jungle
-            OUTPUT=EmberPreview
+            JUNGLE="$PROFILE_PATH/preview.jungle"
+            OUTPUT="${PROFILE}Preview"
             python3 "$ROOT/scripts/preview-fixture.py" "${2:-populated}"
         fi
         "$CIQ_SDK/bin/monkeyc" -f "$JUNGLE" -d "$DEVICE" -y "$KEY" -o "build/$OUTPUT.prg" -w
@@ -73,7 +80,8 @@ case "$COMMAND" in
         sdk_required
         mkdir -p "$ROOT/build"
         cd "$ROOT"
-        "$CIQ_SDK/bin/monkeyc" -f test.jungle -d "$DEVICE" -y "$KEY" -o build/EmberTests.prg -t -w
+        profile_required
+        "$CIQ_SDK/bin/monkeyc" -f "$PROFILE_PATH/test.jungle" -d "$DEVICE" -y "$KEY" -o build/EmberTests.prg -t -w
         # SDK 9.3 monkeydo can exit 1 even when its test report says PASSED.
         # Require an explicit nonempty passing report; preserve output for review.
         "$CIQ_SDK/bin/monkeydo" "$ROOT/build/EmberTests.prg" "$DEVICE" -t > build/tests.log 2>&1 || true
@@ -82,8 +90,9 @@ case "$COMMAND" in
         ;;
     run|preview-run)
         sdk_required
-        OUTPUT=Fenix7XVibeFace
-        if [[ "$COMMAND" == preview-run ]]; then OUTPUT=EmberPreview; fi
+        profile_required
+        OUTPUT="$PROFILE"
+        if [[ "$COMMAND" == preview-run ]]; then OUTPUT="${PROFILE}Preview"; fi
         if [[ ! -f "$ROOT/build/$OUTPUT.prg" ]]; then
             echo "Build $OUTPUT first." >&2
             exit 1

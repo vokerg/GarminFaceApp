@@ -1,2 +1,2 @@
 project.manifest = manifest.xml
-base.sourcePath = source;.local/preview
+base.sourcePath = source;profiles/production;.local/preview
