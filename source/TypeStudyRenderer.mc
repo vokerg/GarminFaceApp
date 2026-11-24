@@ -22,9 +22,9 @@ class TypeStudyRenderer extends FaceRenderer {
             text(dc, 140, 135, Graphics.FONT_XTINY, data[:period], _accent);
         }
 
-        text(dc, 140, 159, Graphics.FONT_SMALL, "RUN  " + km(data[:run]), WHITE);
-        text(dc, 82, 187, Graphics.FONT_XTINY, "BIKE " + km(data[:bike]), WHITE);
-        text(dc, 198, 187, Graphics.FONT_XTINY, "SWIM " + km(data[:swim]), WHITE);
+        text(dc, 140, 159, Graphics.FONT_SMALL, sportLabel(SportOrder.PRIMARY) + "  " + sportKm(data, SportOrder.PRIMARY), WHITE);
+        text(dc, 82, 187, Graphics.FONT_XTINY, sportLabel(SportOrder.SECONDARY) + " " + sportKm(data, SportOrder.SECONDARY), WHITE);
+        text(dc, 198, 187, Graphics.FONT_XTINY, sportLabel(SportOrder.TERTIARY) + " " + sportKm(data, SportOrder.TERTIARY), WHITE);
 
         footer(dc, 74, "BAT", battery(data), data[:battery], 100);
         footer(dc, 140, "STEPS", steps(data[:steps]), data[:steps], data[:goal]);

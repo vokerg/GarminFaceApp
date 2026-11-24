@@ -8,11 +8,14 @@ class FaceRenderer {
     protected var _accent as Number = 0;
     protected var _gauge as Number = 0;
 
+    private var _sportOrder as Array<Number> = SportOrder.DEFAULT;
+
     function initialize() {}
 
     function render(dc as Dc, data as Dictionary, layout as Number) as Void {
         _accent = FaceColors.color(FaceColors.ACCENT, layout);
         _gauge = FaceColors.color(FaceColors.RING, layout);
+        _sportOrder = SportOrder.selected();
         dc.setColor(BLACK, BLACK);
         dc.clear();
         draw(dc, data);
@@ -91,7 +94,12 @@ class FaceRenderer {
         return value == null ? "--" : value.format("%d");
     }
 
-    protected function km(meters) {
+    protected function sportLabel(rank as Number) as String {
+        return SportOrder.NAMES[_sportOrder[rank]].toUpper();
+    }
+
+    protected function sportKm(data as Dictionary, rank as Number) as String {
+        var meters = data[SportOrder.METRICS[_sportOrder[rank]]];
         if (meters == null) { return "--"; }
         return (meters / 1000.0).format(meters >= 1000000 ? "%.0f" : "%.1f");
     }

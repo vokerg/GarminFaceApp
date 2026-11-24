@@ -5,9 +5,10 @@ class QuadrantClockRenderer extends FaceRenderer {
     function initialize() { FaceRenderer.initialize(); }
 
     function draw(dc as Dc, data as Dictionary) as Void {
-        text(dc, 93, 40, Graphics.FONT_XTINY, data[:date], WHITE);
-        text(dc, 204, 40, Graphics.FONT_XTINY, "BAT " + battery(data), _accent);
-        bar(dc, 183, 52, 43, data[:battery], 100);
+        text(dc, 92, 40, Graphics.FONT_XTINY, data[:date], WHITE);
+        text(dc, 188, 40, Graphics.FONT_XTINY, "BAT " + battery(data), WHITE);
+        line(dc, 140, 36, 140, 44, _accent);
+        bar(dc, 164, 51, 48, data[:battery], 100);
 
         line(dc, 140, 59, 140, 178, _accent);
         line(dc, 48, 120, 232, 120, _accent);
@@ -22,12 +23,12 @@ class QuadrantClockRenderer extends FaceRenderer {
         bar(dc, 49, 210, 68, data[:steps], data[:goal]);
         bar(dc, 163, 210, 68, data[:hr], data[:maxHr]);
 
-        text(dc, 80, 222, Graphics.FONT_XTINY, "BIKE", _accent);
-        text(dc, 140, 230, Graphics.FONT_XTINY, "RUN", _accent);
-        text(dc, 200, 222, Graphics.FONT_XTINY, "SWIM", _accent);
-        text(dc, 80, 240, Graphics.FONT_TINY, km(data[:bike]), WHITE);
-        text(dc, 140, 251, Graphics.FONT_SMALL, km(data[:run]), WHITE);
-        text(dc, 200, 240, Graphics.FONT_TINY, km(data[:swim]), WHITE);
+        text(dc, 78, 222, Graphics.FONT_XTINY, sportLabel(SportOrder.SECONDARY), _accent);
+        text(dc, 140, 222, Graphics.FONT_XTINY, sportLabel(SportOrder.PRIMARY), _accent);
+        text(dc, 202, 222, Graphics.FONT_XTINY, sportLabel(SportOrder.TERTIARY), _accent);
+        text(dc, 78, 242, Graphics.FONT_XTINY, sportKm(data, SportOrder.SECONDARY), WHITE);
+        fittedText(dc, 140, 242, Graphics.FONT_SMALL, Graphics.FONT_TINY, 58, sportKm(data, SportOrder.PRIMARY), WHITE);
+        text(dc, 202, 242, Graphics.FONT_XTINY, sportKm(data, SportOrder.TERTIARY), WHITE);
     }
 
     private function digits(dc, y, value as String, color) {

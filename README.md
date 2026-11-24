@@ -13,7 +13,7 @@ All images are exports from the Garmin fēnix 7X simulator. DEMO marks synthetic
 
 <table>
   <tr>
-    <td align="center"><img src="docs/reviews/layouts/field-compass.png" alt="Field Compass analog dial" width="240"><br><strong>Field Compass</strong><br>Analog hands above the training readouts</td>
+    <td align="center"><img src="docs/reviews/layouts/field-compass.png" alt="Field Compass analog dial" width="240"><br><strong>Field Compass</strong> · Under review<br>Analog hands above the training readouts</td>
     <td align="center"><img src="docs/reviews/layouts/split-clock.png" alt="Split Clock with stacked time and side gauges" width="240"><br><strong>Split Clock</strong><br>Stacked time beside the daily gauges</td>
   </tr>
   <tr>
@@ -35,6 +35,8 @@ All images are exports from the Garmin fēnix 7X simulator. DEMO marks synthetic
 ## On-watch settings
 
 Open **Customize → Layout** to switch designs. **Accent Color** and **Gauge Color** each offer eight choices and apply across layouts when selected. Each layout has its own defaults.
+
+**Customize → Activity Order** sets the primary, secondary, and tertiary sports across all layouts. Run, Bike, and Swim start in that order. Selecting a sport already in another slot swaps the two. [Activity Order menu](docs/reviews/layouts/activity-order.png) · [Bike as the primary sport](docs/reviews/layouts/track-ring-bike-primary.png)
 
 <table>
   <tr>
@@ -62,6 +64,7 @@ Open **Customize → Layout** to switch designs. **Accent Color** and **Gauge Co
   </tr>
   <tr>
     <td align="center"><img src="docs/reviews/layouts/signal-bars-always-active.png" alt="Signal Bars in Always-Active mode" width="180"><br>Signal Bars in Always-Active mode</td>
+    <td align="center"><img src="docs/reviews/layouts/quadrant-clock-extreme.png" alt="Quadrant Clock at 23:59 with long values" width="180"><br>Quadrant Clock with long values</td>
   </tr>
 </table>
 

@@ -13,6 +13,7 @@ class FaceCustomizationMenu extends WatchUi.Menu2 {
         _accentItem = new WatchUi.MenuItem("Accent Color", null, FaceColors.ACCENT, null);
         _gaugeItem = new WatchUi.MenuItem("Gauge Color", null, FaceColors.RING, null);
         addItem(_layoutItem);
+        addItem(new WatchUi.MenuItem("Activity Order", null, SportOrder.KEY, null));
         addItem(_accentItem);
         addItem(_gaugeItem);
         refreshLabels();
@@ -36,6 +37,11 @@ class FaceCustomizationDelegate extends WatchUi.Menu2InputDelegate {
 
     function onSelect(item as WatchUi.MenuItem) as Void {
         var key = item.getId() as String;
+        if (key.equals(SportOrder.KEY)) {
+            var menu = new SportOrderMenu();
+            WatchUi.pushView(menu, new SportRankDelegate(menu), WatchUi.SLIDE_IMMEDIATE);
+            return;
+        }
         var layout = FaceLayouts.selected();
         var options = new WatchUi.Menu2({:title => item.getLabel()});
         if (key.equals(FaceLayouts.KEY)) {

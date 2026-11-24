@@ -67,9 +67,9 @@ class EmberRenderer extends FaceRenderer {
     private function drawSportBezel(dc, data as Lang.Dictionary) {
         // The owner knows the period and units. Use the freed center space for
         // a larger, upright running value instead of repeating that legend.
-        text(dc, 140, 214, Graphics.FONT_XTINY, "RUN", _accent);
-        text(dc, 140, 235, Graphics.FONT_SMALL, km(data[:run]), WHITE);
-        var labels = ["BIKE " + km(data[:bike]), "SWIM " + km(data[:swim])];
+        text(dc, 140, 214, Graphics.FONT_XTINY, sportLabel(SportOrder.PRIMARY), _accent);
+        text(dc, 140, 235, Graphics.FONT_SMALL, sportKm(data, SportOrder.PRIMARY), WHITE);
+        var labels = [sportLabel(SportOrder.SECONDARY) + " " + sportKm(data, SportOrder.SECONDARY), sportLabel(SportOrder.TERTIARY) + " " + sportKm(data, SportOrder.TERTIARY)];
         var angles = [215, 325];
         for (var i = 0; i < 2; i++) {
             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);

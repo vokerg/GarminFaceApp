@@ -41,11 +41,11 @@ class FieldCompassRenderer extends FaceRenderer {
         text(dc, 189, 194, Graphics.FONT_TINY, bpm(data[:hr]), WHITE);
         bar(dc, 158, 209, 63, data[:hr], data[:maxHr]);
 
-        text(dc, 76, 228, Graphics.FONT_TINY, km(data[:bike]), WHITE);
-        text(dc, 140, 237, Graphics.FONT_SMALL, km(data[:run]), WHITE);
-        text(dc, 204, 228, Graphics.FONT_TINY, km(data[:swim]), WHITE);
-        text(dc, 76, 245, Graphics.FONT_XTINY, "BIKE", _accent);
-        text(dc, 140, 259, Graphics.FONT_XTINY, "RUN", _accent);
-        text(dc, 204, 245, Graphics.FONT_XTINY, "SWIM", _accent);
+        text(dc, 76, 228, Graphics.FONT_TINY, sportKm(data, SportOrder.SECONDARY), WHITE);
+        text(dc, 140, 237, Graphics.FONT_SMALL, sportKm(data, SportOrder.PRIMARY), WHITE);
+        text(dc, 204, 228, Graphics.FONT_TINY, sportKm(data, SportOrder.TERTIARY), WHITE);
+        text(dc, 76, 245, Graphics.FONT_XTINY, sportLabel(SportOrder.SECONDARY), _accent);
+        text(dc, 140, 259, Graphics.FONT_XTINY, sportLabel(SportOrder.PRIMARY), _accent);
+        text(dc, 204, 245, Graphics.FONT_XTINY, sportLabel(SportOrder.TERTIARY), _accent);
     }
 }

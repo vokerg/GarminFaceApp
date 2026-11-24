@@ -15,13 +15,13 @@ class TrainingLedgerRenderer extends FaceRenderer {
 
         dc.setColor(_accent, Graphics.COLOR_TRANSPARENT);
         dc.fillRectangle(19, 82, 242, 65);
-        text(dc, 63, 113, Graphics.FONT_TINY, "RUN", BLACK);
-        fittedText(dc, 165, 113, Graphics.FONT_LARGE, Graphics.FONT_MEDIUM, 154, km(data[:run]), BLACK);
+        text(dc, 63, 113, Graphics.FONT_TINY, sportLabel(SportOrder.PRIMARY), BLACK);
+        fittedText(dc, 165, 113, Graphics.FONT_LARGE, Graphics.FONT_MEDIUM, 154, sportKm(data, SportOrder.PRIMARY), BLACK);
 
-        text(dc, 79, 165, Graphics.FONT_XTINY, "BIKE", _accent);
-        text(dc, 201, 165, Graphics.FONT_XTINY, "SWIM", _accent);
-        text(dc, 79, 187, Graphics.FONT_SMALL, km(data[:bike]), WHITE);
-        text(dc, 201, 187, Graphics.FONT_SMALL, km(data[:swim]), WHITE);
+        text(dc, 79, 165, Graphics.FONT_XTINY, sportLabel(SportOrder.SECONDARY), _accent);
+        text(dc, 201, 165, Graphics.FONT_XTINY, sportLabel(SportOrder.TERTIARY), _accent);
+        text(dc, 79, 187, Graphics.FONT_SMALL, sportKm(data, SportOrder.SECONDARY), WHITE);
+        text(dc, 201, 187, Graphics.FONT_SMALL, sportKm(data, SportOrder.TERTIARY), WHITE);
 
         line(dc, 44, 207, 236, 207, _accent);
         text(dc, 91, 225, Graphics.FONT_XTINY, "STEPS", _accent);

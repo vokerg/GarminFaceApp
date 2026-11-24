@@ -20,9 +20,9 @@ class MetricGridRenderer extends FaceRenderer {
         bar(dc, 116, 153, 48, data[:steps], data[:goal]);
         bar(dc, 190, 153, 48, data[:hr], data[:maxHr]);
 
-        tile(dc, 32, 172, "BIKE", km(data[:bike]));
-        tile(dc, 106, 172, "RUN", km(data[:run]));
-        tile(dc, 180, 172, "SWIM", km(data[:swim]));
+        tile(dc, 32, 172, sportLabel(SportOrder.SECONDARY), sportKm(data, SportOrder.SECONDARY));
+        tile(dc, 106, 172, sportLabel(SportOrder.PRIMARY), sportKm(data, SportOrder.PRIMARY));
+        tile(dc, 180, 172, sportLabel(SportOrder.TERTIARY), sportKm(data, SportOrder.TERTIARY));
     }
 
     private function tile(dc, x, y, label, value) {

@@ -6,7 +6,7 @@ Each layout uses the same live time, date, battery, steps, heart rate, and trail
 
 | Layout | Design | Simulator capture |
 | --- | --- | --- |
-| Field Compass | Analog hands, date and battery flanking the dial, training readouts below | [Field Compass](layouts/field-compass.png) |
+| Field Compass | Analog hands, date and battery flanking the dial, training readouts below. Under review for inclusion. | [Field Compass](layouts/field-compass.png) |
 | Split Clock | Stacked digital time next to three narrow daily progress rows | [Split Clock](layouts/split-clock.png) |
 | Training Ledger | Inverted running-distance banner, compact time header | [Training Ledger](layouts/training-ledger.png) |
 | Signal Bars | Three ten-segment progress columns with position and height encoding | [Signal Bars](layouts/signal-bars.png) |
@@ -42,3 +42,10 @@ Reviewed against the Garmin fēnix 7X profile at 280×280 on SDK 9.3.0, API 5.2.
 - The layout setting switched renderers and persisted on relaunch in the Garmin simulator. Physical settings access, color under real light, shortcuts and runtime power still require on-watch verification.
 
 [Garmin fēnix 7 watch face customization](https://www8.garmin.com/manuals/webhelp/GUID-C001C335-A8EC-4A41-AB0E-BAC434259F92/EN-US/GUID-A4EA51C3-D0B2-48E3-807A-768C6F07D7BA.html)
+
+## Prototype polish
+
+- Quadrant Clock now uses balanced date and battery columns and three activity columns on the same label and value rows. The primary value sits at the center of the crosshair's vertical axis. The side values use the same font size. See the [populated capture](layouts/quadrant-clock.png) and [23:59 with long values](layouts/quadrant-clock-extreme.png).
+- Track Ring opens the bottom of the three arcs above the sport readouts. The left and right metrics clear the arc ends even with full gauges and longer values. See the [default order](layouts/track-ring.png) and [long values with Bike first](layouts/track-ring-extreme.png).
+- **Customize → Activity Order** applies across all layouts. The defaults remain Run, Bike, Swim. Choosing an occupied slot swaps the two sports so each appears once. The Garmin simulator displayed [Bike first, Swim second, Run third](layouts/track-ring-bike-primary.png) after a menu change and retained it after relaunch. [Activity Order menu](layouts/activity-order.png)
+- All five simulator tests passed, including the new regression check that native shortcuts follow the selected sports. Field Compass remains selectable while its release inclusion is under review.

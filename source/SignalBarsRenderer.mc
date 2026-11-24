@@ -16,12 +16,12 @@ class SignalBarsRenderer extends FaceRenderer {
         column(dc, 217, "BPM", bpm(data[:hr]), data[:hr], data[:maxHr]);
 
         line(dc, 46, 206, 234, 206, _accent);
-        text(dc, 75, 220, Graphics.FONT_XTINY, "BIKE", _accent);
-        text(dc, 140, 223, Graphics.FONT_XTINY, "RUN", _accent);
-        text(dc, 205, 220, Graphics.FONT_XTINY, "SWIM", _accent);
-        text(dc, 75, 236, Graphics.FONT_TINY, km(data[:bike]), WHITE);
-        text(dc, 140, 244, Graphics.FONT_SMALL, km(data[:run]), WHITE);
-        text(dc, 205, 236, Graphics.FONT_TINY, km(data[:swim]), WHITE);
+        text(dc, 75, 220, Graphics.FONT_XTINY, sportLabel(SportOrder.SECONDARY), _accent);
+        text(dc, 140, 223, Graphics.FONT_XTINY, sportLabel(SportOrder.PRIMARY), _accent);
+        text(dc, 205, 220, Graphics.FONT_XTINY, sportLabel(SportOrder.TERTIARY), _accent);
+        text(dc, 75, 236, Graphics.FONT_TINY, sportKm(data, SportOrder.SECONDARY), WHITE);
+        text(dc, 140, 244, Graphics.FONT_SMALL, sportKm(data, SportOrder.PRIMARY), WHITE);
+        text(dc, 205, 236, Graphics.FONT_TINY, sportKm(data, SportOrder.TERTIARY), WHITE);
     }
 
     private function column(dc, x, label, value, reading, limit) {
