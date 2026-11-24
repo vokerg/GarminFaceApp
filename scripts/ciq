@@ -10,7 +10,7 @@ CIQ_SDK="${CIQ_SDK:-}"
 DEVICE="${CIQ_DEVICE:-fenix7x}"
 KEY="${CIQ_KEY:-$HOME/.config/garmin/developer_key.der}"
 COMMAND="${1:-doctor}"
-LAYOUT="${CIQ_LAYOUT:-ember}"
+LAYOUT="${CIQ_LAYOUT:-production}"
 
 sdk_required() {
     if [[ ! -x "$CIQ_SDK/bin/monkeyc" ]]; then
@@ -20,8 +20,19 @@ sdk_required() {
 }
 
 profile_required() {
+    if [[ "$LAYOUT" == production ]]; then
+        PROFILE=Fenix7XVibeFace
+        PREVIEW=EmberPreview
+        LIVE_JUNGLE=monkey.jungle
+        PREVIEW_JUNGLE=preview.jungle
+        TEST_JUNGLE=test.jungle
+        return
+    fi
     PROFILE="$(python3 "$ROOT/scripts/concept-profile.py" "$LAYOUT")"
-    PROFILE_PATH=".local/profiles/$LAYOUT"
+    PREVIEW="${PROFILE}Preview"
+    LIVE_JUNGLE=".local/profiles/$LAYOUT/live.jungle"
+    PREVIEW_JUNGLE=".local/profiles/$LAYOUT/preview.jungle"
+    TEST_JUNGLE=".local/profiles/$LAYOUT/test.jungle"
 }
 
 case "$COMMAND" in
@@ -63,11 +74,11 @@ case "$COMMAND" in
         mkdir -p "$ROOT/build"
         cd "$ROOT"
         profile_required
-        JUNGLE="$PROFILE_PATH/live.jungle"
+        JUNGLE="$LIVE_JUNGLE"
         OUTPUT="$PROFILE"
         if [[ "$COMMAND" == preview-build ]]; then
-            JUNGLE="$PROFILE_PATH/preview.jungle"
-            OUTPUT="${PROFILE}Preview"
+            JUNGLE="$PREVIEW_JUNGLE"
+            OUTPUT="$PREVIEW"
             python3 "$ROOT/scripts/preview-fixture.py" "${2:-populated}"
         fi
         "$CIQ_SDK/bin/monkeyc" -f "$JUNGLE" -d "$DEVICE" -y "$KEY" -o "build/$OUTPUT.prg" -w
@@ -81,7 +92,7 @@ case "$COMMAND" in
         mkdir -p "$ROOT/build"
         cd "$ROOT"
         profile_required
-        "$CIQ_SDK/bin/monkeyc" -f "$PROFILE_PATH/test.jungle" -d "$DEVICE" -y "$KEY" -o build/EmberTests.prg -t -w
+        "$CIQ_SDK/bin/monkeyc" -f "$TEST_JUNGLE" -d "$DEVICE" -y "$KEY" -o build/EmberTests.prg -t -w
         # SDK 9.3 monkeydo can exit 1 even when its test report says PASSED.
         # Require an explicit nonempty passing report; preserve output for review.
         "$CIQ_SDK/bin/monkeydo" "$ROOT/build/EmberTests.prg" "$DEVICE" -t > build/tests.log 2>&1 || true
@@ -92,7 +103,7 @@ case "$COMMAND" in
         sdk_required
         profile_required
         OUTPUT="$PROFILE"
-        if [[ "$COMMAND" == preview-run ]]; then OUTPUT="${PROFILE}Preview"; fi
+        if [[ "$COMMAND" == preview-run ]]; then OUTPUT="$PREVIEW"; fi
         if [[ ! -f "$ROOT/build/$OUTPUT.prg" ]]; then
             echo "Build $OUTPUT first." >&2
             exit 1

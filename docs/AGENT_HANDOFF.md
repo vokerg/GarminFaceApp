@@ -1,6 +1,6 @@
 # Agent handoff — working state and physical installation
 
-Updated 2026-11-15. Read this before repeating environment setup, design experiments or installation troubleshooting.
+Updated 2026-11-24. Read this before repeating environment setup, design experiments or installation troubleshooting.
 
 ## Owner decisions
 
@@ -18,9 +18,9 @@ Canonical code is in `source/`, with separate `data/live` and generated preview 
 
 `UserProfile.getUserActivityHistory()` provides sport, start time and meters. This is the native source for rolling totals; the old claim that a companion service was required was too broad. Don't substitute ActivityMonitor walking distance or calendar-week complications for these totals. Aggregate without assuming iterator ordering. Cache for at most 15 minutes or until the next expiry. Uncertain relevant fields produce `--`.
 
-SDK 9.3.0, Java 21, Monkey C extension and `fenix7x` definition are installed. `./scripts/ciq doctor`, `build`, `preview-build populated`, `preview-run`, `run` and `test` are the working entry points. Three semantic/hit-region tests pass. Build and preview compile without warnings. SDK test runner can exit 1 despite PASSED; the script requires an explicit fresh nonempty zero-failure report.
+SDK 9.3.0, Java 21, Monkey C extension and `fenix7x` definition are installed. `./scripts/ciq doctor`, `build`, `preview-build populated`, `preview-run`, `run` and `test` are the working entry points. Four semantic/hit-region tests pass. Build and preview compile without warnings. SDK test runner can exit 1 despite PASSED. The script requires an explicit fresh nonempty zero-failure report.
 
-Latest populated screenshots and settings verification are in the [two-color simulator review](reviews/2026-11-24-two-colors.md). The updated live build also launched in the simulator without DEMO. A simulator long-press did not visibly launch a native app, so physical shortcut behavior is **not yet verified**.
+The standard build keeps the original app ID and opens on Ember by default. **Customize → Layout** selects among nine layouts. The gallery, settings checks and separately installable profile keys are in the [layout review](reviews/2026-11-24-layout-concepts.md). A simulator long-press did not visibly launch a native app, so physical shortcut behavior is **not yet verified**.
 
 The main revival and padding/shortcut fixes were pushed and fast-forward merged into `main`, through implementation commit `96f810f`. Subsequent documentation commits record this installation.
 

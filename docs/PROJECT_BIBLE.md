@@ -79,10 +79,12 @@ Latest evidence: [triathlon/bezel review](reviews/2026-11-15-triathlon-bezel.md)
 
 Owner refinement: running is the priority sport. The bottom center is RUN; BIKE/SWIM remain on the lower bezel. The cycling-focused intermediate rendering is historical, not the current design.
 
-Final padding fix: values moved to y−6 and labels to y+12 inside the 36px dials. Step values wider than 56px use the smaller native font, keeping them clear of the arc. `triathlon-run-padded.png` is the current populated screenshot.
+Final padding fix: values moved to y−6 and labels to y+12 inside the 36px dials. Step values wider than 56px use the smaller native font, keeping them clear of the arc. See the [current Ember capture](reviews/layouts/ember.png).
 
 Press-and-hold shortcuts are implemented through WatchFaceDelegate/Complications for battery, date, steps, HR, RUN and BIKE. RUN/BIKE open Garmin's native history providers, whose views may use calendar-week totals; displayed face values remain trailing 168 hours. There is no native swimming complication in this API, so swim is display-only. Unsupported/provider-blocked launches return false safely. Added ComplicationSubscriber permission. Native app launch destinations require physical-watch verification; simulator coordinate dispatch did not show a native app opening.
 
 Physical deployment milestone (2026-11-15): live PRG transferred as `GARMIN/Apps/Ember.prg`, downloaded back and byte-for-byte verified. Physical activation/data/shortcut/power acceptance remains pending. Read `docs/AGENT_HANDOFF.md` for the proven CLI transfer process and all current owner decisions.
 
 The owner requested two independent on-watch colors. Accent Color defaults to orange and covers the hours, colored labels and bezel ticks. Ring Color defaults to gold and covers the steps, HR and outer battery gauges. Each gauge has a thin track and a thicker progress arc in the same color. See the [two-color simulator review](reviews/2026-11-24-two-colors.md).
+
+The standard app includes eight alternate layouts under **Customize → Layout**. Their renderers share the data adapter and metric formatting, and the selected layout is saved by stable ID. The color menu now labels the second setting **Gauge Color**. Ember remains the default. See the [layout review](reviews/2026-11-24-layout-concepts.md).

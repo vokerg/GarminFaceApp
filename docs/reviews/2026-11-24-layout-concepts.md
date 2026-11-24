@@ -21,7 +21,7 @@ Each layout uses the same live time, date, battery, steps, heart rate, and trail
 
 [Customize menu](layouts/customize.png) · [Layout menu](layouts/layout-menu.png) · [Approved Ember layout](layouts/ember.png)
 
-`./scripts/ciq build` makes the standalone review app `build/EmberLayoutLab.prg`, which starts on Ember and includes all nine layouts. A specific concept starts on its own layout and gets a separate Garmin application ID and file name. For example:
+`./scripts/ciq build` makes the standard `build/Fenix7XVibeFace.prg` with all nine layouts. `CIQ_LAYOUT=ember ./scripts/ciq build` makes the separately installable `build/EmberLayoutLab.prg`, which also starts on Ember. A specific concept starts on its own layout and gets a separate Garmin application ID and file name. For example:
 
 ```sh
 CIQ_LAYOUT=field-compass ./scripts/ciq build
@@ -29,7 +29,7 @@ CIQ_LAYOUT=field-compass ./scripts/ciq preview-build populated
 CIQ_LAYOUT=field-compass ./scripts/ciq preview-run
 ```
 
-The other review profile keys are `split-clock`, `training-ledger`, `signal-bars`, `metric-grid`, `type-study`, `track-ring`, and `quadrant-clock`. The unmodified app on `main` keeps its original ID.
+The other review profile keys are `split-clock`, `training-ledger`, `signal-bars`, `metric-grid`, `type-study`, `track-ring`, and `quadrant-clock`. The standard app keeps its original ID.
 
 ## Simulator review
 

@@ -19,6 +19,8 @@ Build with `./scripts/ciq build`, switch the watch temporarily to another face, 
 
 ## Initial checks on the physical watch
 
+Open **Customize → Layout** to switch between Ember and the eight alternate faces. **Accent Color** and **Gauge Color** are in the same menu.
+
 Confirm time, battery, steps and HR. Compare RUN/BIKE/SWIM against activities **starting within the trailing 168 hours**. Distances are always kilometers. Check a newly saved workout and any ride recorded on an Edge/indoor platform, since native watch-history completeness is not yet established. HR can show `--` until a valid recent sample exists. The DEMO marker must be absent.
 
 If the watch shows an IQ error, copy `GARMIN/APPS/LOGS/CIQ_LOG.YAML` back to the Mac for diagnosis. A PRG that renders in the simulator is not a substitute for this first physical-watch check.
