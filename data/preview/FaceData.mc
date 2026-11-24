@@ -7,6 +7,7 @@ class FaceData {
             :steps => 12486,
             :goal => 15000,
             :hr => 58,
+            :maxHr => 180,
             :run => 42600.0,
             :bike => 184300.0,
             :swim => 6250.0,

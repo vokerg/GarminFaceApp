@@ -7,10 +7,8 @@ import Toybox.Time.Gregorian;
 import Toybox.WatchUi;
 
 class Fenix7XVibeFaceView extends WatchUi.WatchFace {
-    private const EMBER = 0xFF5500;
-    private const GOLD = 0xFFAA00;
-    private const GRAY = 0xAAAAAA;
-    private const TRACK = 0x555555;
+    private var _accent as Number = 0;
+    private var _ring as Number = 0;
     private var _data;
     private var _bezelFont = null;
 
@@ -20,6 +18,8 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
     }
 
     function onUpdate(dc as Dc) as Void {
+        _accent = FaceColors.color(FaceColors.ACCENT);
+        _ring = FaceColors.color(FaceColors.RING);
         var data = _data.snapshot() as Lang.Dictionary;
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
@@ -27,17 +27,17 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
 
         var date = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
         var dateText = date.day_of_week.toUpper() + " " + date.day.format("%02d") + " " + date.month.toUpper();
-        text(dc, 140, 40, Graphics.FONT_XTINY, dateText, GRAY);
+        text(dc, 140, 40, Graphics.FONT_XTINY, dateText, _accent);
         drawTime(dc, data);
 
         drawSteps(dc, data[:steps], data[:goal]);
-        drawHeartRate(dc, data[:hr]);
+        drawHeartRate(dc, data[:hr], data[:maxHr]);
         drawSportBezel(dc, data);
 
         var battery = data[:battery];
-        text(dc, 140, 62, Graphics.FONT_XTINY, "BAT " + battery.toNumber().format("%d") + "%", GOLD);
+        text(dc, 140, 62, Graphics.FONT_XTINY, "BAT " + battery.toNumber().format("%d") + "%", _accent);
         if (data[:preview]) {
-            text(dc, 140, 17, Graphics.FONT_XTINY, "DEMO", GRAY);
+            text(dc, 140, 17, Graphics.FONT_XTINY, "DEMO", _accent);
         }
     }
 
@@ -46,19 +46,23 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
         dc.drawText(x, y, font, value, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
-    private function perimeter(dc, battery) {
-        dc.setPenWidth(3);
-        // A continuous capacity arc; its color and endpoint describe battery.
-        dc.setColor(TRACK, Graphics.COLOR_TRANSPARENT);
-        dc.drawArc(140, 140, 132, Graphics.ARC_CLOCKWISE, 225, -45);
-        if (battery > 0) {
-            dc.setColor(EMBER, Graphics.COLOR_TRANSPARENT);
-            dc.drawArc(140, 140, 132, Graphics.ARC_CLOCKWISE, 225, 225 - 270 * battery / 100.0);
-        }
+    private function gauge(dc, x, y, radius, value, limit) {
+        dc.setColor(_ring, Graphics.COLOR_TRANSPARENT);
         dc.setPenWidth(1);
+        dc.drawArc(x, y, radius, Graphics.ARC_CLOCKWISE, 225, -45);
+        if (value != null && value > 0 && limit != null && limit > 0) {
+            var progress = value >= limit ? 1.0 : value.toFloat() / limit;
+            dc.setPenWidth(3);
+            dc.drawArc(x, y, radius, Graphics.ARC_CLOCKWISE, 225, 225 - progress * 270);
+            dc.setPenWidth(1);
+        }
+    }
+
+    private function perimeter(dc, battery) {
+        gauge(dc, 140, 140, 132, battery, 100);
+        dc.setColor(_accent, Graphics.COLOR_TRANSPARENT);
         for (var i = 0; i < 60; i++) {
             var angle = Math.toRadians(i * 6 - 90);
-            dc.setColor(i % 5 == 0 ? GRAY : TRACK, Graphics.COLOR_TRANSPARENT);
             var inner = i % 5 == 0 ? 122 : 125;
             dc.drawLine(140 + inner * Math.cos(angle), 140 + inner * Math.sin(angle),
                 140 + 128 * Math.cos(angle), 140 + 128 * Math.sin(angle));
@@ -82,27 +86,19 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
         var leftWidth = dc.getTextWidthInPixels(hours, font);
         var rightWidth = dc.getTextWidthInPixels(minutes, font);
         var left = 140 - (leftWidth + rightWidth + 12) / 2;
-        dc.setColor(EMBER, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(_accent, Graphics.COLOR_TRANSPARENT);
         dc.drawText(left, 103, font, hours, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.drawText(left + leftWidth + 12, 103, font, minutes, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
         if (!settings.is24Hour) {
-            text(dc, 140, 134, Graphics.FONT_XTINY, rawHour >= 12 ? "PM" : "AM", GRAY);
+            text(dc, 140, 134, Graphics.FONT_XTINY, rawHour >= 12 ? "PM" : "AM", _accent);
         }
     }
 
     private function drawSteps(dc, steps, goal) {
         var x = 92;
         var y = 172;
-        dc.setPenWidth(3);
-        dc.setColor(TRACK, Graphics.COLOR_TRANSPARENT);
-        dc.drawArc(x, y, 36, Graphics.ARC_CLOCKWISE, 225, -45);
-        if (steps != null && goal != null && goal > 0 && steps > 0) {
-            var progress = steps.toFloat() / goal;
-            if (progress > 1) { progress = 1.0; }
-            dc.setColor(EMBER, Graphics.COLOR_TRANSPARENT);
-            dc.drawArc(x, y, 36, Graphics.ARC_CLOCKWISE, 225, 225 - progress * 270);
-        }
+        gauge(dc, x, y, 36, steps, goal);
         var label = "--";
         if (steps != null) {
             if (steps >= 99950) {
@@ -116,18 +112,15 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
         var valueFont = Graphics.FONT_TINY;
         if (dc.getTextWidthInPixels(label, valueFont) > 56) { valueFont = Graphics.FONT_XTINY; }
         text(dc, x, y - 6, valueFont, label, Graphics.COLOR_WHITE);
-        text(dc, x, y + 12, Graphics.FONT_XTINY, "STEPS", GRAY);
+        text(dc, x, y + 12, Graphics.FONT_XTINY, "STEPS", _accent);
     }
 
-    private function drawHeartRate(dc, hr) {
+    private function drawHeartRate(dc, hr, maxHr) {
         var x = 188;
         var y = 172;
-        // An open frame, not a fabricated HR/180 progress gauge.
-        dc.setPenWidth(1);
-        dc.setColor(TRACK, Graphics.COLOR_TRANSPARENT);
-        dc.drawArc(x, y, 36, Graphics.ARC_CLOCKWISE, 225, -45);
+        gauge(dc, x, y, 36, hr, maxHr);
         text(dc, x, y - 6, Graphics.FONT_TINY, hr == null ? "--" : hr.format("%d"), Graphics.COLOR_WHITE);
-        text(dc, x, y + 12, Graphics.FONT_XTINY, "BPM", GRAY);
+        text(dc, x, y + 12, Graphics.FONT_XTINY, "BPM", _accent);
     }
 
     function onLayout(dc as Dc) as Void {
@@ -144,7 +137,7 @@ class Fenix7XVibeFaceView extends WatchUi.WatchFace {
     private function drawSportBezel(dc, data as Lang.Dictionary) {
         // The owner knows the period and units. Use the freed center space for
         // a larger, upright running value instead of repeating that legend.
-        text(dc, 140, 214, Graphics.FONT_XTINY, "RUN", GRAY);
+        text(dc, 140, 214, Graphics.FONT_XTINY, "RUN", _accent);
         var run = data[:run];
         var runValue = run == null ? "--" : (run / 1000.0).format(run >= 1000000 ? "%.0f" : "%.1f");
         text(dc, 140, 235, Graphics.FONT_SMALL, runValue, Graphics.COLOR_WHITE);

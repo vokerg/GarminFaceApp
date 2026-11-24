@@ -40,7 +40,7 @@ class FaceData {
         var samples = ActivityMonitor.getHeartRateHistory(new Time.Duration(600), true);
         var sample = samples.next();
         while (sample != null) {
-            if (sample.heartRate != null && sample.heartRate != ActivityMonitor.INVALID_HR_SAMPLE &&
+            if (sample.heartRate != null && sample.heartRate > 0 && sample.heartRate != ActivityMonitor.INVALID_HR_SAMPLE &&
                 sample.when != null && now - sample.when.value() >= 0 && now - sample.when.value() <= 600) {
                 hr = sample.heartRate;
                 break;
@@ -52,10 +52,19 @@ class FaceData {
             :steps => info.steps,
             :goal => info.stepGoal,
             :hr => hr,
+            :maxHr => hr == null ? null : maxHeartRate(),
             :run => distances[:run],
             :bike => distances[:bike],
             :swim => distances[:swim],
             :preview => false
         };
+    }
+
+    private function maxHeartRate() {
+        // The API exposes the generic zone 5 upper threshold in BPM.
+        var zones = UserProfile.getHeartRateZones(UserProfile.HR_ZONE_SPORT_GENERIC);
+        if (zones == null || zones.size() < 6) { return null; }
+        var upper = zones[5];
+        return upper != null && upper > 0 ? upper : null;
     }
 }

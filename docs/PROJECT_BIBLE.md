@@ -33,6 +33,7 @@ Curved labels use the device's native vector font and radial text API. Prefer th
 | Steps | `ActivityMonitor.getInfo().steps` | `--`, distinguish missing from zero |
 | Step goal | `ActivityMonitor.getInfo().stepGoal` | No progress arc if absent/nonpositive |
 | HR | Latest valid `ActivityMonitor.getHeartRateHistory` sample | `--`; respect sample age, never substitute demo HR |
+| HR arc limit | Upper threshold of the watch's generic zone 5 from `UserProfile.getHeartRateZones`, in BPM | Draw only the thin ring if either the sample or limit is unavailable |
 | Run / bike / swim | `UserProfile.getUserActivityHistory()`: filter `Activity.SPORT_RUNNING`, `SPORT_CYCLING`, `SPORT_SWIMMING`, sum activity distances in meters, display kilometers | Missing/invalid date or distance makes the affected sport `--`; accessible empty history sums to zero |
 
 **Rolling window:** activities whose start timestamp is in `(now − 604800 seconds, now]`. This means trailing 168 hours, not the calendar week and not seven midnight-to-midnight dates. Each activity contributes its full saved distance based on its start time. All three values use kilometers regardless of device unit preference, as requested. Running/cycling display tenths below 1000km and whole kilometers above it; swimming currently uses the same precision.
@@ -83,3 +84,5 @@ Final padding fix: values moved to y−6 and labels to y+12 inside the 36px dial
 Press-and-hold shortcuts are implemented through WatchFaceDelegate/Complications for battery, date, steps, HR, RUN and BIKE. RUN/BIKE open Garmin's native history providers, whose views may use calendar-week totals; displayed face values remain trailing 168 hours. There is no native swimming complication in this API, so swim is display-only. Unsupported/provider-blocked launches return false safely. Added ComplicationSubscriber permission. Native app launch destinations require physical-watch verification; simulator coordinate dispatch did not show a native app opening.
 
 Physical deployment milestone (2026-11-15): live PRG transferred as `GARMIN/Apps/Ember.prg`, downloaded back and byte-for-byte verified. Physical activation/data/shortcut/power acceptance remains pending. Read `docs/AGENT_HANDOFF.md` for the proven CLI transfer process and all current owner decisions.
+
+The owner requested two independent on-watch colors. Accent Color defaults to orange and covers the hours, colored labels and bezel ticks. Ring Color defaults to gold and covers the steps, HR and outer battery gauges. Each gauge has a thin track and a thicker progress arc in the same color. See the [two-color simulator review](reviews/2026-11-24-two-colors.md).
